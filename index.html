@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alaa Shaheen · UX/UI Portfolio</title>
+  <meta name="description" content="Alaa Shaheen, UX/UI Designer & Front-End Developer in Cologne. Mobile apps, websites and brand identity." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#d5ddf5" />
+  <!-- Link previews (LinkedIn, WhatsApp, Slack…) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Alaa Shaheen · UX/UI Portfolio" />
+  <meta property="og:description" content="UX/UI Designer & Front-End Developer in Cologne. Mobile apps, websites and brand identity, from research to code." />
+  <meta property="og:image" content="https://alaashaheen93.github.io/assets/og-image.jpg" />
+  <meta property="og:url" content="https://alaashaheen93.github.io/" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="loading">
+
+  <!-- Loader: red sheet that tears away -->
+  <div class="loader" id="loader">
+    <div class="loader-sheet" id="loaderSheet">
+      <p class="glow script" id="loaderTitle"><small>Alaa’s</small>Design Portfolio</p>
+      <p class="loader-count"><span id="count">0</span>%</p>
+      <div class="tear" data-tear="bottom" data-fill="soft" data-fiber="cream"></div>
+    </div>
+  </div>
+
+  <div class="progress" id="progress"></div>
+  <div class="menu" id="menu" aria-hidden="true">
+    <a href="#about">About me</a><a href="#work">Brand identity</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    <p>designer.alaa17@gmail.com</p>
+  </div>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="logo" data-hover>Alaa</a>
+    <nav class="nav-links">
+      <a href="#about" data-hover>About me</a>
+      <a href="#work" data-hover>Brand identity</a>
+      <a href="#projects" data-hover>Projects</a>
+      <a href="#experience" data-hover>Experience</a>
+      <a href="#contact" class="cta" data-hover>Contact</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="hello hero-fade"><span class="pill">Hello, I’m Alaa Shaheen</span></div>
+          <h1 class="big-word heavy" aria-label="Portfolio, UX/UI Designer">
+            <span class="ln split">Portfolio</span>
+            <span class="sig script" id="heroSig">UX/UI Designer</span>
+          </h1>
+          <p class="hero-intro hero-fade">
+            I design <b>intuitive mobile apps, websites and brand identities</b>, and I can build them too.
+            Computer engineer turned designer, based in Cologne, Germany.
+          </p>
+          <div class="hero-btns hero-fade">
+            <a href="#projects" class="btn magnetic" data-hover>View projects
+              <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg></a>
+            <a href="https://www.behance.net/alaashaheen16" target="_blank" rel="noopener" class="btn alt magnetic" data-hover>Behance ↗</a>
+          </div>
+        </div>
+        <figure class="polaroid hero-photo" id="heroPhoto">
+          <span class="tape"></span>
+          <span class="sticker"><i></i>Open to work</span>
+          <img src="assets/alaa-photo.png" alt="Portrait of Alaa Shaheen" />
+          <figcaption>Alaa Shaheen</figcaption>
+          <div class="stamp" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <defs><path id="circ" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" /></defs>
+              <circle cx="60" cy="60" r="58" fill="#f4ede1" stroke="#b51f24" stroke-width="2" stroke-dasharray="3 4"/>
+              <text font-family="Bricolage Grotesque" font-size="11.5" letter-spacing="3" fill="#b51f24"><textPath href="#circ">UX/UI · BRAND · FRONT-END · COLOGNE ·</textPath></text>
+            </svg>
+            <b>✦</b>
+          </div>
+        </figure>
+      </div>
+    </section>
+    <div class="ribbon" aria-hidden="true"><div class="tear" data-tear="band"></div><div class="ribbon-track"><span>UX Research</span><span>user flows</span><span>Wireframes</span><span>prototypes</span><span>Design Systems</span><span>brand identity</span><span>Accessibility</span><span>front-end</span><span>UX Research</span><span>user flows</span><span>Wireframes</span><span>prototypes</span><span>Design Systems</span><span>brand identity</span><span>Accessibility</span><span>front-end</span></div></div>
+
+    <!-- ABOUT -->
+    <section class="sec" id="about">
+      <div class="wrap about-grid">
+        <div class="note reveal">
+          <span class="tape"></span>
+          <h3>Let’s connect</h3>
+          <ul class="contact-list">
+            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span><a href="mailto:designer.alaa17@gmail.com" data-hover>designer.alaa17@gmail.com</a></li>
+            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>Cologne, Germany</li>
+            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h6a3 3 0 0 1 0 6H4zM4 12h7a3.5 3.5 0 0 1 0 7H4zM15 8h5M14 15a3.5 3.5 0 0 1 7 0h-7a3.5 3.5 0 0 0 6.5 1.8"/></svg></span><a href="https://www.behance.net/alaashaheen16" target="_blank" rel="noopener" data-hover>behance.net/alaashaheen16</a></li>
+            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-7M11 13a3 3 0 0 1 6 0v4"/></svg></span><a href="https://www.linkedin.com/in/alaa-design" target="_blank" rel="noopener" data-hover>linkedin.com/in/alaa-design</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="pill reveal">About me</span>
+          <p class="about-text" id="aboutText">I’m a UX/UI designer with a degree in Computer System Engineering and professional Web Design training in Germany. I turn interviews, surveys and usability feedback into clear user flows, Figma prototypes and accessible interfaces. And I speak the language of developers.</p>
+          <div class="tools-h reveal"><span class="pill">Design tools</span></div>
+          <div class="tools" id="tools"></div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="stats">
+          <div class="stat reveal"><div class="stat-n"><span data-count="12">0</span><small>+</small></div><p>UX/UI case studies on Behance</p></div>
+          <div class="stat reveal"><div class="stat-n"><span data-count="4">0</span><small>yrs</small></div><p>Freelance web development, 2016 to 2020</p></div>
+          <div class="stat reveal"><div class="stat-n">B<span data-count="2">0</span></div><p>German &amp; English working proficiency</p></div>
+          <div class="stat reveal"><div class="stat-n"><span data-count="5">0</span><small>steps</small></div><p>From discovery to build</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED: BRAND IDENTITY -->
+    <div class="tear" data-tear="strip"></div>
+    <section class="sec feat" id="work">
+      <div class="wrap feat-grid">
+        <div>
+          <span class="pill reveal">★ Flagship project</span>
+          <p class="feat-proj script reveal">Brand · UX/UI · React</p>
+          <h2 class="feat-name heavy reveal">Ferment<br />Freude</h2>
+          <div class="feat-block reveal">
+            <h4>About the project</h4>
+            <p>An Austrian food startup making fermentation accessible, selling products online and running workshops. The brand story, shop and workshop booking felt disconnected, so customers needed a clearer path from discovery to purchase.</p>
+          </div>
+          <div class="feat-block reveal">
+            <h4>What I did: from brand to code</h4>
+            <ul>
+              <li>Brand strategy, creative direction &amp; full brand guidelines</li>
+              <li>Interviews, surveys, usability feedback &amp; A/B tests</li>
+              <li>User flows, wireframes &amp; Figma prototypes</li>
+              <li>React front-end with a Storybook component library</li>
+              <li>Live at fermentfreude.at and still evolving</li>
+            </ul>
+          </div>
+          <div class="meta reveal"><span>Jan 2026 to now</span><span>Shop · workshops · learning</span><span>Figma · React · Storybook</span></div>
+          <div class="case-btns reveal" style="display:flex;gap:12px;flex-wrap:wrap">
+            <a href="project.html?p=ferment-freude" class="btn magnetic" data-hover>Read the full case study</a>
+            <a href="https://www.fermentfreude.at/" target="_blank" rel="noopener" class="btn alt magnetic" data-hover>Live site ↗</a>
+          </div>
+        </div>
+        <div class="collage" id="collage">
+          <div class="ph c1" data-speed="-40"><span class="tape"></span><img src="assets/brand/brand_jpg_14.jpg" alt="Ferment Freude tote bag" /></div>
+          <div class="ph c2" data-speed="-90"><span class="tape"></span><img src="assets/brand/brand_jpg_12.jpg" alt="Ferment Freude product photo" /></div>
+          <div class="ph c3" data-speed="-20"><img src="assets/brand/brand_jpg_0.jpg" alt="Ferment Freude typography guidelines" /></div>
+          <div class="ph c4" data-speed="-60"><span class="tape"></span><img src="assets/brand/brand_jpg_17.jpg" alt="Ferment Freude logo application" /></div>
+          <div class="ph c5" data-speed="-130"><img src="assets/brand/brand_jpg_16.jpg" alt="Ferment Freude brand mark" /></div>
+        </div>
+      </div>
+    </section>
+    <div class="tear" data-tear="strip"></div>
+
+    <!-- PROJECTS -->
+    <section class="sec" id="projects">
+      <div class="wrap">
+        <div class="proj-top">
+          <div>
+            <span class="pill reveal">UX/UI Projects</span>
+            <h2 class="sec-title heavy reveal">Selected <span class="script">work</span></h2>
+          </div>
+          <div class="filters reveal" id="filters">
+            <button class="chip active" data-filter="all">All · 7</button>
+            <button class="chip" data-filter="app">Mobile apps · 4</button>
+            <button class="chip" data-filter="web">Websites · 3</button>
+          </div>
+        </div>
+        <div class="board" id="board"></div>
+        <div class="more reveal"><a href="https://www.behance.net/alaashaheen16" target="_blank" rel="noopener" class="btn alt magnetic" data-hover>See everything on Behance ↗</a></div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <div class="tear" data-tear="strip" data-fiber="tint"></div>
+    <section class="sec process" id="process">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="pill reveal">How I work</span>
+          <h2 class="sec-title heavy reveal">My <span class="script">process</span></h2>
+        </div>
+        <div class="cards" id="cards">
+          <div class="idx" style="--r:-3deg"><span class="tape"></span><span class="n">01</span><h3>Discover</h3><p>Stakeholder talks, user interviews and surveys to understand goals and pain points.</p></div>
+          <div class="idx" style="--r:2deg"><span class="tape"></span><span class="n">02</span><h3>Define</h3><p>Requirements, hypotheses and customer journeys that frame the right problem.</p></div>
+          <div class="idx" style="--r:-1.5deg"><span class="tape"></span><span class="n">03</span><h3>Design</h3><p>User flows, wireframes and high-fidelity UI in Figma, backed by a brand system.</p></div>
+          <div class="idx" style="--r:3deg"><span class="tape"></span><span class="n">04</span><h3>Validate</h3><p>Interactive prototypes, usability feedback and analytics to learn fast.</p></div>
+          <div class="idx" style="--r:-2deg"><span class="tape"></span><span class="n">05</span><h3>Build</h3><p>Responsive, accessible front-end with HTML, CSS, JS, Webflow and components.</p></div>
+        </div>
+      </div>
+    </section>
+    <div class="tear" data-tear="strip" data-fiber="cream"></div>
+
+    <!-- EXPERIENCE -->
+    <section class="sec journey" id="experience">
+      <div class="wrap">
+        <div class="jr-head">
+          <div>
+            <span class="pill reveal">Experience &amp; education</span>
+            <h2 class="sec-title heavy reveal">The <span class="script">journey</span></h2>
+            <p class="jr-intro reveal">From computer engineering to freelance web development to UX/UI design. Every step added a new layer: how things are built, how clients think, and how people use what I design.</p>
+          </div>
+          <div class="jr-facts reveal">
+            <div><b>2016</b><span>Building for the web since</span></div>
+            <div><b>B2</b><span>German &amp; English</span></div>
+            <div><b>3</b><span>Roles: design, research, code</span></div>
+          </div>
+        </div>
+
+        <div class="jr-filters" id="jrFilters" role="tablist" aria-label="Filter the journey">
+          <button class="jr-f on" data-f="all" role="tab" aria-selected="true">All</button>
+          <button class="jr-f" data-f="work" role="tab" aria-selected="false">Work</button>
+          <button class="jr-f" data-f="edu" role="tab" aria-selected="false">Education</button>
+        </div>
+
+        <div class="jr" id="timeline">
+          <div class="jr-rail" aria-hidden="true"><i id="railFill"></i><b id="railDot"></b></div>
+          <article class="jr-item l" data-type="work">
+            <span class="jr-year" aria-hidden="true">2026</span>
+            <span class="jr-node" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 4.6L18.5 9l-4.6 1.9L12 15.5l-1.9-4.6L5.5 9l4.6-1.4z"/></svg></span>
+            <div class="jr-card">
+              <div class="jr-top"><span class="jr-kind work">Work</span><span class="jr-period">Jan 2026 to now</span><span class="jr-now"><i></i>Now · <b id="jrMonths">this year</b></span></div>
+              <h3>UX/UI Designer & Front-End</h3>
+              <p class="jr-org">Ferment Freude <span>· Austrian food startup · volunteer project</span></p>
+              <ul><li>Brand strategy, creative direction and full brand guidelines</li><li>Research, user flows, wireframes and Figma prototypes</li><li>Online shop and workshop booking experience</li><li>React front-end with Storybook components</li></ul>
+              <div class="jr-chips"><span>Figma</span><span>Branding</span><span>UX research</span><span>React</span><span>Storybook</span></div>
+              <a class="jr-link" href="project.html?p=ferment-freude" data-hover>Read the case study <b>→</b></a>
+            </div>
+          </article>
+          <article class="jr-item r" data-type="edu">
+            <span class="jr-year" aria-hidden="true">2024</span>
+            <span class="jr-node" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5M22 9v6"/></svg></span>
+            <div class="jr-card">
+              <div class="jr-top"><span class="jr-kind edu">Education</span><span class="jr-period">2024 to 2025</span></div>
+              <h3>Web Design Weiterbildung</h3>
+              <p class="jr-org">Beam Institute of Technology <span>· Professional training in Germany · team projects</span></p>
+              <ul><li>UX research: interviews, surveys and usability reviews</li><li>User flows, wireframes and interactive prototypes in Figma</li><li>Responsive, mobile-first sites with HTML, CSS, JS and Webflow</li><li>Design systems, reusable components and accessibility</li></ul>
+              <div class="jr-chips"><span>UX research</span><span>Figma</span><span>Webflow</span><span>Accessibility</span></div>
+              
+            </div>
+          </article>
+          <article class="jr-item l" data-type="work">
+            <span class="jr-year" aria-hidden="true">2016</span>
+            <span class="jr-node" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="3"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>
+            <div class="jr-card">
+              <div class="jr-top"><span class="jr-kind work">Work</span><span class="jr-period">2016 to 2020</span></div>
+              <h3>Freelance Web Developer</h3>
+              <p class="jr-org">Self-employed <span>· Client projects</span></p>
+              <ul><li>Turned business requirements into responsive web interfaces</li><li>Web application development and maintenance</li><li>Usability and consistency across devices and screen sizes</li></ul>
+              <div class="jr-chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span></div>
+              
+            </div>
+          </article>
+          <article class="jr-item r" data-type="edu">
+            <span class="jr-year" aria-hidden="true">2011</span>
+            <span class="jr-node" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5M22 9v6"/></svg></span>
+            <div class="jr-card">
+              <div class="jr-top"><span class="jr-kind edu">Education</span><span class="jr-period">2011 to 2016</span></div>
+              <h3>Computer System Engineering</h3>
+              <p class="jr-org">Al-Azhar University <span>· Degree</span></p>
+              <ul><li>The engineering foundation behind my design work: I understand how the things I design get built</li></ul>
+              <div class="jr-chips"><span>Engineering</span><span>Problem solving</span></div>
+              
+            </div>
+          </article>
+        </div>
+
+        <div class="toolbox">
+          <div class="tb-card reveal"><span class="tb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 4.6L18.5 9l-4.6 1.9L12 15.5l-1.9-4.6L5.5 9l4.6-1.4z"/></svg></span><h3>UX/UI design</h3><div class="tags"><span>Figma</span><span>User flows</span><span>Wireframing</span><span>Prototyping</span><span>Responsive UI</span><span>Visual design</span></div></div>
+          <div class="tb-card reveal"><span class="tb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg></span><h3>UX research</h3><div class="tags"><span>Interviews</span><span>Surveys</span><span>Usability feedback</span><span>Requirements</span><span>A/B testing</span></div></div>
+          <div class="tb-card reveal"><span class="tb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></svg></span><h3>Systems &amp; code</h3><div class="tags"><span>Design systems</span><span>Brand guidelines</span><span>Accessibility</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Webflow</span><span>React</span><span>Storybook</span></div></div>
+          <div class="tb-card lang reveal"><span class="tb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><h3>Languages</h3>
+            <div class="langs"><div><b>German</b><span>B2</span></div><div><b>English</b><span>B2</span></div></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CONTACT / FOOTER -->
+  <footer class="site-foot" id="contact">
+    <div class="wrap">
+      <div class="cta-panel" id="ctaPanel">
+        <div class="cta-badge" aria-hidden="true">
+          <svg viewBox="0 0 120 120"><defs><path id="badgeRing" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+            <text><textPath href="#badgeRing">OPEN TO WORK · UX/UI DESIGN · </textPath></text></svg><span>✦</span>
+        </div>
+        <span class="pill">Get in touch</span>
+        <h2 class="heavy cta-h">Have a project in mind? <span class="script">Let’s make it together.</span></h2>
+        <p class="cta-p">Open to Junior UX/UI &amp; Product Design roles in Germany (hybrid or remote) and freelance projects.</p>
+        <a class="cta-mail" href="mailto:designer.alaa17@gmail.com" data-hover>designer.alaa17@gmail.com</a>
+        <div class="cta-actions">
+          <a href="mailto:designer.alaa17@gmail.com?subject=Hello%20Alaa" class="btn magnetic" data-hover>Send an email</a>
+          <button type="button" class="btn alt" id="copyMail" data-hover>Copy email</button>
+        </div>
+      </div>
+
+      <div class="foot-grid">
+        <div class="fg-brand">
+          <a href="#top" class="foot-logo" data-hover>Alaa Shaheen</a>
+          <p>UX/UI designer crafting calm, accessible digital experiences, from research to code.</p>
+          <span class="fstatus"><i></i>Available for work</span>
+        </div>
+        <nav class="fg-col" aria-label="Footer"><h4>Explore</h4><a class="fl" href="#about" data-hover>About me</a><a class="fl" href="#work" data-hover>Brand identity</a><a class="fl" href="#projects" data-hover>Projects</a><a class="fl" href="#process" data-hover>Process</a><a class="fl" href="#experience" data-hover>Experience</a></nav>
+        <div class="fg-col"><h4>Connect</h4>
+          <div class="soc-row">
+            <a class="soc" href="https://www.behance.net/alaashaheen16" target="_blank" rel="noopener" data-hover><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h5.5a2.5 2.5 0 0 1 0 5H3zM3 12h6a2.5 2.5 0 0 1 0 5H3zM14 8h6M13.5 14.5a3.5 3.5 0 0 1 7 0h-7a3.5 3.5 0 0 0 6.3 2"/></svg>Behance</a>
+            <a class="soc" href="https://www.linkedin.com/in/alaa-design" target="_blank" rel="noopener" data-hover><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M7.5 10v7M7.5 7v.01M11.5 17v-7M11.5 13.5a3 3 0 0 1 6 0V17"/></svg>LinkedIn</a>
+            <a class="soc" href="https://alaa-portfoili.webflow.io" target="_blank" rel="noopener" data-hover><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>Webflow</a>
+          </div>
+        </div>
+        <div class="fg-col"><h4>Based in</h4>
+          <p class="fg-city">Cologne, Germany</p>
+          <p class="fg-time"><b id="clock">--:--</b> local time</p>
+          <p class="fg-lang">German B2 · English B2</p>
+        </div>
+      </div>
+
+      <div class="foot-bottom">
+        <span>© 2026 Alaa Shaheen</span>
+        <span>Designed &amp; built with care in Cologne</span>
+        <a href="#top" class="to-top" data-hover>Back to top <b aria-hidden="true">↑</b></a>
+      </div>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </div>
+  </footer>
+
+  <script src="assets/projects.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const hasGSAP = typeof gsap !== "undefined";
+    const fine = matchMedia("(pointer: fine)").matches;
+
+    // ---------- Torn paper generator ----------
+    function rng(seed) { return () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }; }
+    function edge(W, yMin, yMax, r) {
+      // random walk = soft, irregular paper rip (with an occasional small notch)
+      const pts = [], span = yMax - yMin; let x = 0, y = yMin + span / 2, drift = 0;
+      while (x < W) {
+        drift = drift * .85 + (r() - .5) * span * .12;
+        y += drift + (r() - .5) * span * .1;
+        if (r() > .93) y += (r() - .5) * span * .5;
+        y = Math.max(yMin, Math.min(yMax, y));
+        pts.push([x, y]); x += 3 + r() * 8;
+      }
+      pts.push([W, y]);
+      return pts;
+    }
+    const P = pts => pts.map(p => p[0].toFixed(1) + "," + p[1].toFixed(1)).join(" L");
+    function drawTear(el, i) {
+      const W = Math.max(el.clientWidth, 1), H = el.clientHeight, mode = el.dataset.tear;
+      const cs = getComputedStyle(document.documentElement), v = n => cs.getPropertyValue("--" + n).trim();
+      const fill = v(el.dataset.fill || "soft"), fiber = v(el.dataset.fiber || "paper"), gold = v("gold");
+      const r = rng(1234 + i * 977);
+      let d = "", fibers = "", topE, botE;
+      if (mode === "strip" || mode === "band") {
+        topE = mode === "band" ? edge(W, H * .03, H * .16, r) : edge(W, H * .12, H * .42, r);
+        botE = mode === "band" ? edge(W, H * .84, H * .97, r) : edge(W, H * .6, H * .9, r);
+        d = `M${P(topE)} L${P(botE.slice().reverse())} Z`;
+      } else if (mode === "top") {
+        topE = edge(W, H * .15, H * .75, r);
+        d = `M${P(topE)} L${W},${H + 2} L0,${H + 2} Z`;
+      } else {
+        botE = edge(W, H * .25, H * .8, r);
+        d = `M0,-2 L${W},-2 L${P(botE.slice().reverse())} Z`;
+      }
+      const fiberLine = pts => `<path d="M${P(pts.map(p => [p[0], p[1] + (mode === "bottom" ? 2.5 : -2.5)]))}" fill="none" stroke="${fiber}" stroke-width="4" stroke-linejoin="round" opacity=".95"/>`;
+      if (topE) fibers += fiberLine(topE);
+      if (botE) fibers += fiberLine(botE.map(p => [p[0], p[1] + 5]));
+      // gold flecks
+      let flecks = "";
+      const n = Math.round(W / (mode === "band" ? 30 : 14));
+      for (let k = 0; k < n; k++) {
+        const x = r() * W;
+        const y = mode === "band" ? H * (r() > .5 ? .18 + r() * .1 : .72 + r() * .1) : mode === "strip" ? H * (.45 + r() * .14) : mode === "top" ? H * (.8 + r() * .18) : H * (.05 + r() * .18);
+        flecks += r() > .6
+          ? `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${(2 + r() * 7).toFixed(1)}" height="1.4" fill="${gold}" opacity="${(.5 + r() * .5).toFixed(2)}" transform="rotate(${(r() * 50 - 25).toFixed(0)} ${x.toFixed(0)} ${y.toFixed(0)})"/>`
+          : `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${(.6 + r() * 1.5).toFixed(2)}" fill="${gold}" opacity="${(.5 + r() * .5).toFixed(2)}"/>`;
+      }
+      const shadow = `<path d="${d}" fill="rgba(20,10,10,.08)" transform="translate(0,4)"/>`;
+      el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">${mode !== "bottom" ? shadow : ""}${fibers}<path d="${d}" fill="${fill}"/>${flecks}</svg>`;
+    }
+    const tears = [...document.querySelectorAll("[data-tear]")];
+    function drawAll() { tears.forEach(drawTear); }
+    drawAll();
+
+    // ---------- Buttons v2 ----------
+    (function () {
+      const arrowR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+      const arrowD = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>';
+      const roll = (text, cls = "") => `<span class="btn-label"><span class="${cls}" data-text="${text}">${text}</span></span>`;
+      const setFillOrigin = (el, e) => { const r = el.getBoundingClientRect(); el.style.setProperty("--x", ((e.clientX - r.left) / r.width * 100).toFixed(1) + "%"); el.style.setProperty("--y", ((e.clientY - r.top) / r.height * 100).toFixed(1) + "%"); };
+      const wire = el => {
+        el.addEventListener("pointerenter", e => setFillOrigin(el, e));
+        el.addEventListener("pointerleave", e => setFillOrigin(el, e));
+        el.addEventListener("pointerdown", e => {
+          if (reduced) return;
+          const r = el.getBoundingClientRect(), rp = document.createElement("span");
+          rp.className = "ripple"; rp.style.left = (e.clientX - r.left) + "px"; rp.style.top = (e.clientY - r.top) + "px";
+          el.appendChild(rp); setTimeout(() => rp.remove(), 750);
+        });
+      };
+      document.querySelectorAll(".btn").forEach(b => {
+        if (b.classList.contains("plane-btn")) {
+          const plane = b.querySelector(".plane"), text = b.querySelector(".pb-label").textContent;
+          b.innerHTML = `<span class="btn-fill"></span>${roll(text, "pb-label")}<span class="btn-ic"></span>`;
+          b.querySelector(".btn-ic").appendChild(plane);
+        } else {
+          const raw = b.textContent, text = raw.replace(/[↗→↑]/g, "").trim();
+          const dl = b.hasAttribute("download"), cp = b.id === "copyMail";
+          const ext = !dl && (/↗/.test(raw) || b.target === "_blank");
+          const icDl = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>';
+          const icCp = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>';
+          const a = dl ? icDl : cp ? icCp : ext ? arrowD : arrowR;
+          b.innerHTML = `<span class="btn-fill"></span>${roll(text)}<span class="btn-ic${ext || dl || cp ? "" : " right"}">${a}${a}</span>`;
+        }
+        if (b.tagName === "A" && b.target === "_blank" && !b.getAttribute("aria-label")) b.setAttribute("aria-label", b.textContent.trim() + " (opens in a new tab)");
+        wire(b);
+      });
+      document.querySelectorAll(".fbtn").forEach(b => { b.insertAdjacentHTML("afterbegin", '<span class="btn-fill"></span>'); wire(b); });
+      document.querySelectorAll(".nav-links .cta").forEach(b => { const t = b.textContent.trim(); b.innerHTML = `<span class="btn-fill"></span>${roll(t)}`; wire(b); });
+
+      // sliding filter highlight
+      const filters = document.getElementById("filters"), ind = document.createElement("span");
+      ind.className = "chip-ind"; ind.setAttribute("aria-hidden", "true"); filters.prepend(ind);
+      const moveInd = () => { const a = filters.querySelector(".chip.active"); if (!a) return;
+        ind.style.width = a.offsetWidth + "px"; ind.style.height = a.offsetHeight + "px"; ind.style.transform = `translate(${a.offsetLeft}px, ${a.offsetTop}px)`; };
+      moveInd(); addEventListener("resize", moveInd); document.fonts && document.fonts.ready.then(moveInd);
+      filters.addEventListener("click", () => requestAnimationFrame(moveInd));
+      window.__setBtnLabel = (el, t) => { el.textContent = t; el.dataset.text = t; };
+    })();
+
+
+    // ---------- Footer: copy email + local time ----------
+    (function () {
+      const toast = document.getElementById("toast"), btn = document.getElementById("copyMail");
+      const showToast = msg => { toast.textContent = msg; toast.classList.add("show"); clearTimeout(showToast.t); showToast.t = setTimeout(() => toast.classList.remove("show"), 2200); };
+      const setLabel = t => { const l = btn.querySelector(".btn-label > span"); if (l) { l.textContent = t; l.dataset.text = t; } else btn.textContent = t; };
+      btn.addEventListener("click", async () => {
+        const mail = "designer.alaa17@gmail.com";
+        try { await navigator.clipboard.writeText(mail); }
+        catch (err) { const t = document.createElement("textarea"); t.value = mail; document.body.appendChild(t); t.select(); try { document.execCommand("copy"); } catch (x) {} t.remove(); }
+        setLabel("Copied ✓"); showToast("Email copied to clipboard ✓"); setTimeout(() => setLabel("Copy email"), 2000);
+      });
+      const clock = document.getElementById("clock");
+      const tick = () => clock.textContent = new Date().toLocaleTimeString("en-GB", { timeZone: "Europe/Berlin", hour: "2-digit", minute: "2-digit" });
+      tick(); setInterval(tick, 30000);
+    })();
+
+
+    // ---------- Journey: filters + live "months & counting" ----------
+    (function () {
+      const start = new Date(2026, 0, 1), now = new Date();
+      const months = Math.max(1, (now.getFullYear() - start.getFullYear()) * 12 + now.getMonth() - start.getMonth() + 1);
+      const m = document.getElementById("jrMonths"); if (m) m.textContent = months + (months === 1 ? " month" : " months") + " & counting";
+      const tabs = [...document.querySelectorAll(".jr-f")], items = [...document.querySelectorAll(".jr-item")];
+      tabs.forEach(t => t.addEventListener("click", () => {
+        tabs.forEach(x => { x.classList.toggle("on", x === t); x.setAttribute("aria-selected", String(x === t)); });
+        const f = t.dataset.f;
+        items.forEach(it => {
+          const show = f === "all" || it.dataset.type === f;
+          if (show && it.hidden) { it.hidden = false; if (window.gsap) gsap.fromTo(it, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: .5, ease: "power3.out" }); }
+          else if (!show) it.hidden = true;
+        });
+        let k = 0; items.forEach(it => { if (!it.hidden) { it.classList.toggle("l", k % 2 === 0); it.classList.toggle("r", k % 2 === 1); k++; } });
+        if (window.ScrollTrigger) ScrollTrigger.refresh();
+      }));
+    })();
+
+    // ---------- Mobile menu ----------
+    const menu = document.getElementById("menu"), menuBtn = document.getElementById("menuBtn");
+    const toggleMenu = open => {
+      menu.classList.toggle("open", open); menu.setAttribute("aria-hidden", String(!open));
+      menuBtn.setAttribute("aria-expanded", String(open)); menuBtn.textContent = open ? "Close" : "Menu";
+      document.body.style.overflow = open ? "hidden" : "";
+      document.body.classList.toggle("menu-open", open);
+    };
+    menuBtn.addEventListener("click", () => toggleMenu(!menu.classList.contains("open")));
+    menu.addEventListener("click", e => { if (e.target.closest("a")) toggleMenu(false); });
+    addEventListener("keydown", e => { if (e.key === "Escape" && menu.classList.contains("open")) toggleMenu(false); });
+
+    // ---------- Scroll progress ----------
+    const prog = document.getElementById("progress");
+    addEventListener("scroll", () => {
+      const h = document.documentElement.scrollHeight - innerHeight;
+      prog.style.transform = `scaleX(${h > 0 ? scrollY / h : 0})`;
+    }, { passive: true });
+
+    let rt; addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(drawAll, 150); });
+
+    // ---------- Tools ----------
+    const tools = [["Fi", "Figma", "#a259ff"], ["Wf", "Webflow", "#146ef5"], ["Ht", "HTML", "#e44d26"], ["Cs", "CSS", "#2965f1"], ["Js", "JavaScript", "#c9a400"], ["Re", "React", "#1aa3c2"], ["Sb", "Storybook", "#ff4785"], ["Ai", "AI tools", "var(--ink)"]];
+    document.getElementById("tools").innerHTML = tools.map(t => `<div class="tool reveal" style="color:${t[2]}"><span>${t[0]}</span>${t[1]}</div>`).join("");
+
+    // ---------- Projects (Behance) ----------
+    const CDN = "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/";
+    const projects = [
+      { t: "ferment freude", s: "Brand identity & website UX", c: "web", img: "127e80246062163.Y3JvcCw3MzIsNTcyLDU5LDExNg.png", url: "246062163/ferment-freude-Brand-Identity-Website-UX" },
+      { t: "CasaVue", s: "Furniture shopping website", c: "web", img: "b5d3af258133951.Y3JvcCw3NTUsNTkxLDI4LDM5.jpg", url: "258133951/CasaVue-Furniture-Shopping-Website-UX-Case-Study" },
+      { t: "CalTrack", s: "AI calorie & diet app", c: "app", img: "3523c2238047517.Y3JvcCw4ODYsNjkzLDAsMTk.png", url: "238047517/CalTrack-AI-Calorie-Diet-App-UX-Case-Study" },
+      { t: "Bienenhaus", s: "Raw honey website", c: "web", img: "730add257105511.Y3JvcCwxNTM5LDEyMDQsMjIsMA.png", url: "257105511/Bienenhaus-Raw-Honey-Website" },
+      { t: "Grove", s: "Plant shop & care app", c: "app", img: "2d750d230573965.Y3JvcCwyMTA2LDE2NDgsMzEsMA.png", url: "230573965/Grove-Plant-Shop-Care-App-UX-Case-Study" },
+      { t: "Abaya Store", s: "Modest fashion shopping app", c: "app", img: "93c038239610529.Y3JvcCwxMDA2LDc4NywwLDIxOQ.png", url: "239610529/Abaya-Store-Modest-Fashion-Shopping-App-UIUX" },
+      { t: "Little Chapter", s: "Kids’ storytelling app", c: "app", img: "010429235882915.Y3JvcCwxMDYzLDgzMiwxMDcsMA.png", url: "235882915/Little-Chapter-Kids-Storytelling-App-UX-Case-Study" },
+    ];
+    const rots = [-2.2, 1.6, -1, 2.4, -2.8, 1.2, -1.6, 2.8, -.8, 1.9, -2.4, 1];
+    document.getElementById("board").innerHTML = projects.map((p, i) => `
+      <a class="pola" data-cat="${p.c}" data-view style="--r:${rots[i]}deg" href="project.html?p=${(window.PROJECTS || []).find(x => x.behance === p.url)?.slug || ""}" aria-label="${p.t}: read the case study">
+        ${i % 3 !== 1 ? '<span class="tape"></span>' : ""}
+        ${((window.PROJECTS || []).find(x => x.behance === p.url) || {}).flagship ? '<span class="flag">★ Flagship case study</span>' : ""}
+        <div class="pola-img"><img src="${((window.PROJECTS || []).find(x => x.behance === p.url) || {}).cover || CDN + p.img}" alt="${p.t}: ${p.s}" loading="lazy" /></div>
+        <div class="pola-cap"><div><h3>${p.t}</h3><p>${p.s}</p></div><span class="pola-tag">${p.c === "app" ? "App" : "Web"}</span></div>
+      </a>`).join("");
+
+    // ---------- Text splitting ----------
+    function splitChars(el) {
+      [...el.childNodes].forEach(node => {
+        if (node.nodeType === 3) {
+          const frag = document.createDocumentFragment();
+          node.textContent.split(/(\s+)/).forEach(word => {
+            if (!word) return;
+            if (/^\s+$/.test(word)) { frag.appendChild(document.createTextNode(" ")); return; }
+            const w = document.createElement("span"); w.style.cssText = "display:inline-block;white-space:nowrap";
+            [...word].forEach(ch => { const s = document.createElement("span"); s.className = "char"; s.textContent = ch; w.appendChild(s); });
+            frag.appendChild(w);
+          });
+          node.replaceWith(frag);
+        } else if (node.nodeType === 1) splitChars(node);
+      });
+    }
+    document.querySelectorAll(".split").forEach(splitChars);
+    const about = document.getElementById("aboutText");
+    const hl = ["user", "flows,", "accessible", "interfaces"];
+    about.innerHTML = about.textContent.trim().split(/\s+/).map(w => `<span class="w${hl.includes(w) ? " hl" : ""}">${w}</span>`).join(" ");
+
+
+    // Filters
+    document.getElementById("filters").addEventListener("click", e => {
+      const btn = e.target.closest(".chip"); if (!btn) return;
+      document.querySelectorAll(".chip").forEach(c => c.classList.toggle("active", c === btn));
+      const f = btn.dataset.filter, cards = [...document.querySelectorAll(".pola")];
+      const apply = () => {
+        cards.forEach(c => c.classList.toggle("is-hidden", f !== "all" && c.dataset.cat !== f));
+        if (hasGSAP && !reduced) {
+          ScrollTrigger.refresh();
+          gsap.fromTo(cards.filter(c => !c.classList.contains("is-hidden")),
+            { y: -60, opacity: 0, rotate: (i) => rots[i % rots.length] * 4 },
+            { y: 0, opacity: 1, rotate: 0, duration: .8, stagger: .06, ease: "back.out(1.6)", clearProps: "transform" });
+        }
+      };
+      if (hasGSAP && !reduced) gsap.to(cards, { opacity: 0, y: 30, duration: .22, onComplete: apply }); else apply();
+    });
+
+    // Magnetic buttons
+    if (fine && !reduced) {
+      document.querySelectorAll(".magnetic").forEach(el => {
+        el.addEventListener("mousemove", e => {
+          const r = el.getBoundingClientRect();
+          el.style.translate = `${(e.clientX - r.left - r.width / 2) * .2}px ${(e.clientY - r.top - r.height / 2) * .3}px`;
+        });
+        el.addEventListener("mouseleave", () => el.style.translate = "");
+      });
+    }
+
+    // Nav
+    const nav = document.getElementById("nav"); let lastY = 0;
+    addEventListener("scroll", () => {
+      const y = scrollY; nav.classList.toggle("solid", y > 40); nav.classList.toggle("hidden", y > lastY && y > 500); lastY = y;
+    }, { passive: true });
+
+    function finishLoader() { document.body.classList.remove("loading"); document.getElementById("loader").style.display = "none"; }
+
+    if (!hasGSAP || reduced) {
+      document.body.classList.add("reduced"); finishLoader();
+      document.querySelectorAll(".about-text .w").forEach(w => w.style.opacity = 1);
+      document.querySelectorAll("[data-count]").forEach(n => n.textContent = n.dataset.count);
+    } else {
+      gsap.registerPlugin(ScrollTrigger);
+
+      // ---- Intro: glowing title, counter, red sheet tears away upward ----
+      const count = { v: 0 }, countEl = document.getElementById("count");
+      gsap.timeline()
+        .from("#loaderTitle", { opacity: 0, scale: .92, filter: "blur(10px)", duration: 1, ease: "power2.out" })
+        .to(count, { v: 100, duration: 1.4, ease: "power2.inOut", onUpdate: () => countEl.textContent = Math.round(count.v) }, 0)
+        .to("#loaderTitle", { textShadow: (() => { const g = getComputedStyle(document.documentElement).getPropertyValue("--glow-rgb").trim(); return `0 0 12px rgba(255,248,240,1), 0 0 40px rgba(${g},.9), 0 0 90px rgba(${g},.8)`; })(), duration: .5, yoyo: true, repeat: 1 }, .6)
+        .to("#loaderSheet", { yPercent: -102, duration: 1.15, ease: "expo.inOut" }, "+=.1")
+        .add(finishLoader)
+        .from(".big-word .char", { yPercent: 120, duration: 1, stagger: .045, ease: "expo.out" }, "-=.55")
+        .fromTo("#heroSig", { clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0% 0 0)", duration: 1.3, ease: "power2.inOut" }, "-=.6")
+        .from("#heroPhoto", { y: -260, rotate: -18, opacity: 0, duration: 1.3, ease: "back.out(1.3)" }, "<-.3")
+        .from(".hero-fade", { y: 26, opacity: 0, duration: .9, stagger: .1, ease: "power3.out" }, "<.2")
+        .from(".hero .tape", { scaleX: 0, duration: .5, ease: "power2.out" }, "-=.4")
+        .from(".sticker", { scale: 0, rotate: -40, duration: .7, ease: "back.out(2)" }, "<");
+
+      // Hero parallax
+      gsap.to(".big-word", { y: 120, ease: "none", scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true } });
+      gsap.to("#heroPhoto", { yPercent: -18, ease: "none", scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true } });
+
+      // Torn strips "rip" across as they enter
+      tears.filter(t => !t.closest(".loader") && !t.closest(".ribbon")).forEach(t => {
+        gsap.fromTo(t, { clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0% 0 0)", ease: "none",
+          scrollTrigger: { trigger: t, start: "top 95%", end: "top 45%", scrub: .6 } });
+      });
+
+      // Generic reveal
+      gsap.utils.toArray(".reveal").forEach(el => gsap.to(el, { opacity: 1, y: 0, duration: .9, ease: "power3.out", scrollTrigger: { trigger: el, start: "top 90%" } }));
+
+      // About: words ink in
+      gsap.to(".about-text .w", { opacity: 1, stagger: .05, ease: "none", scrollTrigger: { trigger: "#aboutText", start: "top 80%", end: "bottom 50%", scrub: true } });
+      gsap.from(".note", { rotate: -14, x: -60, duration: 1.2, ease: "back.out(1.4)", scrollTrigger: { trigger: ".note", start: "top 85%" } });
+
+      // Counters
+      document.querySelectorAll("[data-count]").forEach(n => {
+        const o = { v: 0 };
+        gsap.to(o, { v: +n.dataset.count, duration: 1.5, ease: "power2.out", onUpdate: () => n.textContent = Math.round(o.v), scrollTrigger: { trigger: n, start: "top 92%" } });
+      });
+
+      // Collage: photos get pinned one by one, then drift at different speeds
+      gsap.from("#collage .ph", { y: -120, opacity: 0, rotate: (i) => (i % 2 ? 22 : -22), duration: 1, stagger: .14, ease: "back.out(1.5)",
+        scrollTrigger: { trigger: "#collage", start: "top 75%" } });
+      document.querySelectorAll("#collage [data-speed]").forEach(el => {
+        gsap.to(el, { yPercent: el.dataset.speed / 3, ease: "none", scrollTrigger: { trigger: "#collage", start: "top bottom", end: "bottom top", scrub: true } });
+      });
+
+      // Polaroids drop onto the board
+      gsap.set(".pola", { opacity: 0 });
+      ScrollTrigger.batch(".pola", { start: "top 92%", onEnter: b => gsap.fromTo(b,
+        { y: -80, opacity: 0, rotate: (i) => (i % 2 ? 14 : -14) },
+        { y: 0, opacity: 1, rotate: 0, duration: 1, stagger: .1, ease: "back.out(1.4)", clearProps: "transform" }) });
+
+      // Process cards fan in
+      gsap.from("#cards .idx", { y: 140, opacity: 0, rotate: (i) => (i - 2) * 10, duration: 1.1, stagger: .1, ease: "back.out(1.3)",
+        scrollTrigger: { trigger: "#cards", start: "top 82%" }, clearProps: "transform" });
+
+      // Timeline rail
+      // Journey: rail fills + travelling dot, items slide in from their side, nodes pop
+      ScrollTrigger.create({ trigger: "#timeline", start: "top 65%", end: "bottom 55%", scrub: .4, onUpdate: self => {
+        document.getElementById("railFill").style.transform = `scaleY(${self.progress})`;
+        document.getElementById("railDot").style.top = (self.progress * 100) + "%";
+        document.querySelectorAll(".jr-item").forEach(it => { const r = it.querySelector(".jr-node").getBoundingClientRect(); it.classList.toggle("lit", r.top < innerHeight * .6); });
+      } });
+      gsap.utils.toArray(".jr-item").forEach(it => {
+        const wide = innerWidth > 1000, fromX = wide ? (it.classList.contains("l") ? -70 : 70) : 40;
+        gsap.from(it.querySelector(".jr-card"), { x: fromX, opacity: 0, duration: 1, ease: "expo.out", scrollTrigger: { trigger: it, start: "top 85%" } });
+        gsap.from(it.querySelector(".jr-node"), { scale: 0, rotate: -90, duration: .8, ease: "back.out(2)", scrollTrigger: { trigger: it, start: "top 85%" } });
+        gsap.from(it.querySelector(".jr-year"), { y: 30, opacity: 0, duration: 1, ease: "power3.out", scrollTrigger: { trigger: it, start: "top 85%" } });
+      });
+      gsap.from(".jr-facts > div", { y: 30, opacity: 0, duration: .8, stagger: .1, ease: "power3.out", scrollTrigger: { trigger: ".jr-facts", start: "top 88%" } });
+
+      // Footer
+      gsap.from("#ctaPanel", { y: 70, scale: .96, opacity: 0, duration: 1.1, ease: "expo.out", scrollTrigger: { trigger: "#ctaPanel", start: "top 88%" } });
+      gsap.from("#ctaPanel > :not(.cta-badge)", { y: 28, opacity: 0, duration: .8, stagger: .08, delay: .2, ease: "power3.out", scrollTrigger: { trigger: "#ctaPanel", start: "top 88%" } });
+      gsap.from(".foot-grid > *", { y: 24, opacity: 0, duration: .8, stagger: .08, ease: "power3.out", scrollTrigger: { trigger: ".foot-grid", start: "top 92%" } });
+    }
+  </script>
+</body>
+</html>
