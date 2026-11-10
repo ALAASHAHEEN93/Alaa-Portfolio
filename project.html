@@ -362,6 +362,7 @@
     <img id="lbImg" alt="" />
   </div>
 
+  <script src="assets/i18n.js"></script>
   <script src="assets/projects.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -370,7 +371,9 @@
     const hasGSAP = typeof gsap !== "undefined";
     const fine = matchMedia("(pointer: fine)").matches;
     const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+    const T = I18N.T;
     const P = window.PROJECTS || [];
+    if (I18N.lang === "de") P.forEach(x => { if (x.de) I18N.mergeDeep(x, x.de); });
     const slug = new URLSearchParams(location.search).get("p");
     const i = P.findIndex(x => x.slug === slug);
     const main = document.getElementById("top");
@@ -622,6 +625,8 @@
       </section>`;
     }
 
+    I18N.apply(document.body); I18N.toggle();
+
     // ---------- Torn paper ----------
     function rng(seed) { return () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }; }
     function edge(W, yMin, yMax, r) {
@@ -678,7 +683,7 @@
         const mail = "designer.alaa17@gmail.com";
         try { await navigator.clipboard.writeText(mail); }
         catch (err) { const t = document.createElement("textarea"); t.value = mail; document.body.appendChild(t); t.select(); try { document.execCommand("copy"); } catch (x) {} t.remove(); }
-        setLabel("Copied ✓"); showToast("Email copied to clipboard ✓"); setTimeout(() => setLabel("Copy email"), 2000);
+        setLabel(T("Copied ✓")); showToast(T("Email copied to clipboard ✓")); setTimeout(() => setLabel(T("Copy email")), 2000);
       });
       const clock = document.getElementById("clock");
       const tick = () => clock.textContent = new Date().toLocaleTimeString("en-GB", { timeZone: "Europe/Berlin", hour: "2-digit", minute: "2-digit" });
@@ -689,12 +694,12 @@
     // ---------- Flagship: chapter nav, palette copy, carousel drag ----------
     (function () {
       if (i < 0 || !P[i].story) return;
-      const chapters = [["overview", "Overview"], ["challenge", "Challenge"], ["role", "My role"], ["research", "Research"], ["principles", "Principles"], ["process", "Process"], ["features", "Experience"], ["brand", "Brand"], ["decisions", "Decisions"], ["before-after", "Before & after"], ["validation", "Validation"], ["learned", "Learned"], ["outcome", "Outcome"]]
+      const chapters = [["overview", "Overview"], ["challenge", "Challenge"], ["role", "My role"], ["research", "Research"], ["principles", "Principles"], ["process", "Process"], ["features", "Walkthrough"], ["brand", "Brand"], ["decisions", "Decisions"], ["before-after", "Before & after"], ["validation", "Validation"], ["learned", "Learned"], ["outcome", "Outcome"]]
         .filter(c => document.getElementById(c[0]))
         .sort((x, y) => document.getElementById(x[0]).compareDocumentPosition(document.getElementById(y[0])) & 2 ? 1 : -1);
       const nav = document.createElement("nav");
       nav.className = "chapters"; nav.setAttribute("aria-label", "Case study chapters");
-      nav.innerHTML = chapters.map(c => `<a href="#${c[0]}" data-hover>${c[1]}</a>`).join("");
+      nav.innerHTML = chapters.map(c => `<a href="#${c[0]}" data-hover>${T(c[1])}</a>`).join("");
       document.body.appendChild(nav);
       const links = [...nav.querySelectorAll("a")];
       // lazy images above the target can shift layout during the jump → settle on the right spot
@@ -716,8 +721,8 @@
       const toast = document.getElementById("toast");
       document.querySelectorAll(".sw[data-hex]").forEach(b => b.addEventListener("click", async () => {
         try { await navigator.clipboard.writeText(b.dataset.hex); } catch (e) {}
-        const cp = b.querySelector(".cp"); cp.textContent = "Copied ✓"; setTimeout(() => cp.textContent = "Copy", 1600);
-        toast.textContent = `${b.querySelector("b").textContent} ${b.dataset.hex} copied ✓`; toast.classList.add("show"); clearTimeout(toast._t); toast._t = setTimeout(() => toast.classList.remove("show"), 2000);
+        const cp = b.querySelector(".cp"); cp.textContent = T("Copied ✓"); setTimeout(() => cp.textContent = T("Copy"), 1600);
+        toast.textContent = `${b.querySelector("b").textContent} ${b.dataset.hex} ${I18N.lang === "de" ? "kopiert" : "copied"} ✓`; toast.classList.add("show"); clearTimeout(toast._t); toast._t = setTimeout(() => toast.classList.remove("show"), 2000);
       }));
 
       const car = document.getElementById("carousel");

@@ -328,10 +328,12 @@
     </div>
   </footer>
 
+  <script src="assets/i18n.js"></script>
   <script src="assets/projects.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script>
+    const T = I18N.T; I18N.apply(document.body); I18N.toggle();
     const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
     const hasGSAP = typeof gsap !== "undefined";
     const fine = matchMedia("(pointer: fine)").matches;
@@ -445,7 +447,7 @@
         const mail = "designer.alaa17@gmail.com";
         try { await navigator.clipboard.writeText(mail); }
         catch (err) { const t = document.createElement("textarea"); t.value = mail; document.body.appendChild(t); t.select(); try { document.execCommand("copy"); } catch (x) {} t.remove(); }
-        setLabel("Copied ✓"); showToast("Email copied to clipboard ✓"); setTimeout(() => setLabel("Copy email"), 2000);
+        setLabel(T("Copied ✓")); showToast(T("Email copied to clipboard ✓")); setTimeout(() => setLabel(T("Copy email")), 2000);
       });
       const clock = document.getElementById("clock");
       const tick = () => clock.textContent = new Date().toLocaleTimeString("en-GB", { timeZone: "Europe/Berlin", hour: "2-digit", minute: "2-digit" });
@@ -457,7 +459,7 @@
     (function () {
       const start = new Date(2026, 0, 1), now = new Date();
       const months = Math.max(1, (now.getFullYear() - start.getFullYear()) * 12 + now.getMonth() - start.getMonth() + 1);
-      const m = document.getElementById("jrMonths"); if (m) m.textContent = months + (months === 1 ? " month" : " months") + " & counting";
+      const m = document.getElementById("jrMonths"); if (m) m.textContent = I18N.lang === "de" ? (months === 1 ? "seit 1 Monat" : `seit ${months} Monaten`) : months + (months === 1 ? " month" : " months") + " & counting";
       const tabs = [...document.querySelectorAll(".jr-f")], items = [...document.querySelectorAll(".jr-item")];
       tabs.forEach(t => t.addEventListener("click", () => {
         tabs.forEach(x => { x.classList.toggle("on", x === t); x.setAttribute("aria-selected", String(x === t)); });
@@ -476,7 +478,7 @@
     const menu = document.getElementById("menu"), menuBtn = document.getElementById("menuBtn");
     const toggleMenu = open => {
       menu.classList.toggle("open", open); menu.setAttribute("aria-hidden", String(!open));
-      menuBtn.setAttribute("aria-expanded", String(open)); menuBtn.textContent = open ? "Close" : "Menu";
+      menuBtn.setAttribute("aria-expanded", String(open)); menuBtn.textContent = T(open ? "Close" : "Menu");
       document.body.style.overflow = open ? "hidden" : "";
       document.body.classList.toggle("menu-open", open);
     };
@@ -512,9 +514,9 @@
     document.getElementById("board").innerHTML = projects.map((p, i) => `
       <a class="pola" data-cat="${p.c}" data-view style="--r:${rots[i]}deg" href="project.html?p=${(window.PROJECTS || []).find(x => x.behance === p.url)?.slug || ""}" aria-label="${p.t}: read the case study">
         ${i % 3 !== 1 ? '<span class="tape"></span>' : ""}
-        ${((window.PROJECTS || []).find(x => x.behance === p.url) || {}).flagship ? '<span class="flag">★ Flagship case study</span>' : ""}
-        <div class="pola-img"><img src="${((window.PROJECTS || []).find(x => x.behance === p.url) || {}).cover || CDN + p.img}" alt="${p.t}: ${p.s}" loading="lazy" /></div>
-        <div class="pola-cap"><div><h3>${p.t}</h3><p>${p.s}</p></div><span class="pola-tag">${p.c === "app" ? "App" : "Web"}</span></div>
+        ${((window.PROJECTS || []).find(x => x.behance === p.url) || {}).flagship ? '<span class="flag">${T("★ Flagship case study")}</span>' : ""}
+        <div class="pola-img"><img src="${((window.PROJECTS || []).find(x => x.behance === p.url) || {}).cover || CDN + p.img}" alt="${p.t}: ${T(p.s)}" loading="lazy" /></div>
+        <div class="pola-cap"><div><h3>${p.t}</h3><p>${T(p.s)}</p></div><span class="pola-tag">${p.c === "app" ? "App" : "Web"}</span></div>
       </a>`).join("");
 
     // ---------- Text splitting ----------
@@ -535,7 +537,7 @@
     }
     document.querySelectorAll(".split").forEach(splitChars);
     const about = document.getElementById("aboutText");
-    const hl = ["user", "flows,", "accessible", "interfaces"];
+    const hl = ["user", "flows,", "accessible", "interfaces", "User", "Flows,", "barrierefreie", "Interfaces."];
     about.innerHTML = about.textContent.trim().split(/\s+/).map(w => `<span class="w${hl.includes(w) ? " hl" : ""}">${w}</span>`).join(" ");
 
 

@@ -241,6 +241,146 @@ window.PROJECTS = (function () {
       images: imgs(["fs_webp/0eaea9235882915.68e01c8762041.png", "fs_webp/387d10235882915.68e01c8761672.png", "fs_webp/9d4a1d235882915.68e01c876348c.png", "fs_webp/7ecf39235882915.68e01c8762e48.png", "fs_webp/01f45d235882915.68e01c876053f.png", "max_632_webp/367b80235882915.68e01c875fd3b.png", "1400_webp/5de89c235882915.68e7b8bab62c0.png", "1400_webp/eab6fe235882915.68e01dc41d744.png", "1400_webp/340bd3235882915.68e01c8763efa.png"])
     }
   ];
+  // German version of each case study (used when the site is in DE). Anything left out falls back to English.
+  const DE = {
+    "ferment-freude": {
+      tagline: "Markenidentität & Website-UX", kindLabel: "Markenidentität · UI/UX · React",
+      role: "UI/UX Design & React-Entwicklung", platform: "Responsive Website",
+      overview: [
+        "Fermentfreude ist ein österreichisches Food-Startup, das Fermentation für den Alltag und für die Gastronomie zugänglich macht. Die Plattform erklärt komplexe Prozesse einfach und nahbar, nimmt Unsicherheit und lädt dazu ein, es selbst auszuprobieren.",
+        "Ich war für das UI/UX Design und die React-Entwicklung verantwortlich. Die UX setzte auf eine klare, intuitive Journey durch Workshops, Produkte und Lerninhalte. Das UI spiegelt den natürlichen, experimentellen Charakter der Marke durch durchdachte Typografie, Weißraum und visuelle Hierarchie, und die React-Umsetzung hält das Erlebnis auf allen Geräten flüssig und konsistent."
+      ],
+      highlights: ["Markenstrategie & Creative Direction mit der Geschäftsleitung", "Vollständige Brand Guidelines: Schrift, Grafik, Fotografie", "Klare Journey für Workshops, Produkte und Wissen", "Klares, modernes UI mit starker Hierarchie", "Responsive React-Umsetzung im Einklang mit dem Designsystem"],
+      tags: ["Branding", "Logo-Design", "Visuelle Identität", "Webdesign", "React"],
+      tldr: { problem: "Fermentation wirkt kompliziert, und Shop, Workshops und Markengeschichte waren voneinander getrennt.", role: "Markenstrategie, UX-Research, UI Design und React-Entwicklung, vom ersten Gespräch bis zum Live-Betrieb.", result: "Eine einheitliche Marke und eine Live-Website auf fermentfreude.at, mit laufender UX/UI- und Front-End-Arbeit." },
+      facts: [["Rolle", "Marke, UX/UI & React-Entwicklung"], ["Zeitraum", "Seit Januar 2026"], ["Kunde", "Österreichisches Food-Startup"], ["Tools", "Figma · React · Storybook · KI-Tools"]],
+      beforeAfter: {
+        intro: "Die alte Wix-Website listete Workshop-Termine in einer schlichten Tabelle. Die neue Website führt durch Workshops, Produkte und Wissen, mit klarerer Struktur und einem ruhigeren, moderneren Look.",
+        credit: "Screenshots: Rafaela Vaz · älma studio",
+        pairs: [
+          { label: "Startseite", before: "assets/ferment-before-after/ff-wix-home.jpg", after: "assets/ferment-before-after/ff-site-home-kombucha.jpg" },
+          { label: "Workshops", before: "assets/ferment-before-after/ff-wix-dates.jpg", after: "assets/ferment-before-after/ff-site-workshops.jpg" }
+        ]
+      },
+      story: {
+        challenge: {
+          statement: "Fermentation kann kompliziert wirken, und der digitale Auftritt der Marke hat es nicht leichter gemacht.", em: "kompliziert",
+          points: [
+            ["Getrenntes Erlebnis", "Produktseiten, Workshop-Buchung und Markengeschichte wirkten wie getrennte Orte."],
+            ["Kein klarer Weg", "Kund:innen brauchten einen einfacheren Weg vom Entdecken der Marke bis zum Kauf oder zur Workshop-Buchung."],
+            ["Uneinheitliche Identität", "Die Marke brauchte einen klareren, einheitlichen Auftritt, digital wie im Druck."],
+            ["Workshops in einer Tabelle versteckt", "Auf der alten Wix-Website standen die Workshop-Termine in einer schlichten Tabelle mit separaten Buchungs-Buttons."]
+          ]
+        },
+        roles: [
+          ["Markenstrategie & Direction", "Kick-off mit der Geschäftsleitung, Markenstrategie und vollständige Brand Guidelines für Schrift, Grafik und Fotografie."],
+          ["UX-Research", "Interviews, Umfragen und Usability-Feedback, um zu verstehen, wo Kund:innen hängen bleiben."],
+          ["UX/UI Design", "User Flows, Wireframes und High-Fidelity-Prototypen in Figma für Shop, Workshops und Lerninhalte."],
+          ["Front-End-Entwicklung", "Eine responsive React-Umsetzung mit wiederverwendbaren, in Storybook dokumentierten Komponenten."]
+        ],
+        process: [["Kick-off", "Markenstrategie und Creative Direction mit der Geschäftsleitung."], ["Research", "Stakeholder- und Nutzerinterviews, Online-Umfragen und Analytics-Review."], ["Markensystem", "Typografie, Farbe, Grafik, Bildsprache und Logo-Anwendungen."], ["UX & UI", "Flows, Wireframes und Figma-Prototypen für Shop, Workshops und Wissen."], ["Umsetzung", "React-Front-End mit wiederverwendbaren Storybook-Komponenten."], ["Iteration", "Usability-Feedback, Hypothesen und A/B-Tests, laufend."]],
+        research: { methods: ["Stakeholder-Interviews mit der Geschäftsleitung", "Nutzerinterviews", "Online-Umfragen", "Usability-Feedback-Sessions", "Analytics-Review der Absprungstellen", "A/B-Tests"], loop: ["Hypothese", "Test", "Lernen"] },
+        brand: {
+          palette: [["Creme", "#FAF2E0"], ["Anthrazit", "#2D2F2C"], ["Salbei", "#B0C7B8"], ["Senf", "#E6BE68"]],
+          type: [["Fonseca", "Headlines & Titel"], ["Bricolage Grotesque", "Display und Blickfang"], ["Balto", "Fließtext & Bildunterschriften"], ["DIN Next", "Sekundärschrift"]]
+        },
+        decisions: [
+          ["Klarere Produkthierarchie", "Produkte lassen sich leichter überblicken und vergleichen, der Shop wirkt ruhig statt überladen."],
+          ["Kürzere Workshop-Buchung", "Weniger Schritte vom Entdecken eines Workshops bis zur Buchung. Keine Suche mehr in einer Termintabelle."],
+          ["Wiederverwendbare Komponenten", "Eine Storybook-Komponentenbibliothek hält das UI konsistent und macht Übergaben und neue Seiten schneller."],
+          ["Mobile-First & barrierefrei", "Layouts starten auf kleinen Bildschirmen, mit gut lesbarer Schrift und klarer Hierarchie für Barrierefreiheit und Conversion."]
+        ],
+        outcome: {
+          title: ["Live, und", "es geht weiter"], cta: "fermentfreude.at besuchen",
+          points: ["Ein einheitliches Markensystem für digitale und physische Touchpoints", "Ein klareres Shop- und Workshop-Erlebnis", "Design-Iterationen auf Basis von Research und Daten", "Eine lebendige Komponentenbibliothek für die weitere Produktarbeit"],
+          ongoing: "Die Website ist live auf fermentfreude.at, und die Arbeit geht weiter. Nach der ehrenamtlichen Phase übernehme ich jeden Monat 4 bis 6 UX/UI- und Front-End-Aufgaben."
+        }
+      }
+    },
+    "casavue-web": {
+      tagline: "Möbel-Shopping, im Web lebendig gemacht", kindLabel: "Website · UX Case Study",
+      role: "UX-Research, UI Design & Front-End", platform: "Desktop & mobiles Web",
+      overview: ["CasaVue bringt meine Möbel-App-Recherche als funktionierenden, programmierten Prototyp ins Web.", "Statt aus flachen Produktfotos zu raten, sehen Kund:innen, wie Möbel in ihrem eigenen Raum wirklich aussehen und passen, und finden ihren Stil in Sekunden."],
+      highlights: ["Die Sonne durch einen echten Raum ziehen, um Tageslicht zu sehen", "Jede Lampe einschalten, um Abendlicht zu sehen", "Stücke im eigenen Raum platzieren", "Maße mit der eigenen Wand vergleichen", "Den eigenen Stil mit drei Klicks finden"],
+      tags: ["Nutzerforschung", "Interaction Design", "Prototyp", "E-Commerce", "Responsive"],
+      tldr: { problem: "Mit flachen Produktfotos kann man sich Möbel im eigenen Raum kaum vorstellen.", role: "UX-Research, UI Design und Front-End-Entwicklung eines funktionierenden Prototyps.", result: "Ein live programmierter Prototyp: Tages- und Lampenlicht, Raumplanung, Maßvergleich und ein Stil-Finder mit drei Klicks." },
+      facts: [["Rolle", "UX-Research, UI Design & Front-End"], ["Plattform", "Desktop & mobiles Web"], ["Gebaut mit", "HTML · CSS · JavaScript"], ["Jahr", "2026"]],
+      story: {
+        challenge: {
+          statement: "Kund:innen können nicht erkennen, wie ein Möbelstück im eigenen Raum wirkt, also zögern sie vor dem Kauf und schicken es danach zurück.", em: "im eigenen Raum",
+          points: [["Im eigenen Raum sehen", "Ein Stück im Raum platzieren, bevor es im Warenkorb landet."], ["Echte Größe, echtes Licht", "Echte Maße zeigen und wie Materialien von morgens bis abends wirken."], ["Ein Showroom, kein Katalog", "Stöbern soll sich wie ein Gang durch Räume anfühlen, nicht wie Scrollen durch ein Raster."], ["Ein kurzer Weg zum Warenkorb", "Jedes Produkt ist nur einen Klick von „Im Raum ansehen“ und „In den Warenkorb“ entfernt."]]
+        },
+        roles: [["UX-Research", "Eine Online-Umfrage, ein Wettbewerbsvergleich und zwei Personas."], ["UX & Interaction Design", "Eine Struktur entlang der Customer Journey, dazu Raumplaner-, Licht- und Maßstabskonzepte."], ["Visual Design", "Eine ruhige Schiefer-Petrol-Palette mit einem warmen Bernstein nur für Licht."], ["Front-End-Entwicklung", "Als echte, funktionierende Website mit HTML, CSS und JavaScript gebaut, nicht als statische Screens."]],
+        stats: {
+          title: ["Was die", "Umfrage", "gezeigt hat"],
+          items: [["73%", "haben online gekaufte Möbel schon einmal zurückgeschickt."], ["63%", "sagen, ihr größter Frust ist, nicht zu sehen, wie ein Stück in ihrem Raum wirkt."], ["55%", "würden ein Tool nutzen, das Möbel im eigenen Raum zeigt."], ["9%", "kaufen Möbel in Apps, gegenüber 72% auf Websites und 81% im Laden."]],
+          insights: [["Wichtigste Erkenntnis", "Visualisierung ist der größte Pain Point, noch vor Fotos, Vergleich oder Materialien. Möbel im Kontext zu zeigen ist wichtiger als jede andere Funktion."], ["Warum Web", "Kund:innen recherchieren Möbel ohnehin auf Websites. Ein Browser-Erlebnis holt sie dort ab, ganz ohne Installation."]],
+          note: "Online-Umfrage (Google Forms), geteilt per E-Mail, Social Media und WhatsApp."
+        },
+        competitors: { cols: ["IKEA", "OTTO", "CasaVue"], rows: [["Echte Kundenfotos", "no", "yes", "next"], ["Filter & Suche", "no", "yes", "yes"], ["Vorschau im Raum (AR)", "yes", "no", "yes"], ["Einfache Bedienung", "yes", "no", "yes"]], text: "Jeder Shop deckt nur die Hälfte ab. Keiner verbindet eine Vorschau im Raum mit klaren Filtern und einem einfachen Ablauf, und genau diese Lücke will CasaVue schließen." },
+        personas: [
+          { name: "Ayman, 34", role: "Full-Stack-Entwickler · Köln", needs: "Ist gerade in eine neue Wohnung gezogen und sucht funktionale Möbel, die zu seinem minimalistischen Stil passen.", pains: "Überladene, langsame Websites, ungenaue Angaben und Pflicht-Konto beim Checkout." },
+          { name: "Ilham, 33", role: "Buchhalterin · Leverkusen", needs: "Sucht moderne, hochwertige Stücke für eine kleine Wohnung und will Maße und Materialien vergleichen.", pains: "Fast identische Angebote und Bewertungen, die gekauft oder zu positiv wirken." }
+        ],
+        principles: [["Im eigenen Raum sehen", "63% können sich ein Stück in ihrem Raum nicht vorstellen.", "Ein Raumplaner: Stücke in einen Beispielraum oder ein eigenes Foto ziehen, drehen und den Preis summieren."], ["Im eigenen Licht sehen", "Fotos im Studiolicht passen nicht zu echten Wohnungen.", "Ein Hero, in dem man „die Sonne zieht“, plus Lichtschalter im Lichtstudio und im Raumplaner."], ["Im Maßstab sehen", "Ilham sucht für kleine Räume und braucht echte Maße.", "Ein Maßband für jedes Stück, abgeglichen mit der Breite der eigenen Wand."], ["Gehen statt scrollen", "Ein Produktraster wirkt wie ein Katalog, nicht wie ein Laden.", "Räume öffnen sich wie Türen, der Hero führt hinein, und ein Quiz mit drei Fragen findet den Stil."]],
+        process: [["Die Tür", "Der Hero führt in einen beleuchteten Raum", "Entdecken"], ["Räume", "Einen Raum durch seine Tür wählen", "Stöbern"], ["Lichtstudio", "Jede Lampe ein- und ausschalten", "Stöbern"], ["Im Raum testen", "Stücke platzieren, ziehen und drehen", "Erkunden"], ["Im Maßstab", "Mit der eigenen Wand vergleichen", "Abwägen"], ["Stil finden", "Drei schnelle Entweder-oder-Fragen", "Abwägen"], ["Die Kollektion", "Filtern, sortieren, merken", "Entscheiden"], ["Warenkorb", "Einen ganzen Raum auf einmal hinzufügen", "Kaufen"]],
+        processTitle: ["Eine Seite, aufgebaut wie ein", "Ladenbesuch"],
+        processText: "Statt eines Menüs mit vielen Einzelseiten folgt die Startseite den Phasen der Customer Journey aus der App-Recherche. Jeder Abschnitt beantwortet die Frage, die Kund:innen in diesem Moment haben.",
+        features: [
+          { title: "Echtes Licht, zu jeder Stunde", board: 6, text: "Möbel sehen um 9 Uhr anders aus als um 21 Uhr. Ein echter Raum wird digital in vier Lichtstimmungen gezeigt, man zieht die Sonne durch den Tag und sieht, wie sich Sofa, Holz und Messing verändern." },
+          { title: "Jeder Raum hat eine Tür", board: 8, text: "Statt eines Kategorie-Menüs öffnen sich vier Räume als gewölbte Türen. Man stöbert nach dem Raum, den man einrichtet, nicht nach Produkttyp." },
+          { title: "Licht an", board: 9, text: "Lampen kauft man danach, wie sie eingeschaltet wirken. Ein Schalter lässt jede Lampe leuchten, so vergleicht man das Licht, nicht nur den Schirm." },
+          { title: "Dein Raum ist der Showroom", board: 10, text: "Die Antwort auf die 63%. Einen Raum öffnen (Live-Kamera, eigenes Foto oder Beispiel), ein Stück platzieren, ziehen und drehen, den Preis mitwachsen sehen und den ganzen Raum in den Warenkorb legen." },
+          { title: "Alles im Maßstab", board: 11, text: "Jedes Stück steht auf einem Maßband neben einer 170 cm großen Person, und ein Regler stellt die Breite der eigenen Wand ein. So sieht man sofort, ob ein 214 cm Sofa passt." },
+          { title: "Wählen statt filtern", board: 12, text: "Nicht jeder kennt das Wort für den eigenen Stil. Drei Entweder-oder-Fragen führen zu einem benannten Stil mit drei passenden Stücken, bereit für den Warenkorb oder den Raumtest." },
+          { title: "Passt das?", board: 13, text: "Jede Produktseite stellt die Frage, die sich Kund:innen selbst stellen. Wandbreite eingeben, und die Seite prüft sie gegen das Stück, mit Rückgabeinfos direkt unter „In den Warenkorb“." },
+          { title: "Derselbe Laden, im Taschenformat", board: 14, text: "Räume und Produkte falten sich in zweispaltige Raster aus Bögen, und ein schwebender „Im Raum testen“-Button bleibt in Daumenreichweite." }
+        ],
+        brand: { title: ["Ruhige Wände,", "warmes Licht"], text: "Eine Schiefer-Petrol-Wandfarbe mit einem einzigen warmen Bernstein nur für Licht: Alles, was auf der Seite leuchtet, bedeutet „Licht“. Jedes Bild ist als Bogen gerahmt, wie der Weg von Raum zu Raum.",
+          palette: [["Schieferwand", "#3F5458"], ["Tinte", "#22333A"], ["Fenster", "#8DD5D8"], ["Nebel", "#DDE8EA"], ["Leinen", "#F6F8F8"], ["Lampen-Bernstein", "#E9A83C"]],
+          type: [["Poppins", "Headlines, UI und Fließtext"], ["Courgette", "Ein Akzentwort pro Headline"]] },
+        validation: [["„Im Raum testen“ auf jedem Produkt führt zu sichereren Käufen.", "A/B-Test: Produktseite mit und ohne Einstieg in den Raumtest.", "Add-to-Cart-Rate, Retouren"], ["„Passt das?“ senkt größenbedingte Retouren.", "Rückgabegründe von Bestellungen mit und ohne Breitencheck vergleichen.", "Größenbedingte Retourenquote"], ["Das Stil-Quiz verkürzt den Weg zum ersten Warenkorb.", "Funnel-Vergleich: Quiz-Nutzer:innen gegenüber Kollektions-Stöbernden.", "Zeit bis zum ersten Warenkorb"]],
+        learned: { text: "Bauen statt nur Zeichnen hat das Design verändert. Einen Stuhl über ein echtes Foto zu ziehen hat gezeigt, wie wichtig Maßstab und Schatten sind. Licht stellte sich als genauso wichtig für Vertrauen heraus wie die Größe.", next: ["Usability-Test des Raumplaners mit beiden Personas", "Kundenfotos und Bewertungen, sobald es echte Bestellungen gibt", "AR mit der Handykamera, aufbauend auf dem Foto-Upload"] },
+        outcome: { title: ["Gebaut, live und", "bereit zum Testen"], cta: "Live-Prototyp ausprobieren", points: ["Ein funktionierender, programmierter Prototyp zum Scrollen, Ziehen und Ausprobieren", "Funktionen für den größten Pain Point: Visualisierung", "Responsive auf Desktop und Mobilgeräten", "Ein Validierungsplan mit klaren Kennzahlen"], ongoing: "CasaVue ist ein Prototyp: Produkte, Preise und Bewertungen sind Beispielinhalte. Der nächste Schritt ist ein Usability-Test des Raumplaners mit beiden Personas." }
+      }
+    },
+    "caltrack": {
+      tagline: "KI-App für Kalorien & Ernährung", kindLabel: "Mobile App · UX Case Study", role: "UX-Research & UI Design", platform: "Smartphone & Tablet",
+      overview: ["Eine smarte Kalorien- und Ernährungs-App, die Menschen hilft, ihre Ernährung einfach zu verstehen und zu steuern.", "Sie verbindet KI mit einem freundlichen, einfachen Design, damit gesunde Ernährung schnell und für alle zugänglich wird."],
+      highlights: ["Mahlzeit fotografieren: Die KI schätzt Kalorien, Kohlenhydrate, Eiweiß und Fett", "Persönliche Ernährungspläne und gesunde Rezepte für jedes Ziel", "Tägliche Tipps für gesündere Entscheidungen", "Visueller Fortschritt mit Erinnerungen und Streaks"],
+      tags: ["KI", "Gesundheit", "Bild-Upload", "Responsive"],
+      tldr: { problem: "Die eigene Ernährung jeden Tag zu verstehen und zu steuern, kann kompliziert wirken.", role: "UX-Research und UI Design für Smartphone und Tablet.", result: "Ein KI-gestütztes App-Konzept: Mahlzeit fotografieren für sofortige Nährwerte, persönliche Pläne und sichtbarer Fortschritt." }
+    },
+    "bienenhaus": {
+      tagline: "Rohhonig aus Brandenburg", kindLabel: "Website · Design & Front-End", role: "Webdesign & Front-End-Entwicklung", platform: "Responsive Website · Deutsch & Englisch",
+      overview: ["Webdesign und Front-End-Entwicklung für Bienenhaus, eine kleine Honigmarke mit 42 Bienenvölkern in Brandenburg und der Uckermark.", "Das Konzept setzt auf warme Honigtöne, elegante Serifenschrift und eine verspielte animierte Biene, die durch die Geschichte führt: roher, kalt geschleuderter Honig, rückverfolgbare Chargen und handabgefüllte Gläser."],
+      highlights: ["Hero mit Produktpräsentation", "Markenversprechen", "Saisonaler Shop mit Produktkarten", "Kundenbewertungen", "Drei Schritte „vom Bienenstock ins Glas“", "Vollständig responsive, auf Deutsch und Englisch"],
+      tags: ["Branding", "Landingpage", "E-Commerce", "Front-End", "Responsive"],
+      tldr: { problem: "Eine kleine Honigmarke brauchte eine Website, die ihre Geschichte erzählt und ihren Honig verkauft.", role: "Webdesign und Front-End-Entwicklung.", result: "Eine responsive Live-Website auf Deutsch und Englisch mit saisonalem Shop und einer verspielten animierten Biene." }
+    },
+    "grove": {
+      tagline: "Pflanzenshop & smarter Pflege-Assistent", kindLabel: "Mobile App · UX Case Study", role: "UX-Research & UI Design", platform: "Mobile App",
+      overview: ["Grove ist eine All-in-one-App, die Pflanzenkauf und Pflanzenpflege für Einsteiger:innen und Fans vereinfacht.", "Sie verbindet einen digitalen Pflanzenshop mit einem smarten Pflege-Assistenten auf Basis von Bilderkennung."],
+      highlights: ["Digitaler Pflanzenshop", "Foto machen und Schädlinge, Krankheiten oder Pflegefehler erkennen", "Persönliche Pflegetipps", "Für Einsteiger:innen und Pflanzenfans gestaltet"],
+      tags: ["KI", "E-Commerce", "Pflanzen", "Mobile App"],
+      tldr: { problem: "Pflanzenkauf und Pflanzenpflege finden meist an getrennten Orten statt, was für Einsteiger:innen schwierig ist.", role: "UX-Research und UI Design.", result: "Eine All-in-one-App: Pflanzenshop plus fotobasierter Pflege-Assistent, der Schädlinge und Krankheiten erkennt." }
+    },
+    "abaya-store": {
+      tagline: "Eine Shopping-App für Modest Fashion", kindLabel: "Mobile App · UI/UX", role: "UI/UX Design", platform: "Mobile App · arabische Oberfläche (RTL)",
+      overview: ["Eine Shopping-App für Modest Fashion, komplett in Figma gestaltet, mit arabischer Oberfläche von rechts nach links.", "Das Ziel: ein ruhiger, eleganter Shop, in dem Stöbern und Bezahlen mühelos funktionieren."],
+      highlights: ["Willkommens- und Onboarding-Screens", "Startseite und Kategorien", "Produktdetails", "Warenkorb & Checkout", "Login / Registrierung", "Kontakt- und Über-uns-Seite"],
+      tags: ["E-Commerce", "Mode", "Mobile App", "RTL"],
+      tldr: { problem: "Modest Fashion online zu kaufen soll sich ruhig, elegant und einfach anfühlen, auf Arabisch.", role: "UI/UX Design in Figma.", result: "Eine vollständige Shopping-App von rechts nach links: Onboarding, Kategorien, Produktdetails, Warenkorb, Checkout und Konto." }
+    },
+    "little-chapter": {
+      tagline: "Geschichten, die Familien verbinden", kindLabel: "Mobile App · UX Case Study", role: "UX-Research & UI Design", platform: "Mobile App",
+      overview: ["Eine App für Kindergeschichten, mit der Eltern und Kinder gemeinsam lesen oder vertonte Versionen hören können.", "Sie verbindet Lernen, Unterhaltung und gemeinsame Zeit in einer ansprechenden und sicheren digitalen Leseumgebung."],
+      highlights: ["Gemeinsam lesen oder vorlesen lassen", "Kindgerechte, verspielte Oberfläche", "Sicheres Lesen ohne Ablenkung", "Für Eltern und Kinder gestaltet"],
+      tags: ["Kinder", "Bildung", "Storytelling", "Mobile App"],
+      tldr: { problem: "Eltern wünschen sich sichere, spannende Geschichten, die sie gemeinsam mit ihren Kindern erleben können.", role: "UX-Research und UI Design.", result: "Eine Geschichten-App mit Vorlese- und Hörmodus in einer verspielten, sicheren Oberfläche." }
+    }
+  };
+  list.forEach(p => { if (DE[p.slug]) p.de = DE[p.slug]; });
   list.forEach(p => { p.cover = local(p.cover); p.images = p.images.map(local); });
   return list;
 })();

@@ -588,3 +588,10 @@ a, button, [role="button"], .chip, .pola, label { cursor: pointer; }
 }
 @media (max-width: 560px) { .toolbox { grid-template-columns: 1fr; } .jr-facts div { min-width: 0; flex: 1 1 40%; } }
 .pola .flag { position: absolute; top: 22px; right: 22px; z-index: 4; background: var(--ink); color: var(--paper); font: 700 11.5px "Plus Jakarta Sans"; letter-spacing: .06em; padding: 7px 12px; border-radius: 999px; box-shadow: 0 8px 18px -8px rgba(0,0,0,.4); }
+
+/* Language switch */
+.lang-toggle { display: inline-flex; gap: 2px; padding: 3px; border-radius: 999px; border: 1px solid var(--line); background: var(--paper); font: 700 11.5px "Plus Jakarta Sans"; letter-spacing: .08em; cursor: pointer; }
+.lang-toggle span { padding: 6px 9px; border-radius: 999px; color: var(--muted); transition: background .3s, color .3s; }
+.lang-toggle span.on { background: var(--soft); color: var(--ink); }
+.lang-toggle:hover span:not(.on) { color: var(--ink); }
+.lang-toggle:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
