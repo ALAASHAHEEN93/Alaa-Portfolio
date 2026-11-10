@@ -507,7 +507,7 @@
     document.getElementById("board").innerHTML = projects.map((p, i) => `
       <a class="pola" data-cat="${p.c}" data-view style="--r:${rots[i]}deg" href="project.html?p=${(window.PROJECTS || []).find(x => x.behance === p.url)?.slug || ""}" aria-label="${p.t}: read the case study">
         ${i % 3 !== 1 ? '<span class="tape"></span>' : ""}
-        ${((window.PROJECTS || []).find(x => x.behance === p.url) || {}).flagship ? '<span class="flag">${T("★ Flagship case study")}</span>' : ""}
+        ${((window.PROJECTS || []).find(x => x.behance === p.url) || {}).flagship ? `<span class="flag">${T("★ Flagship case study")}</span>` : ""}
         <div class="pola-img"><img src="${((window.PROJECTS || []).find(x => x.behance === p.url) || {}).cover || CDN + p.img}" alt="${p.t}: ${T(p.s)}" loading="lazy" /></div>
         <div class="pola-cap"><div><h3>${p.t}</h3><p>${T(p.s)}</p></div><span class="pola-tag">${p.c === "app" ? "App" : "Web"}</span></div>
       </a>`).join("");
