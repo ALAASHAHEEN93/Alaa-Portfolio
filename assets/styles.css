@@ -624,3 +624,39 @@ a, button, [role="button"], .chip, .pola, label { cursor: pointer; }
 @media (max-width: 640px) { .mf-bottom { flex-direction: column; align-items: flex-start; } .mf-links { gap: 18px; } }
 .mf-mail { word-break: normal; overflow-wrap: anywhere; }
 @media (max-width: 640px) { .mf-mail { font-size: clamp(18px, 5.6vw, 24px); gap: 10px; } .mf-mail b { width: 34px; height: 34px; flex-shrink: 0; } }
+
+/* Contact section v2 */
+.mf-top { max-width: none; display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(40px, 6vw, 96px); align-items: center; }
+.mf-me { display: flex; align-items: center; gap: 14px; margin-bottom: 30px; }
+.mf-me img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; object-position: center 18%; border: 3px solid var(--paper); box-shadow: 0 6px 16px -8px rgba(0,0,0,.3); }
+.mf-me b { display: block; font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; letter-spacing: -.02em; font-size: 17px; }
+.mf-me span { font-size: 13.5px; color: var(--muted); }
+.mf-title { font-size: clamp(46px, 6.4vw, 100px); }
+.mf-status { display: inline-flex; align-items: center; gap: 10px; margin-top: 26px; font-size: 14px; font-weight: 600; color: #1d7a4c; background: #e3f6ec; padding: 9px 15px; border-radius: 999px; }
+.mf-status i { width: 8px; height: 8px; border-radius: 50%; background: #3fbf7f; animation: pulse 2s infinite; }
+.mf-cards { display: grid; gap: 14px; }
+.mf-card { position: relative; display: grid; grid-template-columns: 52px 1fr auto; gap: 18px; align-items: center; padding: 22px 22px; background: var(--paper); border: 1px solid var(--line); border-radius: 26px; color: var(--ink);
+  transition: transform .45s var(--ease), box-shadow .45s var(--ease), border-color .3s; }
+.mf-card:hover { transform: translateY(-4px); border-color: var(--soft-deep); box-shadow: 0 22px 44px -26px color-mix(in srgb, var(--red-deep) 80%, transparent); }
+.mf-card.primary { background: linear-gradient(150deg, var(--paper), var(--tint)); padding: 26px 22px; }
+.mf-ic { width: 52px; height: 52px; border-radius: 16px; background: var(--soft); display: grid; place-items: center; transition: transform .45s var(--ease), border-radius .45s var(--ease); }
+.mf-ic svg { width: 24px; height: 24px; }
+.mf-card:hover .mf-ic { transform: rotate(-8deg); border-radius: 50%; }
+.mf-body { min-width: 0; }
+.mf-body small { display: block; font: 700 11px "Plus Jakarta Sans"; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+.mf-body b { display: block; font-weight: 600; font-size: 15.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mf-body p { font-size: 13.5px; color: var(--muted); margin-top: 2px; }
+.mf-card .mf-mail { display: block; font-size: clamp(18px, 1.9vw, 24px); gap: 0; }
+.mf-card .mf-mail span { background-size: 0% 2px; }
+.mf-card .mf-mail:hover span { background-size: 100% 2px; background-position: 0 100%; }
+.mf-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.mf-go { width: 42px; height: 42px; border-radius: 50%; background: var(--soft); display: grid; place-items: center; font-size: 17px; color: var(--ink); transition: transform .45s var(--ease), background .3s; }
+.mf-card:hover .mf-go, .mf-go:hover { transform: rotate(45deg); background: var(--soft-deep); }
+.mf-card .mf-copy { padding: 6px 12px; font-size: 12.5px; white-space: nowrap; }
+@media (max-width: 960px) { .mf-top { grid-template-columns: 1fr; } }
+@media (max-width: 520px) {
+  .mf-card { grid-template-columns: 44px 1fr auto; gap: 12px; padding: 18px 16px; border-radius: 22px; }
+  .mf-ic { width: 44px; height: 44px; border-radius: 14px; } .mf-ic svg { width: 21px; height: 21px; }
+  .mf-card .mf-mail { font-size: 16px; overflow-wrap: anywhere; }
+  .mf-card.primary { grid-template-columns: 44px 1fr; } .mf-card.primary .mf-actions { grid-column: 1 / -1; flex-direction: row; justify-content: flex-start; align-items: center; }
+}

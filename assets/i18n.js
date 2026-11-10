@@ -79,7 +79,7 @@ window.I18N = (function () {
     "Systems & code": "Systeme & Code", "Design systems": "Designsysteme", "Brand guidelines": "Brand Guidelines",
     "Languages": "Sprachen", "German": "Deutsch", "English": "Englisch",
     // Footer
-    "Get in touch": "Kontakt", "Let’s work": "Lass uns", "together": "zusammenarbeiten", "Cologne, Germany ·": "Köln, Deutschland ·", "Have a project in mind?": "Ein Projekt im Kopf?", "Let’s make it together.": "Lass es uns gemeinsam umsetzen.",
+    "Get in touch": "Kontakt", "Let’s work": "Lass uns", "together": "zusammenarbeiten", "Cologne, Germany ·": "Köln, Deutschland ·", "UX/UI Designer · Cologne": "UX/UI Designer · Köln", "Available now for new roles and projects": "Ab sofort verfügbar für neue Stellen und Projekte", "Email": "E-Mail", "The fastest way to reach me": "Der schnellste Weg zu mir", "All my case studies": "Alle meine Case Studies", "Have a project in mind?": "Ein Projekt im Kopf?", "Let’s make it together.": "Lass es uns gemeinsam umsetzen.",
     "Open to Junior UX/UI & Product Design roles in Germany (hybrid or remote) and freelance projects.": "Offen für Junior-Stellen im UX/UI und Product Design in Deutschland (hybrid oder remote) sowie für freie Projekte.",
     "Send an email": "E-Mail schreiben", "Copy email": "E-Mail kopieren", "Copied ✓": "Kopiert ✓",
     "UX/UI designer crafting calm, accessible digital experiences, from research to code.": "UX/UI Designer für ruhige, barrierefreie digitale Erlebnisse, von der Recherche bis zum Code.",
