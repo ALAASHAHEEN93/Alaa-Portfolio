@@ -10,14 +10,14 @@ window.PROJECTS = (function () {
   const local = u => LOCAL[u] || u;
   const list = [
     {
-      slug: "ferment-freude", tldr: { problem: "Fermentation feels complicated, and the brand’s shop, workshops and story felt disconnected.", role: "Brand strategy, UX research, UI design and React development, from first talk to production.", result: "A unified brand and a live website at fermentfreude.at, with ongoing UX/UI and front-end work." }, behance: "246062163/ferment-freude-Brand-Identity-Website-UX",
+      slug: "ferment-freude", tldr: { problem: "Fermentation feels complicated, and the brand’s shop, workshops and story felt disconnected.", role: "UX/UI design, brand and front-end contribution in a team of two, from first talk to production.", result: "A unified brand and a live website at fermentfreude.at, with ongoing UX/UI and front-end work." }, behance: "246062163/ferment-freude-Brand-Identity-Website-UX",
       title: "ferment freude", tagline: "Brand identity & website UX", kind: "web", kindLabel: "Brand identity · UI/UX · React", year: "2026",
-      role: "UI/UX design & React development", platform: "Responsive web", tools: ["Figma", "React", "Storybook"],
+      role: "UI/UX design, brand & front-end (team project)", platform: "Responsive web", tools: ["Figma", "React", "Storybook"],
       live: "https://www.fermentfreude.at/",
       cover: C + "127e80246062163.Y3JvcCw3MzIsNTcyLDU5LDExNg.png",
       overview: [
         "Fermentfreude is an Austrian food startup dedicated to making fermentation accessible for both everyday use and the food service industry. The platform explains complex processes in a simple, approachable way, removing uncertainty and encouraging people to try it.",
-        "I was responsible for the UI/UX design as well as the React development. The UX focused on a clear, intuitive journey for exploring workshops, products and educational content. The UI reflects the brand’s natural, experimental character through thoughtful typography, spacing and visual hierarchy, and the React build keeps the experience smooth and consistent across devices."
+        "Together with developer Rafaela Vaz, I worked on the UI/UX design and the brand, and contributed to the React implementation. The UX focused on a clear, intuitive journey for exploring workshops, products and educational content. The UI reflects the brand’s natural, experimental character through thoughtful typography, spacing and visual hierarchy, and the React build keeps the experience smooth and consistent across devices."
       ],
       highlights: ["Brand strategy & creative direction with the owner", "Full brand guidelines: type, graphics, photography", "Clear journey for workshops, products and learning", "Clean, modern UI with strong hierarchy", "Responsive React build aligned with the design system"],
       tags: ["Branding", "Logo design", "Visual identity", "Web design", "React"],
@@ -31,8 +31,18 @@ window.PROJECTS = (function () {
         ]
       },
       images: imgs(["max_632_webp/7d4725246062163.69bb3afc783ff.png"]),
+      team: { text: "A team project with developer Rafaela Vaz, made possible by ITCareerHub and Science Park Graz.", link: "https://rafaela-vaz.vercel.app/work/fermentfreude/" },
+      testimonial: {
+        name: "David Haider", role: "Founder, Fermentfreude OG", source: "LinkedIn recommendation, 2026", link: "https://www.linkedin.com/in/alaa-design/",
+        lead: "What impressed me most was your ability to understand what we were trying to achieve, ask the right questions, and come back with thoughtful ideas and solutions rather than simply executing tasks.",
+        more: [
+          "More than once, you had already explored different approaches and prepared potential solutions before we had even asked for them. That level of initiative, ownership and problem-solving is something I value immensely.",
+          "We are genuinely proud of what you created together and how you helped transform and strengthen our brand!"
+        ],
+        closing: "To any future employer reading this: if Ala’a is on your shortlist, I’d strongly suggest moving her to the top."
+      },
       flagship: true,
-      facts: [["Role", "Brand, UX/UI & React development"], ["Timeline", "Jan 2026 to now"], ["Client", "Austrian food startup"], ["Tools", "Figma · React · Storybook · AI tools"]],
+      facts: [["Role", "UX/UI, brand & front-end"], ["Timeline", "Jan 2026 to now"], ["Client", "Austrian food startup"], ["Tools", "Figma · React · Storybook · AI tools"]],
       story: {
         challenge: {
           statement: "Fermentation can feel complicated, and the brand’s digital presence wasn’t making it any easier.",
@@ -47,7 +57,7 @@ window.PROJECTS = (function () {
           ["Brand strategy & direction", "Kick-off with the owner, brand strategy and full brand guidelines: type, graphics and photography."],
           ["UX research", "Interviews, surveys and usability feedback to understand where customers got stuck."],
           ["UX/UI design", "User flows, wireframes and high-fidelity Figma prototypes for the shop, workshops and learning content."],
-          ["Front-end development", "A responsive React build with reusable components documented in Storybook."]
+          ["Front-end contribution", "Contributed to the React implementation, with reusable components documented in Storybook."]
         ],
         process: [
           ["Kick-off", "Brand strategy and creative direction with the owner."],
@@ -245,15 +255,17 @@ window.PROJECTS = (function () {
   const DE = {
     "ferment-freude": {
       tagline: "Markenidentität & Website-UX", kindLabel: "Markenidentität · UI/UX · React",
-      role: "UI/UX Design & React-Entwicklung", platform: "Responsive Website",
+      role: "UI/UX Design, Marke & Front-End (Teamprojekt)", platform: "Responsive Website",
       overview: [
         "Fermentfreude ist ein österreichisches Food-Startup, das Fermentation für den Alltag und für die Gastronomie zugänglich macht. Die Plattform erklärt komplexe Prozesse einfach und nahbar, nimmt Unsicherheit und lädt dazu ein, es selbst auszuprobieren.",
-        "Ich war für das UI/UX Design und die React-Entwicklung verantwortlich. Die UX setzte auf eine klare, intuitive Journey durch Workshops, Produkte und Lerninhalte. Das UI spiegelt den natürlichen, experimentellen Charakter der Marke durch durchdachte Typografie, Weißraum und visuelle Hierarchie, und die React-Umsetzung hält das Erlebnis auf allen Geräten flüssig und konsistent."
+        "Gemeinsam mit Rafaela Vaz (Entwicklung) habe ich am UI/UX Design und an der Marke gearbeitet und zur React-Umsetzung beigetragen. Die UX setzte auf eine klare, intuitive Journey durch Workshops, Produkte und Lerninhalte. Das UI spiegelt den natürlichen, experimentellen Charakter der Marke durch durchdachte Typografie, Weißraum und visuelle Hierarchie, und die React-Umsetzung hält das Erlebnis auf allen Geräten flüssig und konsistent."
       ],
       highlights: ["Markenstrategie & Creative Direction mit der Geschäftsleitung", "Vollständige Brand Guidelines: Schrift, Grafik, Fotografie", "Klare Journey für Workshops, Produkte und Wissen", "Klares, modernes UI mit starker Hierarchie", "Responsive React-Umsetzung im Einklang mit dem Designsystem"],
       tags: ["Branding", "Logo-Design", "Visuelle Identität", "Webdesign", "React"],
-      tldr: { problem: "Fermentation wirkt kompliziert, und Shop, Workshops und Markengeschichte waren voneinander getrennt.", role: "Markenstrategie, UX-Research, UI Design und React-Entwicklung, vom ersten Gespräch bis zum Live-Betrieb.", result: "Eine einheitliche Marke und eine Live-Website auf fermentfreude.at, mit laufender UX/UI- und Front-End-Arbeit." },
-      facts: [["Rolle", "Marke, UX/UI & React-Entwicklung"], ["Zeitraum", "Seit Januar 2026"], ["Kunde", "Österreichisches Food-Startup"], ["Tools", "Figma · React · Storybook · KI-Tools"]],
+      tldr: { problem: "Fermentation wirkt kompliziert, und Shop, Workshops und Markengeschichte waren voneinander getrennt.", role: "UX/UI Design, Marke und Front-End-Beitrag im Zweierteam, vom ersten Gespräch bis zum Live-Betrieb.", result: "Eine einheitliche Marke und eine Live-Website auf fermentfreude.at, mit laufender UX/UI- und Front-End-Arbeit." },
+      team: { text: "Ein Teamprojekt mit Rafaela Vaz (Entwicklung), ermöglicht durch ITCareerHub und Science Park Graz." },
+      testimonial: { role: "Founder, Fermentfreude OG", source: "LinkedIn-Empfehlung, 2026 · im englischen Original" },
+      facts: [["Rolle", "UX/UI, Marke & Front-End"], ["Zeitraum", "Seit Januar 2026"], ["Kunde", "Österreichisches Food-Startup"], ["Tools", "Figma · React · Storybook · KI-Tools"]],
       beforeAfter: {
         intro: "Die alte Wix-Website listete Workshop-Termine in einer schlichten Tabelle. Die neue Website führt durch Workshops, Produkte und Wissen, mit klarerer Struktur und einem ruhigeren, moderneren Look.",
         credit: "Screenshots: Rafaela Vaz · älma studio",
@@ -276,7 +288,7 @@ window.PROJECTS = (function () {
           ["Markenstrategie & Direction", "Kick-off mit der Geschäftsleitung, Markenstrategie und vollständige Brand Guidelines für Schrift, Grafik und Fotografie."],
           ["UX-Research", "Interviews, Umfragen und Usability-Feedback, um zu verstehen, wo Kund:innen hängen bleiben."],
           ["UX/UI Design", "User Flows, Wireframes und High-Fidelity-Prototypen in Figma für Shop, Workshops und Lerninhalte."],
-          ["Front-End-Entwicklung", "Eine responsive React-Umsetzung mit wiederverwendbaren, in Storybook dokumentierten Komponenten."]
+          ["Front-End-Beitrag", "Beitrag zur React-Umsetzung, mit wiederverwendbaren, in Storybook dokumentierten Komponenten."]
         ],
         process: [["Kick-off", "Markenstrategie und Creative Direction mit der Geschäftsleitung."], ["Research", "Stakeholder- und Nutzerinterviews, Online-Umfragen und Analytics-Review."], ["Markensystem", "Typografie, Farbe, Grafik, Bildsprache und Logo-Anwendungen."], ["UX & UI", "Flows, Wireframes und Figma-Prototypen für Shop, Workshops und Wissen."], ["Umsetzung", "React-Front-End mit wiederverwendbaren Storybook-Komponenten."], ["Iteration", "Usability-Feedback, Hypothesen und A/B-Tests, laufend."]],
         research: { methods: ["Stakeholder-Interviews mit der Geschäftsleitung", "Nutzerinterviews", "Online-Umfragen", "Usability-Feedback-Sessions", "Analytics-Review der Absprungstellen", "A/B-Tests"], loop: ["Hypothese", "Test", "Lernen"] },

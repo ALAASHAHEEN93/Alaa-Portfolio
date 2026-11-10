@@ -662,3 +662,21 @@ a, button, [role="button"], .chip, .pola, label { cursor: pointer; }
 }
 /* Hero photo without a name caption: a slimmer polaroid bottom */
 .hero-photo { padding-bottom: 34px; }
+
+/* Home: recommendation */
+.home-testi { padding-top: 0; }
+.ht { position: relative; max-width: 1060px; margin: 0 auto; padding: clamp(36px, 5.5vw, 76px); border-radius: clamp(28px, 4vw, 44px); overflow: hidden;
+  background: radial-gradient(ellipse at 0% 0%, var(--red-glow), transparent 55%), var(--soft); }
+.ht-mark { position: absolute; right: clamp(20px, 4vw, 54px); top: -.18em; font: italic 400 clamp(160px, 22vw, 320px) "Instrument Serif", serif; color: color-mix(in srgb, var(--red) 22%, transparent); line-height: 1; pointer-events: none; }
+.ht .pill { background: var(--paper); }
+.ht blockquote { position: relative; margin: 24px 0 30px; }
+.ht-lead { font-family: "Instrument Serif", serif; font-style: italic; font-size: clamp(26px, 3.4vw, 46px); line-height: 1.2; color: var(--ink); max-width: 30ch; }
+.ht-close { margin-top: 22px; font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; letter-spacing: -.02em; font-size: clamp(18px, 1.9vw, 24px); color: var(--red); }
+.ht figcaption { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; padding-top: 22px; border-top: 1px solid color-mix(in srgb, var(--ink) 12%, transparent); }
+.ht-av { width: 50px; height: 50px; border-radius: 50%; background: var(--paper); display: grid; place-items: center; font: italic 400 26px "Instrument Serif", serif; color: var(--red); }
+.ht figcaption b { display: block; font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; letter-spacing: -.02em; font-size: 18px; }
+.ht figcaption small { color: var(--body); font-size: 14px; }
+.ht-link { margin-left: auto; font-weight: 700; font-size: 14.5px; padding: 10px 16px; border-radius: 999px; background: var(--paper); transition: background .3s, transform .3s var(--ease); }
+.ht-link:hover { background: var(--soft-deep); transform: translateX(3px); }
+@media (max-width: 600px) { .ht-link { margin-left: 0; } }
+.ht-mark, .testi-mark { top: .02em !important; font-size: clamp(120px, 15vw, 210px) !important; line-height: .8 !important; }
