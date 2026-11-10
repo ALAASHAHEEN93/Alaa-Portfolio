@@ -660,3 +660,5 @@ a, button, [role="button"], .chip, .pola, label { cursor: pointer; }
   .mf-card .mf-mail { font-size: 16px; overflow-wrap: anywhere; }
   .mf-card.primary { grid-template-columns: 44px 1fr; } .mf-card.primary .mf-actions { grid-column: 1 / -1; flex-direction: row; justify-content: flex-start; align-items: center; }
 }
+/* Hero photo without a name caption: a slimmer polaroid bottom */
+.hero-photo { padding-bottom: 34px; }
