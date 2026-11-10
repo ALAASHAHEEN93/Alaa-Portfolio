@@ -4,7 +4,7 @@
   --cream: #f8f7f4; --paper: #ffffff; --ink: #2f3247; --gold: #c9a35a; --glow-rgb: 255,255,255;
 }
 :root {
-  --muted: color-mix(in srgb, var(--ink) 62%, var(--cream));
+  --muted: color-mix(in srgb, var(--ink) 78%, var(--cream));
   --line: color-mix(in srgb, var(--ink) 14%, transparent);
   --body: color-mix(in srgb, var(--ink) 80%, var(--cream));
   --tint: color-mix(in srgb, var(--soft) 45%, var(--cream));
