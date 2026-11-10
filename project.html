@@ -310,47 +310,24 @@
 
   <main id="top"></main>
 
-  <footer class="site-foot" id="contact">
+  <footer class="site-foot mfoot" id="contact">
     <div class="wrap">
-      <div class="cta-panel" id="ctaPanel">
-        <div class="cta-badge" aria-hidden="true">
-          <svg viewBox="0 0 120 120"><defs><path id="badgeRing" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
-            <text><textPath href="#badgeRing">OPEN TO WORK · UX/UI DESIGN · </textPath></text></svg><span>✦</span>
-        </div>
-        <span class="pill">Get in touch</span>
-        <h2 class="heavy cta-h">Have a project in mind? <span class="script">Let’s make it together.</span></h2>
-        <p class="cta-p">Open to Junior UX/UI &amp; Product Design roles in Germany (hybrid or remote) and freelance projects.</p>
-        <a class="cta-mail" href="mailto:designer.alaa17@gmail.com" data-hover>designer.alaa17@gmail.com</a>
-        <div class="cta-actions">
-          <a href="mailto:designer.alaa17@gmail.com?subject=Hello%20Alaa" class="btn magnetic" data-hover>Send an email</a>
-          <button type="button" class="btn alt" id="copyMail" data-hover>Copy email</button>
+      <div class="mf-top">
+        <p class="mf-kicker">Get in touch</p>
+        <h2 class="mf-title heavy"><span class="mf-a">Let’s work</span> <span class="script">together</span></h2>
+        <p class="mf-text">Open to Junior UX/UI &amp; Product Design roles in Germany (hybrid or remote) and freelance projects.</p>
+        <div class="mf-mail-row">
+          <a class="mf-mail" href="mailto:designer.alaa17@gmail.com" data-hover><span>designer.alaa17@gmail.com</span> <b aria-hidden="true">↗</b></a>
+          <button type="button" class="mf-copy" id="copyMail" data-hover>Copy email</button>
         </div>
       </div>
-
-      <div class="foot-grid">
-        <div class="fg-brand">
-          <a href="index.html#top" class="foot-logo" data-hover>Alaa Shaheen</a>
-          <p>UX/UI designer crafting calm, accessible digital experiences, from research to code.</p>
-          <span class="fstatus"><i></i>Available for work</span>
-        </div>
-        <nav class="fg-col" aria-label="Footer"><h4>Explore</h4><a class="fl" href="index.html#about" data-hover>About me</a><a class="fl" href="index.html#work" data-hover>Brand identity</a><a class="fl" href="index.html#projects" data-hover>Projects</a><a class="fl" href="index.html#process" data-hover>Process</a><a class="fl" href="index.html#experience" data-hover>Experience</a></nav>
-        <div class="fg-col"><h4>Connect</h4>
-          <div class="soc-row">
-            <a class="soc" href="https://www.behance.net/alaashaheen16" target="_blank" rel="noopener" data-hover><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h5.5a2.5 2.5 0 0 1 0 5H3zM3 12h6a2.5 2.5 0 0 1 0 5H3zM14 8h6M13.5 14.5a3.5 3.5 0 0 1 7 0h-7a3.5 3.5 0 0 0 6.3 2"/></svg>Behance</a>
-            <a class="soc" href="https://www.linkedin.com/in/alaa-design" target="_blank" rel="noopener" data-hover><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M7.5 10v7M7.5 7v.01M11.5 17v-7M11.5 13.5a3 3 0 0 1 6 0V17"/></svg>LinkedIn</a>
-            <a class="soc" href="https://alaa-portfoili.webflow.io" target="_blank" rel="noopener" data-hover><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>Webflow</a>
-          </div>
-        </div>
-        <div class="fg-col"><h4>Based in</h4>
-          <p class="fg-city">Cologne, Germany</p>
-          <p class="fg-time"><b id="clock">--:--</b> local time</p>
-          <p class="fg-lang">German B2 · English B2</p>
-        </div>
-      </div>
-
-      <div class="foot-bottom">
-        <span>© 2026 Alaa Shaheen</span>
-        <span>Designed &amp; built with care in Cologne</span>
+      <div class="mf-bottom">
+        <span class="mf-copyright">© 2026 Alaa Shaheen</span>
+        <nav class="mf-links" aria-label="Footer">
+          <a href="https://www.behance.net/alaashaheen16" target="_blank" rel="noopener" data-hover>Behance</a>
+          <a href="https://www.linkedin.com/in/alaa-design" target="_blank" rel="noopener" data-hover>LinkedIn</a>
+          <span class="mf-loc">Cologne, Germany · <b id="clock">--:--</b></span>
+        </nav>
         <a href="#top" class="to-top" data-hover>Back to top <b aria-hidden="true">↑</b></a>
       </div>
       <div class="toast" id="toast" role="status" aria-live="polite"></div>
@@ -793,10 +770,8 @@
       if (document.querySelector(".palette")) gsap.from(".sw", { y: 60, rotate: k => (k % 2 ? 6 : -6), opacity: 0, duration: 1, stagger: .1, ease: "back.out(1.5)", clearProps: "transform", scrollTrigger: { trigger: ".palette", start: "top 88%" } });
       gsap.utils.toArray(".stat-card b[data-num]").forEach(el => { const end = +el.dataset.num, suf = el.textContent.replace(/[0-9]/g, ""), o = { v: 0 };
         gsap.to(o, { v: end, duration: 1.6, ease: "power2.out", onUpdate: () => el.textContent = Math.round(o.v) + suf, scrollTrigger: { trigger: el, start: "top 90%" } }); });
-      // Footer
-      gsap.from("#ctaPanel", { y: 70, scale: .96, opacity: 0, duration: 1.1, ease: "expo.out", scrollTrigger: { trigger: "#ctaPanel", start: "top 88%" } });
-      gsap.from("#ctaPanel > :not(.cta-badge)", { y: 28, opacity: 0, duration: .8, stagger: .08, delay: .2, ease: "power3.out", scrollTrigger: { trigger: "#ctaPanel", start: "top 88%" } });
-      gsap.from(".foot-grid > *", { y: 24, opacity: 0, duration: .8, stagger: .08, ease: "power3.out", scrollTrigger: { trigger: ".foot-grid", start: "top 92%" } });
+      // Footer: calm fade-up
+      gsap.from(".mf-top > *", { y: 24, opacity: 0, duration: .9, stagger: .08, ease: "power3.out", scrollTrigger: { trigger: ".mfoot", start: "top 85%" } });
       // lazy images change page height → keep triggers accurate
       let rf; document.querySelectorAll(".shot img").forEach(im => im.addEventListener("load", () => { clearTimeout(rf); rf = setTimeout(() => ScrollTrigger.refresh(), 200); }));
     }
