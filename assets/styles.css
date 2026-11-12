@@ -694,3 +694,14 @@ a, button, [role="button"], .chip, .pola, label { cursor: pointer; }
 .cert-cta { margin-top: 6px; font-weight: 700; font-size: 13.5px; display: inline-flex; align-items: center; gap: 6px; }
 .cert-cta i { font-style: normal; display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--soft); transition: transform .4s var(--ease); }
 .cert:hover .cert-cta i { transform: rotate(45deg); }
+.cert img.wide { width: 96px; aspect-ratio: 900 / 687; }
+.cert:has(img.wide) { grid-template-columns: 96px 1fr; }
+.cert.static { grid-template-columns: 52px 1fr; cursor: default; }
+.cert.static:hover { transform: none; box-shadow: none; border-color: var(--line); }
+.cert-ic { width: 52px; height: 52px; border-radius: 14px; background: var(--paper); display: grid; place-items: center; font-size: 24px; }
+@media (max-width: 520px) {
+  .cert, .cert:has(img.wide) { grid-template-columns: 60px 1fr; gap: 12px; padding: 10px; }
+  .cert img, .cert img.wide { width: 60px; }
+  .cert small { letter-spacing: .1em; font-size: 10px; }
+  .cert b { font-size: 15.5px; }
+}
