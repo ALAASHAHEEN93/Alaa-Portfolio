@@ -11,13 +11,13 @@ window.PROJECTS = (function () {
   const list = [
     {
       slug: "ferment-freude", tldr: { problem: "Fermentation feels complicated, and the brand’s shop, workshops and story felt disconnected.", role: "UX/UI design, brand and front-end contribution in a team of two, from first talk to production.", result: "A unified brand and a live website at fermentfreude.at, with ongoing UX/UI and front-end work." }, behance: "246062163/ferment-freude-Brand-Identity-Website-UX",
-      title: "ferment freude", tagline: "Brand identity & website UX", kind: "web", kindLabel: "Brand identity · UI/UX · React", year: "2026",
-      role: "UI/UX design, brand & front-end (team project)", platform: "Responsive web", tools: ["Figma", "React", "Storybook"],
+      title: "ferment freude", tagline: "Brand identity & website UX", kind: "web", kindLabel: "Brand identity · UI/UX · Next.js", year: "2026",
+      role: "UI/UX design, brand & front-end (team project)", platform: "Responsive web", tools: ["Figma", "Webflow", "Next.js", "TypeScript", "Git & GitHub"],
       live: "https://www.fermentfreude.at/",
       cover: C + "127e80246062163.Y3JvcCw3MzIsNTcyLDU5LDExNg.png",
       overview: [
         "Fermentfreude is an Austrian food startup dedicated to making fermentation accessible for both everyday use and the food service industry. The platform explains complex processes in a simple, approachable way, removing uncertainty and encouraging people to try it.",
-        "Together with developer Rafaela Vaz, I worked on the UI/UX design and the brand, and contributed to the React implementation. The UX focused on a clear, intuitive journey for exploring workshops, products and educational content. The UI reflects the brand’s natural, experimental character through thoughtful typography, spacing and visual hierarchy, and the React build keeps the experience smooth and consistent across devices."
+        "Together with developer Rafaela Vaz, I worked on the UI/UX design and the brand, and contributed to the Next.js front-end. The UX focused on a clear, intuitive journey for exploring workshops, products and educational content. The UI reflects the brand’s natural, experimental character through thoughtful typography, spacing and visual hierarchy, and the React build keeps the experience smooth and consistent across devices."
       ],
       highlights: ["Rebrand strategy & creative direction with the owner", "Full brand guidelines: type, graphics, photography", "Clear journey for workshops, products and learning", "Clean, modern UI with strong hierarchy", "Responsive React build aligned with the design system"],
       tags: ["Branding", "Logo design", "Visual identity", "Web design", "React"],
@@ -41,7 +41,7 @@ window.PROJECTS = (function () {
         closing: "To any future employer reading this: if Ala’a is on your shortlist, I’d strongly suggest moving her to the top."
       },
       flagship: true,
-      facts: [["Role", "UX/UI, brand & front-end"], ["Timeline", "Jan 2026 to now"], ["Client", "Austrian food startup"], ["Tools", "Figma · React · Storybook · AI tools"]],
+      facts: [["Role", "UX/UI, brand & front-end"], ["Timeline", "Jan 2026 to now"], ["Client", "Austrian food startup"], ["Tools", "Figma · Webflow · Next.js · TypeScript"]],
       story: {
         challenge: {
           statement: "Fermentation can feel complicated, and the brand’s digital presence wasn’t making it any easier.",
@@ -56,8 +56,18 @@ window.PROJECTS = (function () {
           ["Brand strategy & direction", "Kick-off with the owner, brand strategy and full brand guidelines: type, graphics and photography."],
           ["UX & usability", "Usability feedback and analytics to understand where customers got stuck on the old site."],
           ["UX/UI design", "User flows, wireframes and high-fidelity Figma prototypes for the shop, workshops and learning content."],
-          ["Front-end contribution", "Contributed to the React implementation, with reusable components documented in Storybook."]
+          ["Front-end development", "Helped build website components and UI elements with Next.js and TypeScript, working with Git and GitHub in the team."]
         ],
+        evolution: {
+          title: ["From Webflow", "to Next.js"],
+          intro: "The project changed direction along the way, and so did my toolkit.",
+          phases: [
+            { label: "Phase 1", title: "UI/UX design in Figma, built for Webflow", text: "It started as a UI/UX design project planned for Webflow: tools I already had experience with. I designed flows, wireframes and the UI in Figma.", tools: ["Figma", "Webflow"] },
+            { label: "Phase 2", title: "A custom platform in Next.js", text: "As the plans grew, development moved from Webflow to a custom platform. With no prior React experience, I learned Next.js, TypeScript, HTML, CSS, Git and GitHub on the job and applied them in a real project.", tools: ["Next.js", "TypeScript", "HTML", "CSS", "Git & GitHub"] }
+          ],
+          platform: ["E-commerce", "Workshop booking", "Customer accounts", "CRM integrations", "Content delivery", "Ready for online courses"],
+          duties: ["UI/UX design and user-centred thinking throughout the project", "Front-end development with modern web technologies", "Building website components and UI elements", "Working with Git and GitHub in a collaborative team", "Ideas and solutions for better UX, structure and functionality", "Turning business requirements into practical, user-friendly solutions"]
+        },
         process: [
           ["Kick-off", "Brand strategy and creative direction with the owner."],
           ["Audit", "Reviewed the existing brand and website to see what to keep and what to change."],
@@ -214,6 +224,23 @@ window.PROJECTS = (function () {
       images: imgs(["1400_webp/635af7257105511.6acf98becc601.jpg", "1400_webp/bbf5a8257105511.6acf98becbf14.jpg", "1400_webp/1860a8257105511.6acf98becbb79.jpg", "1400_webp/7322d3257105511.6acf98becc267.jpg", "1400_webp/959951257105511.6acf98becc940.jpg"])
     },
     {
+      slug: "aurelle-bakery", behance: null, repo: "https://github.com/ALAASHAHEEN93/aurelle-bakery-menu",
+      tldr: { problem: "A motion concept from social media only exists as a video: nobody can actually use it.", role: "Front-end development: turning the concept into a real, interactive page.", result: "A live menu book with 3D page turns, a canvas particle effect, and tap, swipe and keyboard controls." },
+      title: "Aurelle Bakery", tagline: "A menu book where every page bakes a dessert", kind: "web", kindLabel: "Interactive web · Front-end", year: "2026",
+      role: "Front-end development & interaction", platform: "Responsive web (desktop & mobile)", tools: ["HTML", "CSS", "JavaScript", "Canvas"],
+      live: "https://alaashaheen93.github.io/aurelle-bakery-menu/",
+      cover: "assets/work/aurelle/preview.jpg",
+      team: { icon: "✦", text: "Concept and dessert imagery from an Instagram reel by @vexmo_animation. I rebuilt the concept as a working, interactive web page." },
+      overview: [
+        "An interactive dessert menu for a fictional bakery. Each tap turns a page in 3D, and the next dessert bakes onto the page out of swirling flour and sparkles.",
+        "I rebuilt a motion concept from an Instagram reel as a real web page, in plain HTML, CSS and JavaScript, with no build step and no dependencies."
+      ],
+      highlights: ["An open menu book on a marble table: leather cover, gold corners, framed paper pages", "3D page turns, forward and back", "A flour-and-sparkle particle effect drawn on canvas", "Autoplay, plus tap, swipe and arrow-key navigation", "No build step and no dependencies"],
+      tags: ["Interaction design", "Animation", "Front-end", "Canvas"],
+      videoFile: "assets/work/aurelle/aurelle-demo.mp4",
+      images: ["assets/work/aurelle/desktop-lava-cake.jpg", "assets/work/aurelle/mobile-cheesecake.jpg"]
+    },
+    {
       slug: "grove", tldr: { problem: "Plant shopping and plant care usually live in separate places, which is hard for beginners.", role: "UX research and UI design.", result: "An all-in-one app: plant store plus a photo-based care assistant that spots pests and diseases." }, behance: "230573965/Grove-Plant-Shop-Care-App-UX-Case-Study",
       title: "Grove", tagline: "Plant shop & smart care assistant", kind: "app", kindLabel: "Mobile app · UX case study", year: "2025",
       role: "UX research & UI design", platform: "Mobile app", tools: ["Figma"],
@@ -255,19 +282,27 @@ window.PROJECTS = (function () {
   ];
   // German version of each case study (used when the site is in DE). Anything left out falls back to English.
   const DE = {
+    "aurelle-bakery": {
+      tagline: "Ein Menübuch, in dem jede Seite ein Dessert backt", kindLabel: "Interaktives Web · Front-End", role: "Front-End-Entwicklung & Interaktion", platform: "Responsive Website (Desktop & Mobil)",
+      team: { text: "Konzept und Dessert-Bilder aus einem Instagram-Reel von @vexmo_animation. Ich habe das Konzept als funktionierende, interaktive Webseite umgesetzt." },
+      overview: ["Eine interaktive Dessertkarte für eine fiktive Bäckerei. Jeder Tipp blättert eine Seite in 3D um, und das nächste Dessert backt sich aus wirbelndem Mehl und Glitzer auf die Seite.", "Ich habe ein Motion-Konzept aus einem Instagram-Reel als echte Webseite umgesetzt, mit purem HTML, CSS und JavaScript, ohne Build-Schritt und ohne Abhängigkeiten."],
+      highlights: ["Ein offenes Menübuch auf einem Marmortisch: Ledereinband, goldene Ecken, gerahmte Papierseiten", "3D-Umblättern, vor und zurück", "Ein Mehl-und-Glitzer-Partikeleffekt auf Canvas", "Autoplay sowie Tippen, Wischen und Pfeiltasten", "Kein Build-Schritt, keine Abhängigkeiten"],
+      tags: ["Interaction Design", "Animation", "Front-End", "Canvas"],
+      tldr: { problem: "Ein Motion-Konzept aus Social Media existiert nur als Video: Niemand kann es wirklich benutzen.", role: "Front-End-Entwicklung: das Konzept in eine echte, interaktive Seite verwandeln.", result: "Ein live nutzbares Menübuch mit 3D-Umblättern, Canvas-Partikeleffekt und Steuerung per Tippen, Wischen und Tastatur." }
+    },
     "ferment-freude": {
-      tagline: "Markenidentität & Website-UX", kindLabel: "Markenidentität · UI/UX · React",
+      tagline: "Markenidentität & Website-UX", kindLabel: "Markenidentität · UI/UX · Next.js",
       role: "UI/UX Design, Marke & Front-End (Teamprojekt)", platform: "Responsive Website",
       overview: [
         "Fermentfreude ist ein österreichisches Food-Startup, das Fermentation für den Alltag und für die Gastronomie zugänglich macht. Die Plattform erklärt komplexe Prozesse einfach und nahbar, nimmt Unsicherheit und lädt dazu ein, es selbst auszuprobieren.",
-        "Gemeinsam mit Rafaela Vaz (Entwicklung) habe ich am UI/UX Design und an der Marke gearbeitet und zur React-Umsetzung beigetragen. Die UX setzte auf eine klare, intuitive Journey durch Workshops, Produkte und Lerninhalte. Das UI spiegelt den natürlichen, experimentellen Charakter der Marke durch durchdachte Typografie, Weißraum und visuelle Hierarchie, und die React-Umsetzung hält das Erlebnis auf allen Geräten flüssig und konsistent."
+        "Gemeinsam mit Rafaela Vaz (Entwicklung) habe ich am UI/UX Design und an der Marke gearbeitet und zum Next.js-Front-End beigetragen. Die UX setzte auf eine klare, intuitive Journey durch Workshops, Produkte und Lerninhalte. Das UI spiegelt den natürlichen, experimentellen Charakter der Marke durch durchdachte Typografie, Weißraum und visuelle Hierarchie, und die React-Umsetzung hält das Erlebnis auf allen Geräten flüssig und konsistent."
       ],
       highlights: ["Rebranding-Strategie & Creative Direction mit der Geschäftsleitung", "Vollständige Brand Guidelines: Schrift, Grafik, Fotografie", "Klare Journey für Workshops, Produkte und Wissen", "Klares, modernes UI mit starker Hierarchie", "Responsive React-Umsetzung im Einklang mit dem Designsystem"],
       tags: ["Branding", "Logo-Design", "Visuelle Identität", "Webdesign", "React"],
       tldr: { problem: "Fermentation wirkt kompliziert, und Shop, Workshops und Markengeschichte waren voneinander getrennt.", role: "UX/UI Design, Marke und Front-End-Beitrag im Zweierteam, vom ersten Gespräch bis zum Live-Betrieb.", result: "Eine einheitliche Marke und eine Live-Website auf fermentfreude.at, mit laufender UX/UI- und Front-End-Arbeit." },
       team: { text: "Ein Teamprojekt mit Rafaela Vaz (Entwicklung), ermöglicht durch ITCareerHub und Science Park Graz." },
       testimonial: { role: "Founder, Fermentfreude OG", source: "LinkedIn-Empfehlung, 2026 · im englischen Original" },
-      facts: [["Rolle", "UX/UI, Marke & Front-End"], ["Zeitraum", "Seit Januar 2026"], ["Kunde", "Österreichisches Food-Startup"], ["Tools", "Figma · React · Storybook · KI-Tools"]],
+      facts: [["Rolle", "UX/UI, Marke & Front-End"], ["Zeitraum", "Seit Januar 2026"], ["Kunde", "Österreichisches Food-Startup"], ["Tools", "Figma · Webflow · Next.js · TypeScript"]],
       beforeAfter: {
         intro: "Die alte Wix-Website listete Workshop-Termine in einer schlichten Tabelle. Die neue Website führt durch Workshops, Produkte und Wissen, mit klarerer Struktur und einem ruhigeren, moderneren Look.",
         pairs: [
@@ -289,8 +324,18 @@ window.PROJECTS = (function () {
           ["Markenstrategie & Direction", "Kick-off mit der Geschäftsleitung, Markenstrategie und vollständige Brand Guidelines für Schrift, Grafik und Fotografie."],
           ["UX & Usability", "Usability-Feedback und Analytics, um zu verstehen, wo Kund:innen auf der alten Website hängen blieben."],
           ["UX/UI Design", "User Flows, Wireframes und High-Fidelity-Prototypen in Figma für Shop, Workshops und Lerninhalte."],
-          ["Front-End-Beitrag", "Beitrag zur React-Umsetzung, mit wiederverwendbaren, in Storybook dokumentierten Komponenten."]
+          ["Front-End-Entwicklung", "Mitarbeit an Website-Komponenten und UI-Elementen mit Next.js und TypeScript, im Team mit Git und GitHub."]
         ],
+        evolution: {
+          title: ["Von Webflow", "zu Next.js"],
+          intro: "Das Projekt hat unterwegs die Richtung geändert, und mein Werkzeugkasten auch.",
+          phases: [
+            { label: "Phase 1", title: "UI/UX Design in Figma, geplant für Webflow", text: "Es begann als UI/UX-Designprojekt, das in Webflow umgesetzt werden sollte: Tools, mit denen ich bereits Erfahrung hatte. Flows, Wireframes und UI habe ich in Figma gestaltet.", tools: ["Figma", "Webflow"] },
+            { label: "Phase 2", title: "Eine eigene Plattform mit Next.js", text: "Als die Pläne wuchsen, wechselte die Entwicklung von Webflow zu einer eigenen Plattform. Ohne Vorerfahrung mit React habe ich mir Next.js, TypeScript, HTML, CSS, Git und GitHub im Projekt angeeignet und direkt angewendet.", tools: ["Next.js", "TypeScript", "HTML", "CSS", "Git & GitHub"] }
+          ],
+          platform: ["E-Commerce", "Workshop-Buchung", "Kundenkonten", "CRM-Integrationen", "Content-Auslieferung", "Vorbereitet für Online-Kurse"],
+          duties: ["UI/UX Design und nutzerzentriertes Denken über das gesamte Projekt", "Front-End-Entwicklung mit modernen Webtechnologien", "Umsetzung von Website-Komponenten und UI-Elementen", "Arbeit mit Git und GitHub im Team", "Ideen und Lösungen für bessere UX, Struktur und Funktionalität", "Geschäftsanforderungen in praktische, nutzerfreundliche Lösungen übersetzen"]
+        },
         process: [["Kick-off", "Markenstrategie und Creative Direction mit der Geschäftsleitung."], ["Analyse", "Bestehende Marke und Website geprüft: was bleibt, was sich ändert."], ["Markensystem", "Typografie, Farbe, Grafik, Bildsprache und Logo-Anwendungen."], ["UX & UI", "Flows, Wireframes und Figma-Prototypen für Shop, Workshops und Wissen."], ["Umsetzung", "React-Front-End mit wiederverwendbaren Storybook-Komponenten."], ["Iteration", "Usability-Feedback, Hypothesen und A/B-Tests, laufend."]],
         research: { title: ["Feedback", "& Daten"], intro: "Das war ein Rebranding, keine Marke von null: Die Marke gab es bereits. Statt neu anzufangen, haben wir mit Usability-Feedback und Daten entschieden, was wir verbessern, und die Änderungen getestet.", methods: ["Analyse der bestehenden Marke und Website", "Usability-Feedback-Sessions", "Analytics-Review der Absprungstellen", "A/B-Tests"], loop: ["Hypothese", "Test", "Lernen"] },
         brand: {

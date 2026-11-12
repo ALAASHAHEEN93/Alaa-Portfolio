@@ -267,6 +267,7 @@
     @media (max-width: 1000px) { .stats-grid, .pr-grid { grid-template-columns: 1fr 1fr; } .cp-grid, .learn-grid, .insights { grid-template-columns: 1fr; } .feat-row, .feat-row.flip { grid-template-columns: 1fr; } .feat-row.flip > :first-child { order: 0; } .palette { grid-template-columns: repeat(3, 1fr); } }
     @media (max-width: 560px) { .stats-grid, .pr-grid { grid-template-columns: 1fr; } .crow { grid-template-columns: 1.2fr repeat(3, 1fr); padding: 12px; font-size: 13px; } .ck i { display: none; } .val { grid-template-columns: 1fr; } .palette { grid-template-columns: 1fr 1fr; } }
 
+    .video-frame .vfile { display: block; width: 100%; height: auto; max-height: 80vh; background: #efe6da; border-radius: 4px; }
     .team-note { display: inline-flex; align-items: center; gap: 10px; margin-top: 16px; padding: 10px 16px; border-radius: 999px; background: var(--paper); border: 1px solid var(--line); font-size: 14px; color: var(--body); }
     .testi { position: relative; max-width: 1000px; margin: 0 auto; padding: clamp(36px, 5vw, 70px); border-radius: clamp(28px, 4vw, 44px); overflow: hidden;
       background: radial-gradient(ellipse at 0% 0%, var(--red-glow), transparent 55%), var(--soft); }
@@ -286,6 +287,24 @@
     .photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .photo-grid .shot img { aspect-ratio: 4 / 5; object-fit: cover; min-height: 0; }
     @media (max-width: 700px) { .photo-grid { grid-template-columns: 1fr 1fr; gap: 10px; } }
+
+    .evo { display: grid; grid-template-columns: 1fr auto 1fr; gap: 18px; align-items: stretch; }
+    .evo-card { background: var(--paper); border: 1px solid var(--line); border-radius: 28px; padding: clamp(24px, 3vw, 36px); }
+    .evo-card.now { border-color: var(--soft-deep); box-shadow: 0 22px 44px -28px color-mix(in srgb, var(--red-deep) 80%, transparent); }
+    .evo-label { display: inline-block; font: 700 11px "Plus Jakarta Sans"; letter-spacing: .16em; text-transform: uppercase; padding: 6px 11px; border-radius: 999px; background: var(--tint); color: var(--muted); }
+    .evo-card.now .evo-label { background: var(--soft); color: var(--ink); }
+    .evo-card h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; letter-spacing: -.03em; font-size: clamp(21px, 2.1vw, 27px); line-height: 1.15; margin: 14px 0 10px; }
+    .evo-card p { color: var(--body); font-size: 15.5px; }
+    .evo-tools { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+    .evo-tools span { font-size: 12.5px; font-weight: 700; padding: 5px 11px; border-radius: 999px; background: var(--tint); border: 1px solid var(--line); }
+    .evo-arrow { align-self: center; width: 54px; height: 54px; border-radius: 50%; background: var(--paper); display: grid; place-items: center; font-size: 22px; color: var(--red); box-shadow: 0 10px 24px -12px color-mix(in srgb, var(--red-deep) 80%, transparent); }
+    .evo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(30px, 5vw, 70px); margin-top: clamp(50px, 6vw, 80px); }
+    .evo-chips { display: flex; flex-wrap: wrap; gap: 10px; }
+    .evo-chips span { background: var(--paper); border: 1px solid var(--soft-deep); padding: 10px 16px; border-radius: 999px; font-weight: 600; font-size: 14.5px; }
+    .evo-duties { list-style: none; display: grid; gap: 10px; }
+    .evo-duties li { display: flex; gap: 12px; align-items: flex-start; font-size: 15px; color: var(--body); }
+    .evo-duties b { width: 24px; height: 24px; flex-shrink: 0; border-radius: 50%; background: var(--soft); display: grid; place-items: center; font-size: 12px; color: var(--red); margin-top: 1px; }
+    @media (max-width: 900px) { .evo, .evo-grid { grid-template-columns: 1fr; } .evo-arrow { justify-self: center; transform: rotate(90deg); } }
     .lightbox { position: fixed; inset: 0; z-index: 120; background: color-mix(in srgb, var(--ink) 88%, transparent); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); display: none; overflow: auto; padding: 70px 16px 40px; }
     .lightbox.open { display: block; }
     .lightbox img { width: min(1300px, 100%); height: auto; margin: 0 auto; background: #fff; box-shadow: 0 30px 80px rgba(0,0,0,.4); }
@@ -441,6 +460,18 @@
         <div class="roles">${st.roles.map((r, k) => `<div class="role reveal"><span class="role-ic">${ROLE_ICONS[k] || ROLE_ICONS[0]}</span><h3>${esc(r[0])}</h3><p>${esc(r[1])}</p><span class="bar"></span></div>`).join("")}</div>
       </div></section>`);
 
+
+      if (st.evolution) { const ev = st.evolution; out.push(`<div class="tear" data-tear="strip"></div>
+      <section class="sec" id="evolution" style="background:var(--tint)"><div class="wrap">
+        ${sectionHead("Project evolution", ev.title[0], ev.title[1], "", ev.intro)}
+        <div class="evo">
+          ${ev.phases.map((ph, k) => `${k ? '<span class="evo-arrow reveal" aria-hidden="true">→</span>' : ""}<div class="evo-card reveal${k ? " now" : ""}"><span class="evo-label">${esc(ph.label)}</span><h3>${esc(ph.title)}</h3><p>${esc(ph.text)}</p><div class="evo-tools">${ph.tools.map(t => `<span>${esc(t)}</span>`).join("")}</div></div>`).join("")}
+        </div>
+        <div class="evo-grid">
+          <div class="reveal"><h3 class="mini-h">What the <span class="script">platform</span> includes</h3><div class="evo-chips">${ev.platform.map(x => `<span>${esc(x)}</span>`).join("")}</div></div>
+          <div class="reveal"><h3 class="mini-h">What I <span class="script">did</span></h3><ul class="evo-duties">${ev.duties.map(d => `<li><b>✓</b>${esc(d)}</li>`).join("")}</ul></div>
+        </div>
+      </div></section><div class="tear" data-tear="strip" data-fiber="tint"></div>`); }
       if (st.stats || st.research) {
         let inner = "";
         if (st.stats) {
@@ -533,7 +564,7 @@
               <p class="out-text">${esc(o.ongoing)}</p>
               <div class="case-btns">
                 ${p.live ? `<a class="btn magnetic" href="${p.live}" target="_blank" rel="noopener" data-hover>${esc(o.cta || "Visit the live site")} ↗</a>` : ""}
-                <a class="btn alt magnetic" href="https://www.behance.net/gallery/${p.behance}" target="_blank" rel="noopener" data-hover>View on Behance ↗</a>
+                ${p.behance ? `<a class="btn alt magnetic" href="https://www.behance.net/gallery/${p.behance}" target="_blank" rel="noopener" data-hover>View on Behance ↗</a>` : ""}
               </div>
             </div>
             <ul class="out-list">${o.points.map(pt => `<li><b>✓</b>${esc(pt)}</li>`).join("")}</ul>
@@ -570,7 +601,8 @@
               <p class="case-lead hero-fade">${esc(p.overview[0])}</p>
               <div class="case-btns hero-fade">
                 ${p.live ? `<a class="btn magnetic" href="${p.live}" target="_blank" rel="noopener" data-hover>View live site ↗</a>` : ""}
-                <a class="btn ${p.live ? "alt" : ""} magnetic" href="https://www.behance.net/gallery/${p.behance}" target="_blank" rel="noopener" data-hover>View on Behance ↗</a>
+                ${p.behance ? `<a class="btn ${p.live ? "alt" : ""} magnetic" href="https://www.behance.net/gallery/${p.behance}" target="_blank" rel="noopener" data-hover>View on Behance ↗</a>` : ""}
+                ${p.repo ? `<a class="btn alt magnetic" href="${p.repo}" target="_blank" rel="noopener" data-hover>View code on GitHub ↗</a>` : ""}
               </div>
             </div>
             <figure class="polaroid case-cover" id="caseCover"><span class="tape"></span><img src="${p.cover}" alt="${esc(p.title)} cover" /><figcaption>${esc(p.title)}</figcaption></figure>
@@ -591,7 +623,7 @@
             <div class="tldr-col"><small><i></i>My role</small><p>${esc(p.tldr.role)}</p></div>
             <div class="tldr-col"><small><i></i>Result</small><p>${esc(p.tldr.result)}</p></div>
           </div>` : ""}
-          ${p.team ? `<p class="team-note reveal"><span aria-hidden="true">👥</span>${esc(p.team.text)}</p>` : ""}
+          ${p.team ? `<p class="team-note reveal"><span aria-hidden="true">${p.team.icon || "👥"}</span>${esc(p.team.text)}</p>` : ""}
         </div>
       </section>
 
@@ -639,6 +671,7 @@
             <h2 class="sec-title heavy reveal">Inside the <span class="script">project</span></h2>
             <p class="reveal" style="color:var(--muted); margin-top:14px">Click any board to view it full size.</p>
           </div>
+          ${p.videoFile ? `<div class="video-frame reveal"><span class="tape"></span><video class="vfile" src="${p.videoFile}" autoplay muted loop playsinline controls preload="metadata" aria-label="${esc(p.title)} demo video"></video></div>` : ""}
           ${p.video ? `<div class="video-frame reveal"><span class="tape"></span><div class="ratio"><iframe src="${p.video}" title="${esc(p.title)} video" allow="fullscreen" loading="lazy"></iframe></div></div>` : ""}
           <div class="gallery" id="gallery">${shots}</div>
         </div>
@@ -729,7 +762,7 @@
     // ---------- Flagship: chapter nav, palette copy, carousel drag ----------
     (function () {
       if (i < 0 || !P[i].story) return;
-      const chapters = [["overview", "Overview"], ["testimonial", "Testimonial"], ["challenge", "Challenge"], ["role", "My role"], ["research", "Research"], ["principles", "Principles"], ["process", "Process"], ["features", "Walkthrough"], ["brand", "Brand"], ["decisions", "Decisions"], ["before-after", "Before & after"], ["validation", "Validation"], ["learned", "Learned"], ["outcome", "Outcome"]]
+      const chapters = [["overview", "Overview"], ["testimonial", "Testimonial"], ["challenge", "Challenge"], ["role", "My role"], ["evolution", "Evolution"], ["research", "Research"], ["principles", "Principles"], ["process", "Process"], ["features", "Walkthrough"], ["brand", "Brand"], ["decisions", "Decisions"], ["before-after", "Before & after"], ["validation", "Validation"], ["learned", "Learned"], ["outcome", "Outcome"]]
         .filter(c => document.getElementById(c[0]))
         .sort((x, y) => document.getElementById(x[0]).compareDocumentPosition(document.getElementById(y[0])) & 2 ? 1 : -1);
       const nav = document.createElement("nav");

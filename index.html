@@ -165,9 +165,9 @@
             <h2 class="sec-title heavy reveal">Selected <span class="script">work</span></h2>
           </div>
           <div class="filters reveal" id="filters">
-            <button class="chip active" data-filter="all">All · 7</button>
+            <button class="chip active" data-filter="all">All · 8</button>
             <button class="chip" data-filter="app">Mobile apps · 4</button>
-            <button class="chip" data-filter="web">Websites · 3</button>
+            <button class="chip" data-filter="web">Websites · 4</button>
           </div>
         </div>
         <div class="board" id="board"></div>
@@ -518,16 +518,17 @@
       { t: "CasaVue", s: "Furniture shopping website", c: "web", img: "b5d3af258133951.Y3JvcCw3NTUsNTkxLDI4LDM5.jpg", url: "258133951/CasaVue-Furniture-Shopping-Website-UX-Case-Study" },
       { t: "CalTrack", s: "AI calorie & diet app", c: "app", img: "3523c2238047517.Y3JvcCw4ODYsNjkzLDAsMTk.png", url: "238047517/CalTrack-AI-Calorie-Diet-App-UX-Case-Study" },
       { t: "Bienenhaus", s: "Raw honey website", c: "web", img: "730add257105511.Y3JvcCwxNTM5LDEyMDQsMjIsMA.png", url: "257105511/Bienenhaus-Raw-Honey-Website" },
+      { t: "Aurelle Bakery", s: "Interactive dessert menu book", c: "web", img: "", url: "aurelle-bakery" },
       { t: "Grove", s: "Plant shop & care app", c: "app", img: "2d750d230573965.Y3JvcCwyMTA2LDE2NDgsMzEsMA.png", url: "230573965/Grove-Plant-Shop-Care-App-UX-Case-Study" },
       { t: "Abaya Store", s: "Modest fashion shopping app", c: "app", img: "93c038239610529.Y3JvcCwxMDA2LDc4NywwLDIxOQ.png", url: "239610529/Abaya-Store-Modest-Fashion-Shopping-App-UIUX" },
       { t: "Little Chapter", s: "Kids’ storytelling app", c: "app", img: "010429235882915.Y3JvcCwxMDYzLDgzMiwxMDcsMA.png", url: "235882915/Little-Chapter-Kids-Storytelling-App-UX-Case-Study" },
     ];
     const rots = [-2.2, 1.6, -1, 2.4, -2.8, 1.2, -1.6, 2.8, -.8, 1.9, -2.4, 1];
     document.getElementById("board").innerHTML = projects.map((p, i) => `
-      <a class="pola" data-cat="${p.c}" data-view style="--r:${rots[i]}deg" href="project.html?p=${(window.PROJECTS || []).find(x => x.behance === p.url)?.slug || ""}" aria-label="${p.t}: read the case study">
+      <a class="pola" data-cat="${p.c}" data-view style="--r:${rots[i]}deg" href="project.html?p=${(window.PROJECTS || []).find(x => x.behance === p.url || x.slug === p.url)?.slug || ""}" aria-label="${p.t}: read the case study">
         ${i % 3 !== 1 ? '<span class="tape"></span>' : ""}
-        ${((window.PROJECTS || []).find(x => x.behance === p.url) || {}).flagship ? `<span class="flag">${T("★ Flagship case study")}</span>` : ""}
-        <div class="pola-img"><img src="${((window.PROJECTS || []).find(x => x.behance === p.url) || {}).cover || CDN + p.img}" alt="${p.t}: ${T(p.s)}" loading="lazy" /></div>
+        ${((window.PROJECTS || []).find(x => x.behance === p.url || x.slug === p.url) || {}).flagship ? `<span class="flag">${T("★ Flagship case study")}</span>` : ""}
+        <div class="pola-img"><img src="${((window.PROJECTS || []).find(x => x.behance === p.url || x.slug === p.url) || {}).cover || CDN + p.img}" alt="${p.t}: ${T(p.s)}" loading="lazy" /></div>
         <div class="pola-cap"><div><h3>${p.t}</h3><p>${T(p.s)}</p></div><span class="pola-tag">${p.c === "app" ? "App" : "Web"}</span></div>
       </a>`).join("");
 
