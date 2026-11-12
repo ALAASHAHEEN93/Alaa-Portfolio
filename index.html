@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/styles.css?v=20261112b" />
 </head>
 <body class="loading">
 
@@ -89,17 +89,7 @@
 
     <!-- ABOUT -->
     <section class="sec" id="about">
-      <div class="wrap about-grid">
-        <div class="note reveal">
-          <span class="tape"></span>
-          <h3>Let’s connect</h3>
-          <ul class="contact-list">
-            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span><a href="mailto:designer.alaa17@gmail.com" data-hover>designer.alaa17@gmail.com</a></li>
-            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>Cologne, Germany</li>
-            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h6a3 3 0 0 1 0 6H4zM4 12h7a3.5 3.5 0 0 1 0 7H4zM15 8h5M14 15a3.5 3.5 0 0 1 7 0h-7a3.5 3.5 0 0 0 6.5 1.8"/></svg></span><a href="https://www.behance.net/alaashaheen16" target="_blank" rel="noopener" data-hover>behance.net/alaashaheen16</a></li>
-            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-7M11 13a3 3 0 0 1 6 0v4"/></svg></span><a href="https://www.linkedin.com/in/alaa-design" target="_blank" rel="noopener" data-hover>linkedin.com/in/alaa-design</a></li>
-          </ul>
-        </div>
+      <div class="wrap about-grid solo">
         <div>
           <span class="pill reveal">About me</span>
           <p class="about-text" id="aboutText">I’m a UX/UI designer with a degree in Computer System Engineering and professional Web Design training in Germany. I turn interviews, surveys and usability feedback into clear user flows, Figma prototypes and accessible interfaces. And I speak the language of developers.</p>
@@ -112,7 +102,6 @@
           <div class="stat reveal"><div class="stat-n"><span data-count="12">0</span><small>+</small></div><p>UX/UI case studies on Behance</p></div>
           <div class="stat reveal"><div class="stat-n"><span data-count="4">0</span><small>yrs</small></div><p>Freelance web development, 2016 to 2020</p></div>
           <div class="stat reveal"><div class="stat-n">B<span data-count="2">0</span></div><p>German &amp; English working proficiency</p></div>
-          <div class="stat reveal"><div class="stat-n"><span data-count="5">0</span><small>steps</small></div><p>From discovery to build</p></div>
         </div>
       </div>
     </section>
@@ -222,11 +211,6 @@
             <h2 class="sec-title heavy reveal">The <span class="script">journey</span></h2>
             <p class="jr-intro reveal">From computer engineering to freelance web development to UX/UI design. Every step added a new layer: how things are built, how clients think, and how people use what I design.</p>
           </div>
-          <div class="jr-facts reveal">
-            <div><b>2016</b><span>Building for the web since</span></div>
-            <div><b>B2</b><span>German &amp; English</span></div>
-            <div><b>3</b><span>Roles: design, research, code</span></div>
-          </div>
         </div>
 
         <div class="jr-filters" id="jrFilters" role="tablist" aria-label="Filter the journey">
@@ -244,8 +228,7 @@
               <div class="jr-top"><span class="jr-kind work">Work</span><span class="jr-period">Jan 2026 to now</span><span class="jr-now"><i></i>Now · <b id="jrMonths">this year</b></span></div>
               <h3>UX/UI Designer & Front-End</h3>
               <p class="jr-org">Ferment Freude <span>· Austrian food startup · volunteer project</span></p>
-              <ul><li>Rebrand: brand strategy, creative direction and guidelines</li><li>User flows, wireframes and Figma prototypes</li><li>Online shop and workshop booking experience</li><li>Contributed to the React front-end with Storybook components</li></ul>
-              <div class="jr-chips"><span>Figma</span><span>Branding</span><span>UX research</span><span>React</span><span>Storybook</span></div>
+              <p class="jr-sum">Rebrand, UX/UI design and front-end work for the shop and workshop booking, in a team with Rafaela Vaz.</p>
               <a class="jr-link" href="project.html?p=ferment-freude" data-hover>Read the case study <b>→</b></a>
             </div>
           </article>
@@ -257,12 +240,11 @@
               <h3>Google AI Essentials</h3>
               <p class="jr-org">Google <span>· Online course on Coursera</span></p>
               <ul><li>Using generative AI tools in everyday work</li><li>Writing effective prompts</li><li>Using AI responsibly</li></ul>
-              <div class="jr-chips"><span>AI tools</span><span>Prompting</span><span>Responsible AI</span></div>
               <a class="cert" href="https://coursera.org/verify/UACAADBH6P6O" target="_blank" rel="noopener" data-hover>
                 <img class="wide" src="assets/docs/google-ai-essentials.jpg" alt="Google AI Essentials course certificate" loading="lazy" width="900" height="687" />
                 <span class="cert-body">
                   <small>Course certificate</small>
-                  <b>Google AI Essentials</b>
+                  <b>Certificate of completion</b>
                   <span class="cert-meta">Google · Coursera · Jul 2025</span>
                   <span class="cert-cta">Verify on Coursera <i aria-hidden="true">↗</i></span>
                 </span>
@@ -277,7 +259,6 @@
               <h3>Web Design Weiterbildung</h3>
               <p class="jr-org">Beam Institute of Technology <span>· Professional training in Germany · team projects</span></p>
               <ul><li>UX research: interviews, surveys and usability reviews</li><li>User flows, wireframes and interactive prototypes in Figma</li><li>Responsive, mobile-first sites with HTML, CSS, JS and Webflow</li><li>Design systems, reusable components and accessibility</li></ul>
-              <div class="jr-chips"><span>UX research</span><span>Figma</span><span>Webflow</span><span>Accessibility</span></div>
               <a class="cert" href="assets/docs/Alaa_Shaheen_Certificate_Interactive_Web_Designer.pdf" target="_blank" rel="noopener" data-hover>
                 <img src="assets/docs/certificate-preview.jpg" alt="Certificate: Interactive Web Designer, Beam Institute of Technology" loading="lazy" width="639" height="900" />
                 <span class="cert-body">
@@ -298,7 +279,6 @@
               <h3>Freelance Web Developer</h3>
               <p class="jr-org">Self-employed <span>· Client projects</span></p>
               <ul><li>Turned business requirements into responsive web interfaces</li><li>Web application development and maintenance</li><li>Usability and consistency across devices and screen sizes</li></ul>
-              <div class="jr-chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span></div>
               
             </div>
           </article>
@@ -310,7 +290,6 @@
               <h3>Computer System Engineering</h3>
               <p class="jr-org">Al-Azhar University <span>· Degree</span></p>
               <ul><li>The engineering foundation behind my design work: I understand how the things I design get built</li></ul>
-              <div class="jr-chips"><span>Engineering</span><span>Problem solving</span></div>
               <div class="cert static">
                 <span class="cert-ic" aria-hidden="true">🎓</span>
                 <span class="cert-body">
@@ -325,11 +304,9 @@
         </div>
 
         <div class="toolbox">
-          <div class="tb-card reveal"><span class="tb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 4.6L18.5 9l-4.6 1.9L12 15.5l-1.9-4.6L5.5 9l4.6-1.4z"/></svg></span><h3>UX/UI design</h3><div class="tags"><span>Figma</span><span>User flows</span><span>Wireframing</span><span>Prototyping</span><span>Responsive UI</span><span>Visual design</span></div></div>
+          <div class="tb-card reveal"><span class="tb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 4.6L18.5 9l-4.6 1.9L12 15.5l-1.9-4.6L5.5 9l4.6-1.4z"/></svg></span><h3>UX/UI design</h3><div class="tags"><span>User flows</span><span>Wireframing</span><span>Prototyping</span><span>Responsive UI</span><span>Visual design</span></div></div>
           <div class="tb-card reveal"><span class="tb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg></span><h3>UX research</h3><div class="tags"><span>Interviews</span><span>Surveys</span><span>Usability feedback</span><span>Requirements</span><span>A/B testing</span></div></div>
-          <div class="tb-card reveal"><span class="tb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></svg></span><h3>Systems &amp; code</h3><div class="tags"><span>Design systems</span><span>Brand guidelines</span><span>Accessibility</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Webflow</span><span>React</span><span>Storybook</span></div></div>
-          <div class="tb-card lang reveal"><span class="tb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><h3>Languages</h3>
-            <div class="langs"><div><b>German</b><span>B2</span></div><div><b>English</b><span>B2</span></div></div></div>
+          <div class="tb-card reveal"><span class="tb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></svg></span><h3>Systems &amp; quality</h3><div class="tags"><span>Design systems</span><span>Brand guidelines</span><span>Accessibility</span><span>Responsive design</span></div></div>
         </div>
       </div>
     </section>
@@ -377,8 +354,8 @@
     </div>
   </footer>
 
-  <script src="assets/i18n.js"></script>
-  <script src="assets/projects.js"></script>
+  <script src="assets/i18n.js?v=20261112b"></script>
+  <script src="assets/projects.js?v=20261112b"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script>
@@ -664,7 +641,6 @@
 
       // About: words ink in
       gsap.to(".about-text .w", { opacity: 1, stagger: .05, ease: "none", scrollTrigger: { trigger: "#aboutText", start: "top 80%", end: "bottom 50%", scrub: true } });
-      gsap.from(".note", { rotate: -14, x: -60, duration: 1.2, ease: "back.out(1.4)", scrollTrigger: { trigger: ".note", start: "top 85%" } });
 
       // Counters
       document.querySelectorAll("[data-count]").forEach(n => {
@@ -702,7 +678,6 @@
         gsap.from(it.querySelector(".jr-node"), { scale: 0, rotate: -90, duration: .8, ease: "back.out(2)", scrollTrigger: { trigger: it, start: "top 85%" } });
         gsap.from(it.querySelector(".jr-year"), { y: 30, opacity: 0, duration: 1, ease: "power3.out", scrollTrigger: { trigger: it, start: "top 85%" } });
       });
-      gsap.from(".jr-facts > div", { y: 30, opacity: 0, duration: .8, stagger: .1, ease: "power3.out", scrollTrigger: { trigger: ".jr-facts", start: "top 88%" } });
 
       // Footer: calm fade-up
       gsap.from(".mf-intro > *", { y: 24, opacity: 0, duration: .9, stagger: .07, ease: "power3.out", scrollTrigger: { trigger: ".mfoot", start: "top 85%" } });

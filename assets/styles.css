@@ -705,3 +705,11 @@ a, button, [role="button"], .chip, .pola, label { cursor: pointer; }
   .cert small { letter-spacing: .1em; font-size: 10px; }
   .cert b { font-size: 15.5px; }
 }
+/* Home without repeats */
+.about-grid.solo { grid-template-columns: 1fr; max-width: 980px; }
+.stats { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 900px) { .stats { grid-template-columns: 1fr 1fr; } }
+.toolbox { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 1000px) { .toolbox { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .toolbox { grid-template-columns: 1fr; } }
+.jr-sum { color: var(--body); font-size: 15.5px; }
