@@ -238,7 +238,7 @@ window.PROJECTS = (function () {
       highlights: ["An open menu book on a marble table: leather cover, gold corners, framed paper pages", "3D page turns, forward and back", "A flour-and-sparkle particle effect drawn on canvas", "Autoplay, plus tap, swipe and arrow-key navigation", "No build step and no dependencies"],
       tags: ["Interaction design", "Animation", "Front-end", "Canvas"],
       videoFile: "assets/work/aurelle/aurelle-demo.mp4",
-      images: ["assets/work/aurelle/desktop-lava-cake.jpg", "assets/work/aurelle/mobile-cheesecake.jpg"]
+      images: []
     },
     {
       slug: "grove", tldr: { problem: "Plant shopping and plant care usually live in separate places, which is hard for beginners.", role: "UX research and UI design.", result: "An all-in-one app: plant store plus a photo-based care assistant that spots pests and diseases." }, behance: "230573965/Grove-Plant-Shop-Care-App-UX-Case-Study",

@@ -669,11 +669,11 @@
           <div class="sec-head" style="text-align:center">
             <span class="pill reveal">The case study</span>
             <h2 class="sec-title heavy reveal">Inside the <span class="script">project</span></h2>
-            <p class="reveal" style="color:var(--muted); margin-top:14px">Click any board to view it full size.</p>
+            ${p.images.length ? `<p class="reveal" style="color:var(--muted); margin-top:14px">Click any board to view it full size.</p>` : ""}
           </div>
           ${p.videoFile ? `<div class="video-frame reveal"><span class="tape"></span><video class="vfile" src="${p.videoFile}" autoplay muted loop playsinline controls preload="metadata" aria-label="${esc(p.title)} demo video"></video></div>` : ""}
           ${p.video ? `<div class="video-frame reveal"><span class="tape"></span><div class="ratio"><iframe src="${p.video}" title="${esc(p.title)} video" allow="fullscreen" loading="lazy"></iframe></div></div>` : ""}
-          <div class="gallery" id="gallery">${shots}</div>
+          ${p.images.length ? `<div class="gallery" id="gallery">${shots}</div>` : ""}
         </div>
       </section>
       <div class="tear" data-tear="strip" data-fiber="tint"></div>`}
