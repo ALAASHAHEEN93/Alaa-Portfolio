@@ -283,6 +283,9 @@
     .testi-src { margin-left: auto; font-size: 13.5px; font-weight: 600; padding: 8px 14px; border-radius: 999px; background: var(--paper); transition: background .3s; }
     .testi-src:hover { background: var(--soft-deep); }
     @media (max-width: 560px) { .testi-src { margin-left: 0; } }
+    .photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .photo-grid .shot img { aspect-ratio: 4 / 5; object-fit: cover; min-height: 0; }
+    @media (max-width: 700px) { .photo-grid { grid-template-columns: 1fr 1fr; gap: 10px; } }
     .lightbox { position: fixed; inset: 0; z-index: 120; background: color-mix(in srgb, var(--ink) 88%, transparent); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); display: none; overflow: auto; padding: 70px 16px 40px; }
     .lightbox.open { display: block; }
     .lightbox img { width: min(1300px, 100%); height: auto; margin: 0 auto; background: #fff; box-shadow: 0 30px 80px rgba(0,0,0,.4); }
@@ -498,7 +501,7 @@
             <div class="types${b.typeBoards ? "" : " solo"}"><div class="type-list">${b.type.map(t => `<div class="type-row reveal"><b>${esc(t[0])}</b><span>${esc(t[1])}</span></div>`).join("")}</div>
               ${b.typeBoards ? `<div class="type-boards">${b.typeBoards.map((src, k) => `<div class="reveal">${shot(src, p.title + " typography guideline " + (k + 1))}</div>`).join("")}</div>` : ""}</div></div>`;
         if (b.logo) inner += `<div class="b-block"><div class="b-label reveal"><h3>Logo &amp; merchandise</h3><span>The mark on totes and in-store signage</span></div><div class="bgrid g4">${b.logo.map((src, k) => `<div class="reveal">${shot(src, p.title + " logo application " + (k + 1))}</div>`).join("")}</div></div>`;
-        if (b.photo) inner += `<div class="b-block"><div class="b-label reveal"><h3>Photography direction</h3><span>Warm, honest and hands-on: real workshops and real jars</span></div><div class="masonry">${b.photo.map((src, k) => `<div class="reveal">${shot(src, p.title + " photography " + (k + 1))}</div>`).join("")}</div></div>`;
+        if (b.photo) inner += `<div class="b-block"><div class="b-label reveal"><h3>Photography direction</h3><span>Warm, honest and hands-on: real workshops and real jars</span></div><div class="photo-grid">${b.photo.map((src, k) => `<div class="reveal">${shot(src, p.title + " photography " + (k + 1))}</div>`).join("")}</div></div>`;
         if (b.print) inner += `<div class="b-block"><div class="b-label reveal"><h3>Print</h3><span>Posters and flyers for workshops</span></div><div class="bgrid g4">${b.print.map((src, k) => `<div class="reveal">${shot(src, p.title + " print design " + (k + 1))}</div>`).join("")}</div></div>`;
         if (b.social) inner += `<div class="b-block"><div class="b-label reveal"><h3>Social media</h3><span>Drag or scroll sideways →</span></div><div class="carousel" id="carousel">${b.social.map((src, k) => shot(src, p.title + " social media post " + (k + 1))).join("")}</div></div>`;
         out.push(`<div class="tear" data-tear="strip"></div><section class="sec brand" id="brand" style="background:var(--tint)"><div class="wrap">${inner}</div></section><div class="tear" data-tear="strip" data-fiber="tint"></div>`);

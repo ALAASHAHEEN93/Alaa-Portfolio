@@ -78,7 +78,7 @@ window.PROJECTS = (function () {
           type: [["Fonseca", "Headlines & titles"], ["Bricolage Grotesque", "Display and calls to attention"], ["Balto", "Body text & captions"], ["DIN Next", "Secondary typeface"]],
           typeBoards: ["assets/brand/brand_jpg_0.jpg", "assets/brand/brand_jpg_1.jpg"],
           logo: ["assets/brand/brand_jpg_16.jpg", "assets/brand/brand_jpg_17.jpg", "assets/brand/brand_jpg_14.jpg", "assets/brand/brand_jpg_29.jpg"],
-          photo: ["assets/brand/brand_jpg_6.jpg", "assets/brand/brand_jpg_12.jpg", "assets/brand/brand_jpg_10.jpg", "assets/brand/brand_jpg_4.jpg", "assets/brand/brand_jpg_13.jpg", "assets/brand/brand_jpg_2.jpg", "assets/brand/brand_jpg_9.jpg", "assets/brand/brand_jpg_11.jpg", "assets/brand/brand_jpg_5.jpg"],
+          photo: ["assets/brand/brand_jpg_6.jpg", "assets/brand/brand_jpg_12.jpg", "assets/brand/brand_jpg_10.jpg", "assets/brand/brand_jpg_4.jpg", "assets/brand/brand_jpg_13.jpg", "assets/brand/brand_jpg_2.jpg"],
           print: ["assets/brand/brand_jpg_15.jpg", "assets/brand/brand_jpg_19.jpg", "assets/brand/brand_jpg_20.jpg", "assets/brand/brand_jpg_21.jpg"],
           social: ["assets/brand/brand_jpg_22.jpg", "assets/brand/brand_jpg_25.jpg", "assets/brand/brand_jpg_23.jpg", "assets/brand/brand_jpg_26.jpg", "assets/brand/brand_jpg_27.jpg", "assets/brand/brand_jpg_28.jpg", "assets/brand/brand_jpg_24.jpg"]
         },
