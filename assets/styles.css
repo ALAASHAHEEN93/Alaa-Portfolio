@@ -713,3 +713,7 @@ a, button, [role="button"], .chip, .pola, label { cursor: pointer; }
 @media (max-width: 1000px) { .toolbox { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .toolbox { grid-template-columns: 1fr; } }
 .jr-sum { color: var(--body); font-size: 15.5px; }
+.mf-card:hover .mf-go.dl { transform: translateY(3px); }
+.mf-card .mf-mail { font-size: clamp(15px, 1.55vw, 21px); white-space: nowrap; overflow-wrap: normal; }
+@media (max-width: 520px) { .mf-card .mf-mail { font-size: clamp(13px, 4.1vw, 16px); } }
+@media (max-width: 520px) { .mf-body b { white-space: normal; overflow: visible; overflow-wrap: anywhere; } }
