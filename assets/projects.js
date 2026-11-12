@@ -19,12 +19,11 @@ window.PROJECTS = (function () {
         "Fermentfreude is an Austrian food startup dedicated to making fermentation accessible for both everyday use and the food service industry. The platform explains complex processes in a simple, approachable way, removing uncertainty and encouraging people to try it.",
         "Together with developer Rafaela Vaz, I worked on the UI/UX design and the brand, and contributed to the React implementation. The UX focused on a clear, intuitive journey for exploring workshops, products and educational content. The UI reflects the brand’s natural, experimental character through thoughtful typography, spacing and visual hierarchy, and the React build keeps the experience smooth and consistent across devices."
       ],
-      highlights: ["Brand strategy & creative direction with the owner", "Full brand guidelines: type, graphics, photography", "Clear journey for workshops, products and learning", "Clean, modern UI with strong hierarchy", "Responsive React build aligned with the design system"],
+      highlights: ["Rebrand strategy & creative direction with the owner", "Full brand guidelines: type, graphics, photography", "Clear journey for workshops, products and learning", "Clean, modern UI with strong hierarchy", "Responsive React build aligned with the design system"],
       tags: ["Branding", "Logo design", "Visual identity", "Web design", "React"],
       video: "https://www-ccv.adobe.io/v1/player/ccv/4r-2Ty5PqgT/embed?api_key=behance1&bgcolor=%23191919",
       beforeAfter: {
         intro: "The old Wix site listed workshop dates in a plain table. The new site guides visitors through workshops, products and learning with a clearer structure and a calmer, more modern look.",
-        credit: "Screenshots: Rafaela Vaz · älma studio",
         pairs: [
           { label: "Home page", before: "assets/ferment-before-after/ff-wix-home.jpg", after: "assets/ferment-before-after/ff-site-home-kombucha.jpg" },
           { label: "Workshops", before: "assets/ferment-before-after/ff-wix-dates.jpg", after: "assets/ferment-before-after/ff-site-workshops.jpg" }
@@ -55,23 +54,26 @@ window.PROJECTS = (function () {
         },
         roles: [
           ["Brand strategy & direction", "Kick-off with the owner, brand strategy and full brand guidelines: type, graphics and photography."],
-          ["UX research", "Interviews, surveys and usability feedback to understand where customers got stuck."],
+          ["UX & usability", "Usability feedback and analytics to understand where customers got stuck on the old site."],
           ["UX/UI design", "User flows, wireframes and high-fidelity Figma prototypes for the shop, workshops and learning content."],
           ["Front-end contribution", "Contributed to the React implementation, with reusable components documented in Storybook."]
         ],
         process: [
           ["Kick-off", "Brand strategy and creative direction with the owner."],
-          ["Research", "Stakeholder and user interviews, online surveys and an analytics review."],
+          ["Audit", "Reviewed the existing brand and website to see what to keep and what to change."],
           ["Brand system", "Typography, colour, graphics, photography direction and logo applications."],
           ["UX & UI", "Flows, wireframes and Figma prototypes for shop, workshops and learning."],
           ["Build", "React front-end with reusable Storybook components."],
           ["Iterate", "Usability feedback, hypotheses and A/B tests, ongoing."]
         ],
         research: {
-          methods: ["Stakeholder interviews with the owner", "User interviews", "Online surveys", "Usability feedback sessions", "Analytics review of drop-off points", "A/B testing"],
+          title: ["Feedback", "& data"],
+          intro: "This was a rebrand, not a brand from scratch: the brand already existed. Instead of starting over, we used usability feedback and data to decide what to improve, then tested the changes.",
+          methods: ["Audit of the existing brand and website", "Usability feedback sessions", "Analytics review of drop-off points", "A/B testing"],
           loop: ["Hypothesis", "Test", "Learn"]
         },
         brand: {
+          text: "A rebrand of the existing brand: full guidelines for typography, colour, graphics and photography, so it looks the same on the website, in the shop and on social media.",
           palette: [["Cream", "#FAF2E0"], ["Charcoal", "#2D2F2C"], ["Sage", "#B0C7B8"], ["Mustard", "#E6BE68"]],
           type: [["Fonseca", "Headlines & titles"], ["Bricolage Grotesque", "Display and calls to attention"], ["Balto", "Body text & captions"], ["DIN Next", "Secondary typeface"]],
           typeBoards: ["assets/brand/brand_jpg_0.jpg", "assets/brand/brand_jpg_1.jpg"],
@@ -260,7 +262,7 @@ window.PROJECTS = (function () {
         "Fermentfreude ist ein österreichisches Food-Startup, das Fermentation für den Alltag und für die Gastronomie zugänglich macht. Die Plattform erklärt komplexe Prozesse einfach und nahbar, nimmt Unsicherheit und lädt dazu ein, es selbst auszuprobieren.",
         "Gemeinsam mit Rafaela Vaz (Entwicklung) habe ich am UI/UX Design und an der Marke gearbeitet und zur React-Umsetzung beigetragen. Die UX setzte auf eine klare, intuitive Journey durch Workshops, Produkte und Lerninhalte. Das UI spiegelt den natürlichen, experimentellen Charakter der Marke durch durchdachte Typografie, Weißraum und visuelle Hierarchie, und die React-Umsetzung hält das Erlebnis auf allen Geräten flüssig und konsistent."
       ],
-      highlights: ["Markenstrategie & Creative Direction mit der Geschäftsleitung", "Vollständige Brand Guidelines: Schrift, Grafik, Fotografie", "Klare Journey für Workshops, Produkte und Wissen", "Klares, modernes UI mit starker Hierarchie", "Responsive React-Umsetzung im Einklang mit dem Designsystem"],
+      highlights: ["Rebranding-Strategie & Creative Direction mit der Geschäftsleitung", "Vollständige Brand Guidelines: Schrift, Grafik, Fotografie", "Klare Journey für Workshops, Produkte und Wissen", "Klares, modernes UI mit starker Hierarchie", "Responsive React-Umsetzung im Einklang mit dem Designsystem"],
       tags: ["Branding", "Logo-Design", "Visuelle Identität", "Webdesign", "React"],
       tldr: { problem: "Fermentation wirkt kompliziert, und Shop, Workshops und Markengeschichte waren voneinander getrennt.", role: "UX/UI Design, Marke und Front-End-Beitrag im Zweierteam, vom ersten Gespräch bis zum Live-Betrieb.", result: "Eine einheitliche Marke und eine Live-Website auf fermentfreude.at, mit laufender UX/UI- und Front-End-Arbeit." },
       team: { text: "Ein Teamprojekt mit Rafaela Vaz (Entwicklung), ermöglicht durch ITCareerHub und Science Park Graz." },
@@ -268,7 +270,6 @@ window.PROJECTS = (function () {
       facts: [["Rolle", "UX/UI, Marke & Front-End"], ["Zeitraum", "Seit Januar 2026"], ["Kunde", "Österreichisches Food-Startup"], ["Tools", "Figma · React · Storybook · KI-Tools"]],
       beforeAfter: {
         intro: "Die alte Wix-Website listete Workshop-Termine in einer schlichten Tabelle. Die neue Website führt durch Workshops, Produkte und Wissen, mit klarerer Struktur und einem ruhigeren, moderneren Look.",
-        credit: "Screenshots: Rafaela Vaz · älma studio",
         pairs: [
           { label: "Startseite", before: "assets/ferment-before-after/ff-wix-home.jpg", after: "assets/ferment-before-after/ff-site-home-kombucha.jpg" },
           { label: "Workshops", before: "assets/ferment-before-after/ff-wix-dates.jpg", after: "assets/ferment-before-after/ff-site-workshops.jpg" }
@@ -286,13 +287,14 @@ window.PROJECTS = (function () {
         },
         roles: [
           ["Markenstrategie & Direction", "Kick-off mit der Geschäftsleitung, Markenstrategie und vollständige Brand Guidelines für Schrift, Grafik und Fotografie."],
-          ["UX-Research", "Interviews, Umfragen und Usability-Feedback, um zu verstehen, wo Kund:innen hängen bleiben."],
+          ["UX & Usability", "Usability-Feedback und Analytics, um zu verstehen, wo Kund:innen auf der alten Website hängen blieben."],
           ["UX/UI Design", "User Flows, Wireframes und High-Fidelity-Prototypen in Figma für Shop, Workshops und Lerninhalte."],
           ["Front-End-Beitrag", "Beitrag zur React-Umsetzung, mit wiederverwendbaren, in Storybook dokumentierten Komponenten."]
         ],
-        process: [["Kick-off", "Markenstrategie und Creative Direction mit der Geschäftsleitung."], ["Research", "Stakeholder- und Nutzerinterviews, Online-Umfragen und Analytics-Review."], ["Markensystem", "Typografie, Farbe, Grafik, Bildsprache und Logo-Anwendungen."], ["UX & UI", "Flows, Wireframes und Figma-Prototypen für Shop, Workshops und Wissen."], ["Umsetzung", "React-Front-End mit wiederverwendbaren Storybook-Komponenten."], ["Iteration", "Usability-Feedback, Hypothesen und A/B-Tests, laufend."]],
-        research: { methods: ["Stakeholder-Interviews mit der Geschäftsleitung", "Nutzerinterviews", "Online-Umfragen", "Usability-Feedback-Sessions", "Analytics-Review der Absprungstellen", "A/B-Tests"], loop: ["Hypothese", "Test", "Lernen"] },
+        process: [["Kick-off", "Markenstrategie und Creative Direction mit der Geschäftsleitung."], ["Analyse", "Bestehende Marke und Website geprüft: was bleibt, was sich ändert."], ["Markensystem", "Typografie, Farbe, Grafik, Bildsprache und Logo-Anwendungen."], ["UX & UI", "Flows, Wireframes und Figma-Prototypen für Shop, Workshops und Wissen."], ["Umsetzung", "React-Front-End mit wiederverwendbaren Storybook-Komponenten."], ["Iteration", "Usability-Feedback, Hypothesen und A/B-Tests, laufend."]],
+        research: { title: ["Feedback", "& Daten"], intro: "Das war ein Rebranding, keine Marke von null: Die Marke gab es bereits. Statt neu anzufangen, haben wir mit Usability-Feedback und Daten entschieden, was wir verbessern, und die Änderungen getestet.", methods: ["Analyse der bestehenden Marke und Website", "Usability-Feedback-Sessions", "Analytics-Review der Absprungstellen", "A/B-Tests"], loop: ["Hypothese", "Test", "Lernen"] },
         brand: {
+          text: "Ein Rebranding der bestehenden Marke: vollständige Guidelines für Typografie, Farbe, Grafik und Fotografie, damit sie auf der Website, im Laden und auf Social Media gleich aussieht.",
           palette: [["Creme", "#FAF2E0"], ["Anthrazit", "#2D2F2C"], ["Salbei", "#B0C7B8"], ["Senf", "#E6BE68"]],
           type: [["Fonseca", "Headlines & Titel"], ["Bricolage Grotesque", "Display und Blickfang"], ["Balto", "Fließtext & Bildunterschriften"], ["DIN Next", "Sekundärschrift"]]
         },
