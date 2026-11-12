@@ -10,7 +10,7 @@ window.PROJECTS = (function () {
   const local = u => LOCAL[u] || u;
   const list = [
     {
-      slug: "ferment-freude", tldr: { problem: "Fermentation feels complicated, and the brand’s shop, workshops and story felt disconnected.", role: "UX/UI design, brand and front-end contribution in a team of two, from first talk to production.", result: "A unified brand and a live website at fermentfreude.at, with ongoing UX/UI and front-end work." }, behance: "246062163/ferment-freude-Brand-Identity-Website-UX",
+      slug: "ferment-freude", hideBoards: true, tldr: { problem: "Fermentation feels complicated, and the brand’s shop, workshops and story felt disconnected.", role: "UX/UI design, brand and front-end contribution in a team of two, from first talk to production.", result: "A unified brand and a live website at fermentfreude.at, with ongoing UX/UI and front-end work." }, behance: "246062163/ferment-freude-Brand-Identity-Website-UX",
       title: "ferment freude", tagline: "Brand identity & website UX", kind: "web", kindLabel: "Brand identity · UI/UX · Next.js", year: "2026",
       role: "UI/UX design, brand & front-end (team project)", platform: "Responsive web", tools: ["Figma", "Webflow", "Next.js", "TypeScript", "Git & GitHub"],
       live: "https://www.fermentfreude.at/",

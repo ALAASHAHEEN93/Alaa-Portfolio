@@ -663,7 +663,7 @@
           ${p.beforeAfter.credit ? `<p class="ba-credit reveal">${esc(p.beforeAfter.credit)}</p>` : ""}
         </div>
       </section>` : ""}
-      <div class="tear" data-tear="strip"></div>
+      ${p.hideBoards ? "" : `<div class="tear" data-tear="strip"></div>
       <section class="sec" id="boards" style="background:var(--tint)">
         <div class="wrap">
           <div class="sec-head" style="text-align:center">
@@ -676,7 +676,7 @@
           <div class="gallery" id="gallery">${shots}</div>
         </div>
       </section>
-      <div class="tear" data-tear="strip" data-fiber="tint"></div>
+      <div class="tear" data-tear="strip" data-fiber="tint"></div>`}
 
       ${p.story ? outcomeHTML(p) : ""}
 
