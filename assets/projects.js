@@ -197,6 +197,46 @@ window.PROJECTS = (function () {
       }
     },
     {
+      slug: "coffee-lab", behance: null, repo: "https://github.com/ALAASHAHEEN93/Coffee-Lab",
+      tldr: { problem: "Most coffee shops online look the same and don’t help you understand how a coffee will taste.", role: "Concept, UI design and full-stack development, on my own.", result: "A bilingual shop in Next.js and Payload CMS with interactive flavour tools, a cart and user accounts." },
+      title: "CoffeeLab", tagline: "A molecular roastery online shop", kind: "web", kindLabel: "E-commerce · Design & full-stack", year: "2026",
+      role: "UI design & full-stack development", platform: "Responsive web · German & English", tools: ["Next.js", "TypeScript", "Payload CMS", "MongoDB"],
+      cover: "assets/work/coffee-lab/cover.webp",
+      overview: [
+        "CoffeeLab is a specialty coffee shop designed as a molecular laboratory: every coffee is a “specimen” you can explore, tune and compare before you buy.",
+        "I designed and built it end to end, from the dark roastery look to a Next.js front-end with a Payload CMS back-end, accounts, a cart and content in German and English."
+      ],
+      highlights: ["A bold lab concept for a coffee brand", "Live flavour radar with roast and taste sliders", "Espresso or filter: one switch changes the tasting notes", "Product filters, cart drawer, login and sign-up", "All content editable in Payload CMS, in German and English"],
+      tags: ["E-commerce", "UI design", "Next.js", "Payload CMS", "Full-stack"],
+      images: ["assets/work/coffee-lab/00-hero.webp", "assets/work/coffee-lab/01-roastery.webp", "assets/work/coffee-lab/02-cart.webp", "assets/work/coffee-lab/03-precision-lab.webp", "assets/work/coffee-lab/04-blendingsection.webp", "assets/work/coffee-lab/05-vault.webp", "assets/work/coffee-lab/06-blending-genome.webp", "assets/work/coffee-lab/07-archives.webp", "assets/work/coffee-lab/08-operations.webp", "assets/work/coffee-lab/09-mobile.webp", "assets/work/coffee-lab/10-login.webp"],
+      facts: [["Role", "UI design & full-stack"], ["Platform", "Responsive web · DE & EN"], ["Built with", "Next.js · TypeScript · Payload CMS"], ["Year", "2026"]],
+      story: {
+        challenge: {
+          statement: "Specialty coffee shops online all look alike: a grid of bags and a few tasting notes. CoffeeLab lets you explore a coffee before you buy it.", em: "explore",
+          points: [["A brand you remember", "A bold lab concept, with specimens, protocols and archives instead of a generic shop."], ["Taste before you buy", "Interactive tools show how roast level and brew method change the flavour."], ["A real shop behind it", "Filters, a cart, accounts and a checkout step, not just a landing page."], ["Editable in two languages", "All content lives in a CMS, in German and English."]]
+        },
+        rolesTitle: ["From concept", "to code"], rolesText: "I designed and built CoffeeLab on my own, from the visual concept to the deployed app.",
+        roles: [["Concept & UI design", "The lab theme, the dark roastery palette, typography and every section of the page."], ["Interaction design", "The flavour radar, roast slider, espresso and filter switch, and the blending chamber."], ["Front-end", "Next.js and React with TypeScript: product filters, a cart drawer and responsive layouts."], ["CMS & back-end", "Payload CMS with MongoDB: editable home content, products, user accounts, German and English."]],
+        featuresTitle: ["Walk", "through the lab"], featuresText: "Eight moments from the shop, from the first screen to the cart.",
+        features: [
+          { title: "A lab, not a shop window", board: 0, text: "The hero sets the tone: a molecular roastery. A sticky switch for espresso or filter stays on screen and changes the tasting notes across the page." },
+          { title: "Featured specimens", board: 1, text: "Coffees as lab specimens, with filters for bestsellers, single origins, espresso blends and rare varietals. Each card shows tasting tags, rating and price." },
+          { title: "Add without leaving", board: 2, text: "Adding a coffee opens a slide-in cart with the item, quantity and subtotal, so shoppers can keep browsing." },
+          { title: "Tune the flavour", board: 3, text: "Sliders for roast, acidity, body, sweetness and complexity drive a live flavour radar, so you see a profile instead of reading about it." },
+          { title: "The blending chamber", board: 4, text: "Pick an expert blend or assemble your own. The tasting notes change with the brew method." },
+          { title: "The classified vault", board: 5, text: "Rare micro-lots presented as sealed protocols with cupping scores, origin, roast and flavour notes." },
+          { title: "Blend analysis", board: 6, text: "A detailed view for each blend: origins, sensory scores and stability, with Add to cart right next to the data." },
+          { title: "Same lab, pocket size", board: 9, text: "Navigation, filters and product cards reflow for phones, with the same dark, calm look." }
+        ],
+        brand: { title: ["Dark roast,", "copper light"], text: "A near-black roastery background with warm copper accents, an elegant serif for headlines and a clean sans-serif for data and UI.",
+          palette: [["Roast black", "#080706"], ["Foam", "#F6F2EC"], ["Crema", "#D8CEC3"], ["Copper", "#C78F6F"], ["Bronze", "#A67C52"]],
+          type: [["Cormorant Garamond", "Headlines and product names"], ["Inter / system sans", "UI, labels and body text"]] },
+        decisionsTitle: ["Key decisions", "Built to", "last"],
+        decisions: [["Content in a CMS, not in code", "Every text on the home page lives in a Payload CMS global, so content can change without a developer."], ["Two languages, one toggle", "German and English content per field, with a DE / EN toggle that remembers the choice."], ["Never a blank page", "If the database is unavailable, the site falls back to built-in content instead of breaking."], ["Accounts and cart", "Login, sign-up and an account page built on Payload’s authentication, plus a shared cart across the page."]],
+        outcome: { title: ["Designed", "and built"], points: ["A complete brand and UI concept", "A working Next.js shop with cart and accounts", "Content editable in a CMS, in German and English", "Responsive on desktop and mobile"], ongoing: "CoffeeLab is a portfolio project: products, prices, ratings and figures are sample content. The code is on GitHub." }
+      }
+    },
+    {
       slug: "caltrack", tldr: { problem: "Understanding and managing your nutrition every day can feel complicated.", role: "UX research and UI design for mobile and tablet.", result: "An AI-powered app concept: snap a meal for instant nutrition, personal meal plans and visual progress." }, behance: "238047517/CalTrack-AI-Calorie-Diet-App-UX-Case-Study",
       title: "CalTrack", tagline: "AI calorie & diet app", kind: "app", kindLabel: "Mobile app · UX case study", year: "2025",
       role: "UX research & UI design", platform: "Mobile & tablet", tools: ["Figma"],
@@ -354,6 +394,39 @@ window.PROJECTS = (function () {
   ];
   // German version of each case study (used when the site is in DE). Anything left out falls back to English.
   const DE = {
+    "coffee-lab": {
+      tagline: "Ein Onlineshop als molekulare Rösterei", kindLabel: "E-Commerce · Design & Full-Stack", role: "UI Design & Full-Stack-Entwicklung", platform: "Responsive Website · Deutsch & Englisch",
+      tldr: { problem: "Die meisten Kaffee-Shops online sehen gleich aus und helfen nicht zu verstehen, wie ein Kaffee schmeckt.", role: "Konzept, UI Design und Full-Stack-Entwicklung, eigenständig.", result: "Ein zweisprachiger Shop mit Next.js und Payload CMS, mit interaktiven Geschmacks-Tools, Warenkorb und Nutzerkonten." },
+      overview: ["CoffeeLab ist ein Specialty-Coffee-Shop, gestaltet als molekulares Labor: Jeder Kaffee ist eine „Probe“, die man vor dem Kauf erkunden, einstellen und vergleichen kann.", "Ich habe ihn komplett gestaltet und gebaut, vom dunklen Röstereilook bis zum Next.js-Front-End mit Payload-CMS-Back-End, Konten, Warenkorb und Inhalten auf Deutsch und Englisch."],
+      highlights: ["Ein starkes Laborkonzept für eine Kaffeemarke", "Live-Geschmacksradar mit Röst- und Geschmacksreglern", "Espresso oder Filter: Ein Schalter ändert die Geschmacksnoten", "Produktfilter, Warenkorb-Drawer, Login und Registrierung", "Alle Inhalte in Payload CMS pflegbar, auf Deutsch und Englisch"],
+      tags: ["E-Commerce", "UI Design", "Next.js", "Payload CMS", "Full-Stack"],
+      facts: [["Rolle", "UI Design & Full-Stack"], ["Plattform", "Responsive Web · DE & EN"], ["Gebaut mit", "Next.js · TypeScript · Payload CMS"], ["Jahr", "2026"]],
+      story: {
+        challenge: {
+          statement: "Specialty-Coffee-Shops sehen online alle gleich aus: ein Raster aus Tüten und ein paar Geschmacksnoten. Bei CoffeeLab kann man einen Kaffee erkunden, bevor man ihn kauft.", em: "erkunden",
+          points: [["Eine Marke, die bleibt", "Ein starkes Laborkonzept, mit Proben, Protokollen und Archiven statt eines austauschbaren Shops."], ["Schmecken vor dem Kauf", "Interaktive Tools zeigen, wie Röstgrad und Zubereitung den Geschmack verändern."], ["Ein echter Shop dahinter", "Filter, Warenkorb, Konten und ein Checkout-Schritt, nicht nur eine Landingpage."], ["Pflegbar in zwei Sprachen", "Alle Inhalte liegen in einem CMS, auf Deutsch und Englisch."]]
+        },
+        rolesTitle: ["Vom Konzept", "zum Code"], rolesText: "Ich habe CoffeeLab eigenständig gestaltet und gebaut, vom visuellen Konzept bis zur veröffentlichten App.",
+        roles: [["Konzept & UI Design", "Das Laborthema, die dunkle Röstereipalette, Typografie und jeder Abschnitt der Seite."], ["Interaction Design", "Das Geschmacksradar, der Röstregler, der Espresso-/Filter-Schalter und die Blending-Kammer."], ["Front-End", "Next.js und React mit TypeScript: Produktfilter, Warenkorb-Drawer und responsive Layouts."], ["CMS & Back-End", "Payload CMS mit MongoDB: pflegbare Inhalte, Produkte, Nutzerkonten, Deutsch und Englisch."]],
+        featuresTitle: ["Ein Rundgang", "durch das Labor"], featuresText: "Acht Momente aus dem Shop, vom ersten Screen bis zum Warenkorb.",
+        features: [
+          { title: "Ein Labor, kein Schaufenster", board: 0, text: "Der Hero setzt den Ton: eine molekulare Rösterei. Ein fixierter Schalter für Espresso oder Filter bleibt sichtbar und ändert die Geschmacksnoten auf der ganzen Seite." },
+          { title: "Ausgewählte Proben", board: 1, text: "Kaffees als Laborproben, mit Filtern für Bestseller, Single Origins, Espresso-Blends und seltene Varietäten. Jede Karte zeigt Geschmacksnoten, Bewertung und Preis." },
+          { title: "Hinzufügen, ohne die Seite zu verlassen", board: 2, text: "Ein Kaffee im Warenkorb öffnet einen seitlichen Warenkorb mit Artikel, Menge und Zwischensumme, und man kann weiterstöbern." },
+          { title: "Den Geschmack einstellen", board: 3, text: "Regler für Röstung, Säure, Körper, Süße und Komplexität steuern ein Live-Geschmacksradar: Man sieht das Profil, statt darüber zu lesen." },
+          { title: "Die Blending-Kammer", board: 4, text: "Einen Experten-Blend wählen oder selbst zusammenstellen. Die Geschmacksnoten ändern sich mit der Zubereitung." },
+          { title: "Der geheime Tresor", board: 5, text: "Seltene Microlots als versiegelte Protokolle, mit Cupping-Score, Herkunft, Röstung und Geschmacksnoten." },
+          { title: "Blend-Analyse", board: 6, text: "Eine Detailansicht für jeden Blend: Herkunft, sensorische Werte und Stabilität, mit „In den Warenkorb“ direkt neben den Daten." },
+          { title: "Dasselbe Labor im Taschenformat", board: 9, text: "Navigation, Filter und Produktkarten passen sich an Smartphones an, mit demselben dunklen, ruhigen Look." }
+        ],
+        brand: { title: ["Dunkle Röstung,", "Kupferlicht"], text: "Ein fast schwarzer Röstereihintergrund mit warmen Kupferakzenten, eine elegante Serifenschrift für Headlines und eine klare Sans-Serif für Daten und UI.",
+          palette: [["Röstschwarz", "#080706"], ["Milchschaum", "#F6F2EC"], ["Crema", "#D8CEC3"], ["Kupfer", "#C78F6F"], ["Bronze", "#A67C52"]],
+          type: [["Cormorant Garamond", "Headlines und Produktnamen"], ["Inter / System-Sans", "UI, Labels und Fließtext"]] },
+        decisionsTitle: ["Wichtige Entscheidungen", "Gebaut, um zu", "bleiben"],
+        decisions: [["Inhalte im CMS, nicht im Code", "Jeder Text der Startseite liegt in einem Payload-CMS-Global, Inhalte lassen sich ohne Entwickler:in ändern."], ["Zwei Sprachen, ein Schalter", "Deutsche und englische Inhalte pro Feld, mit einem DE-/EN-Schalter, der die Wahl speichert."], ["Nie eine leere Seite", "Ist die Datenbank nicht erreichbar, zeigt die Seite eingebaute Inhalte, statt abzustürzen."], ["Konten und Warenkorb", "Login, Registrierung und Kontoseite auf Basis der Payload-Authentifizierung, dazu ein gemeinsamer Warenkorb auf der ganzen Seite."]],
+        outcome: { title: ["Gestaltet", "und gebaut"], points: ["Ein komplettes Marken- und UI-Konzept", "Ein funktionierender Next.js-Shop mit Warenkorb und Konten", "Inhalte im CMS pflegbar, auf Deutsch und Englisch", "Responsive auf Desktop und Mobilgeräten"], ongoing: "CoffeeLab ist ein Portfolio-Projekt: Produkte, Preise, Bewertungen und Zahlen sind Beispielinhalte. Der Code liegt auf GitHub." }
+      }
+    },
     "aurelle-bakery": {
       tagline: "Ein Menübuch, in dem jede Seite ein Dessert backt", kindLabel: "Interaktives Web · Front-End", role: "Front-End-Entwicklung & Interaktion", platform: "Responsive Website (Desktop & Mobil)",
       team: { text: "Konzept und Dessert-Bilder aus einem Instagram-Reel von @vexmo_animation. Ich habe das Konzept als funktionierende, interaktive Webseite umgesetzt." },
