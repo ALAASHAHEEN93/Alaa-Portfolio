@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alaashaheen93.github.io/Alaa-Portfolio/sitemap.xml

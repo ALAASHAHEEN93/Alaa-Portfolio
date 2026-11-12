@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page not found · Alaa Shaheen</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="/Alaa-Portfolio/assets/favicon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#d5ddf5" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --soft: #d5ddf5; --soft-deep: #b3c0e8; --red: #55669e; --cream: #f8f7f4; --paper: #ffffff; --ink: #2f3247;
+      --body: color-mix(in srgb, var(--ink) 85%, var(--cream)); --tint: color-mix(in srgb, var(--soft) 45%, var(--cream)); }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { min-height: 100vh; min-height: 100dvh; display: grid; place-items: center; padding: 32px 16px; background: var(--cream); color: var(--ink);
+      font-family: "Plus Jakarta Sans", system-ui, sans-serif; overflow-x: hidden; }
+    body::before { content: ""; position: fixed; inset: auto -20% -40% -20%; height: 70vh; background: radial-gradient(closest-side, var(--soft), transparent); z-index: -1; }
+    .logo { position: fixed; top: 22px; left: 24px; font: italic 30px "Instrument Serif", serif; color: var(--red); text-decoration: none; }
+    main { text-align: center; max-width: 620px; }
+    .num { font: 800 clamp(120px, 30vw, 230px)/.9 "Bricolage Grotesque", sans-serif; letter-spacing: -.06em; color: var(--ink); position: relative; display: inline-block; }
+    .num span { display: inline-block; animation: bob 3.2s ease-in-out infinite; }
+    .num span:nth-child(2) { color: var(--red); animation-delay: .25s; }
+    .num span:nth-child(3) { animation-delay: .5s; }
+    @keyframes bob { 0%, 100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-10px) rotate(-3deg); } }
+    .tag { font: italic clamp(30px, 6vw, 44px)/1.1 "Instrument Serif", serif; color: var(--red); margin-top: 6px; }
+    p.txt { color: var(--body); font-size: 17px; line-height: 1.6; margin: 18px auto 30px; max-width: 46ch; }
+    .btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .b { display: inline-flex; align-items: center; gap: 10px; padding: 14px 24px; border-radius: 999px; font-weight: 700; font-size: 15px; text-decoration: none;
+      border: 1.5px solid var(--ink); background: var(--ink); color: var(--paper); transition: transform .25s, box-shadow .25s; }
+    .b.alt { background: var(--paper); color: var(--ink); }
+    .b:hover { transform: translate(-2px, -3px); box-shadow: 6px 7px 0 var(--soft-deep); }
+    .b:focus-visible { outline: 3px solid var(--red); outline-offset: 4px; }
+    @media (prefers-reduced-motion: reduce) { .num span { animation: none; } }
+  </style>
+</head>
+<body>
+  <a class="logo" href="/Alaa-Portfolio/">Alaa</a>
+  <main>
+    <div class="num" aria-hidden="true"><span>4</span><span>0</span><span>4</span></div>
+    <h1 class="tag" id="t">This page wandered off</h1>
+    <p class="txt" id="d">The link may be old or mistyped. The work is still here, just one click away.</p>
+    <div class="btns">
+      <a class="b" id="b1" href="/Alaa-Portfolio/">Back to home</a>
+      <a class="b alt" id="b2" href="/Alaa-Portfolio/#projects">See all projects</a>
+    </div>
+  </main>
+  <script>
+    (function () {
+      var lang = "en";
+      try { lang = new URLSearchParams(location.search).get("lang") || localStorage.getItem("alaa-lang") || ""; } catch (e) {}
+      if (!lang) lang = (navigator.language || "en").slice(0, 2);
+      if (lang !== "de") return;
+      document.documentElement.lang = "de"; document.title = "Seite nicht gefunden · Alaa Shaheen";
+      document.getElementById("t").textContent = "Diese Seite hat sich verlaufen";
+      document.getElementById("d").textContent = "Der Link ist vielleicht alt oder falsch geschrieben. Die Arbeiten sind aber noch da, nur einen Klick entfernt.";
+      document.getElementById("b1").textContent = "Zur Startseite";
+      document.getElementById("b2").textContent = "Alle Projekte ansehen";
+    })();
+  </script>
+</body>
+</html>

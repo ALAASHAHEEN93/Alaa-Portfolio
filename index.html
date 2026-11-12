@@ -12,6 +12,7 @@
   <meta property="og:title" content="Alaa Shaheen · UX/UI Portfolio" />
   <meta property="og:description" content="UX/UI Designer & Front-End Developer in Cologne. Mobile apps, websites and brand identity, from research to code." />
   <meta property="og:image" content="https://alaashaheen93.github.io/Alaa-Portfolio/assets/og-image.jpg" />
+  <link rel="canonical" href="https://alaashaheen93.github.io/Alaa-Portfolio/" />
   <meta property="og:url" content="https://alaashaheen93.github.io/Alaa-Portfolio/" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -19,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css?v=20261112f" />
+  <link rel="stylesheet" href="assets/styles.css?v=20261112g" />
 </head>
 <body class="loading">
 
@@ -339,7 +340,7 @@
             <div class="mf-body"><small>Behance</small><b>behance.net/alaashaheen16</b><p>All my case studies</p></div>
             <span class="mf-go" aria-hidden="true">↗</span>
           </a>
-          <a class="mf-card" href="assets/docs/Alaa_Shaheen_CV_UXUI_Designer.pdf" download data-hover>
+          <a class="mf-card" href="assets/docs/Alaa_Shaheen_CV_UXUI_Designer.pdf" download data-cv data-hover>
             <span class="mf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 11v6M9 14l3 3 3-3"/></svg></span>
             <div class="mf-body"><small>CV</small><b>Download my CV (PDF)</b><p>Junior UX/UI Designer · 2 pages</p></div>
             <span class="mf-go dl" aria-hidden="true">↓</span>
@@ -359,12 +360,13 @@
     </div>
   </footer>
 
-  <script src="assets/i18n.js?v=20261112f"></script>
-  <script src="assets/projects.js?v=20261112f"></script>
+  <script src="assets/i18n.js?v=20261112g"></script>
+  <script src="assets/projects.js?v=20261112g"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script>
     const T = I18N.T; I18N.apply(document.body); I18N.toggle();
+    if (I18N.lang === "de") document.querySelectorAll("[data-cv]").forEach(a => a.href = "assets/docs/Alaa_Shaheen_Lebenslauf_UXUI_Designer.pdf");
     const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
     const hasGSAP = typeof gsap !== "undefined";
     const fine = matchMedia("(pointer: fine)").matches;
