@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css?v=20261112e" />
+  <link rel="stylesheet" href="assets/styles.css?v=20261112f" />
   <style>
     /* ---------- Case study page ---------- */
     .case-hero { position: relative; padding: 130px 0 120px; }
@@ -198,7 +198,25 @@
     .dec:hover { transform: translateY(-6px); box-shadow: 0 24px 50px -24px color-mix(in srgb, var(--red-deep) 70%, transparent); }
     .dec .num { font-size: 64px; position: absolute; right: 28px; top: 18px; opacity: .35; }
     .dec h3 { font-size: clamp(22px, 2.2vw, 28px); margin-top: 0; max-width: 16ch; }
-    @media (max-width: 760px) { .decs { grid-template-columns: 1fr; } }
+    @media (max-width: 760px) { .decs { grid-template-columns: 1fr; } .dec .num { position: static; display: block; font-size: 44px; margin-bottom: 10px; } }
+    .scr-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .scr { position: relative; border-radius: 24px; padding: 26px 24px 24px; background: var(--paper); border: 1px solid var(--line); transition: transform .45s var(--ease), box-shadow .45s var(--ease); }
+    .scr:hover { transform: translateY(-6px); box-shadow: 0 20px 40px -20px color-mix(in srgb, var(--red-deep) 70%, transparent); }
+    .scr h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; letter-spacing: -.03em; font-size: 20px; line-height: 1.15; margin: 12px 0 8px; }
+    .scr p { color: var(--body); font-size: 15px; }
+    @media (max-width: 1000px) { .scr-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 560px) { .scr-grid { grid-template-columns: 1fr; } }
+    .emp { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .emp-q { background: var(--paper); border: 1px solid var(--line); border-radius: 26px; padding: clamp(24px, 3vw, 36px); }
+    .emp-q:nth-child(odd) { padding-right: clamp(24px, 6vw, 80px); } .emp-q:nth-child(even) { padding-left: clamp(24px, 6vw, 80px); }
+    .emp-q h3 { display: flex; align-items: center; gap: 12px; font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; letter-spacing: -.03em; font-size: 24px; margin-bottom: 14px; }
+    .emp-ic { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: var(--soft); font-size: 19px; }
+    .emp-q ul { list-style: none; display: grid; gap: 10px; }
+    .emp-q li { color: var(--body); font-size: 15px; padding-left: 16px; position: relative; }
+    .emp-q li::before { content: ""; position: absolute; left: 0; top: .6em; width: 6px; height: 6px; border-radius: 50%; background: var(--red); }
+    .emp-core { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 104px; height: 104px; border-radius: 50%; display: grid; place-items: center; text-align: center; background: var(--ink); color: var(--cream); font: italic 26px "Instrument Serif", serif; box-shadow: 0 0 0 10px var(--tint); }
+    .emp-insight { margin-top: 26px; max-width: 760px; color: var(--body); font-size: 17px; }
+    @media (max-width: 760px) { .emp { grid-template-columns: 1fr; } .emp-core { display: none; } .emp-q:nth-child(n) { padding: 24px; } }
 
     .outcome { border-radius: clamp(28px, 4vw, 48px); padding: clamp(36px, 6vw, 80px); background: radial-gradient(ellipse at 90% 0%, var(--red-glow), transparent 55%), var(--soft);
       display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(30px, 5vw, 70px); align-items: center; }
@@ -401,8 +419,8 @@
     <img id="lbImg" alt="" />
   </div>
 
-  <script src="assets/i18n.js?v=20261112e"></script>
-  <script src="assets/projects.js?v=20261112e"></script>
+  <script src="assets/i18n.js?v=20261112f"></script>
+  <script src="assets/projects.js?v=20261112f"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script>
@@ -461,11 +479,18 @@
       </div></section>`);
       }
       if (st.roles) out.push(`<section class="sec" id="role" style="padding-top:0"><div class="wrap">
-        ${sectionHead("My role", "From brand", "to code", "", "I worked across the whole product, from the first idea to the code running in the browser.")}
+        ${sectionHead("My role", (st.rolesTitle || ["From brand", "to code"])[0], (st.rolesTitle || ["From brand", "to code"])[1], "", st.rolesText || "I worked across the whole product, from the first idea to the code running in the browser.")}
         <div class="roles">${st.roles.map((r, k) => `<div class="role reveal"><span class="role-ic">${ROLE_ICONS[k] || ROLE_ICONS[0]}</span><h3>${esc(r[0])}</h3><p>${esc(r[1])}</p><span class="bar"></span></div>`).join("")}</div>
       </div></section>`);
 
 
+      if (st.empathy) { const em = st.empathy; out.push(`<div class="tear" data-tear="strip"></div>
+      <section class="sec" id="empathy" style="background:var(--tint)"><div class="wrap">
+        ${sectionHead("Research", (em.title || ["Inside the user’s", "head"])[0], (em.title || ["Inside the user’s", "head"])[1], "", em.intro || "")}
+        <div class="emp">${em.quads.map(q => `<div class="emp-q reveal"><h3><span class="emp-ic" aria-hidden="true">${q[0]}</span>${esc(q[1])}</h3><ul>${q[2].map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>`).join("")}
+          <div class="emp-core" aria-hidden="true">${esc(em.core || "User")}</div></div>
+        ${em.insight ? `<p class="emp-insight reveal"><b>${esc(em.insight[0])}:</b> ${esc(em.insight[1])}</p>` : ""}
+      </div></section><div class="tear" data-tear="strip" data-fiber="tint"></div>`); }
       if (st.evolution) { const ev = st.evolution; out.push(`<div class="tear" data-tear="strip"></div>
       <section class="sec" id="evolution" style="background:var(--tint)"><div class="wrap">
         ${sectionHead("Project evolution", ev.title[0], ev.title[1], "", ev.intro)}
@@ -528,11 +553,16 @@
           <div class="reveal">${shot(p.images[f.board], p.title + ": " + f.title)}</div></div>`).join("")}</div>
       </div></section>`);
 
+      if (st.screens) { const sc = st.screensTitle || ["Screen by", "screen"]; out.push(`<section class="sec" id="screens"><div class="wrap">
+        ${sectionHead("The experience", sc[0], sc[1], "", st.screensText || "")}
+        <div class="scr-grid">${st.screens.map((x, k) => `<div class="scr reveal"><span class="num">${pad2(k + 1)}</span><h3>${esc(x[0])}</h3><p>${esc(x[1])}</p></div>`).join("")}</div>
+      </div></section>`); }
+
       if (b) {
         const bt = b.title || ["A brand that feels", "natural"];
         let inner = `${sectionHead("Brand system", bt[0], bt[1], "", b.text || "Full brand guidelines for typography, colour, graphics and photography, so the brand looks the same on the website, in the shop and on social media.")}
           <div class="b-block"><div class="b-label reveal"><h3>Colour</h3><span>Click a swatch to copy its hex code</span></div>
-            <div class="palette" style="--cols:${Math.min(b.palette.length, 6)}">${b.palette.map(c => `<button type="button" class="sw" data-hex="${c[1]}" style="background:${c[1]}; color:${isDark(c[1]) ? "#F6F8F8" : "#22262b"}"><span class="cp">Copy</span><b>${esc(c[0])}</b><small>${c[1]}</small></button>`).join("")}</div></div>
+            <div class="palette" style="--cols:${Math.max(4, Math.min(b.palette.length, 6))}">${b.palette.map(c => `<button type="button" class="sw" data-hex="${c[1]}" style="background:${c[1]}; color:${isDark(c[1]) ? "#F6F8F8" : "#22262b"}"><span class="cp">Copy</span><b>${esc(c[0])}</b><small>${c[1]}</small></button>`).join("")}</div></div>
           <div class="b-block"><div class="b-label reveal"><h3>Typography</h3><span>A clear hierarchy from headline to caption</span></div>
             <div class="types${b.typeBoards ? "" : " solo"}"><div class="type-list">${b.type.map(t => `<div class="type-row reveal"><b>${esc(t[0])}</b><span>${esc(t[1])}</span></div>`).join("")}</div>
               ${b.typeBoards ? `<div class="type-boards">${b.typeBoards.map((src, k) => `<div class="reveal">${shot(src, p.title + " typography guideline " + (k + 1))}</div>`).join("")}</div>` : ""}</div></div>`;
@@ -543,10 +573,10 @@
         out.push(`<div class="tear" data-tear="strip"></div><section class="sec brand" id="brand" style="background:var(--tint)"><div class="wrap">${inner}</div></section><div class="tear" data-tear="strip" data-fiber="tint"></div>`);
       }
 
-      if (st.decisions) out.push(`<section class="sec" id="decisions"><div class="wrap">
-        ${sectionHead("Key design decisions", "What I", "changed", "")}
+      if (st.decisions) { const dt = st.decisionsTitle || ["Key design decisions", "What I", "changed"]; out.push(`<section class="sec" id="decisions"><div class="wrap">
+        ${sectionHead(dt[0], dt[1], dt[2], "", st.decisionsText || "")}
         <div class="decs">${st.decisions.map((d, k) => `<div class="dec reveal"><span class="num">${pad2(k + 1)}</span><h3>${esc(d[0])}</h3><p>${esc(d[1])}</p></div>`).join("")}</div>
-      </div></section>`);
+      </div></section>`); }
 
       if (st.validation) out.push(`<section class="sec" id="validation"><div class="wrap">
         ${sectionHead("Validation plan", "How I’d", "measure", "it", "Each big idea becomes a hypothesis with a test and a metric, so the next version is decided by data.")}
@@ -767,7 +797,7 @@
     // ---------- Flagship: chapter nav, palette copy, carousel drag ----------
     (function () {
       if (i < 0 || !P[i].story) return;
-      const chapters = [["overview", "Overview"], ["testimonial", "Testimonial"], ["challenge", "Challenge"], ["role", "My role"], ["evolution", "Evolution"], ["research", "Research"], ["principles", "Principles"], ["process", "Process"], ["features", "Walkthrough"], ["brand", "Brand"], ["decisions", "Decisions"], ["before-after", "Before & after"], ["validation", "Validation"], ["learned", "Learned"], ["outcome", "Outcome"]]
+      const chapters = [["overview", "Overview"], ["testimonial", "Testimonial"], ["challenge", "Challenge"], ["role", "My role"], ["empathy", "Empathy map"], ["evolution", "Evolution"], ["research", "Research"], ["principles", "Principles"], ["process", "Process"], ["features", "Walkthrough"], ["screens", "Key screens"], ["brand", "Brand"], ["decisions", P[i].story.decisionsNav || "Decisions"], ["before-after", "Before & after"], ["validation", "Validation"], ["learned", "Learned"], ["outcome", "Outcome"]]
         .filter(c => document.getElementById(c[0]))
         .sort((x, y) => document.getElementById(x[0]).compareDocumentPosition(document.getElementById(y[0])) & 2 ? 1 : -1);
       const nav = document.createElement("nav");

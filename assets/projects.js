@@ -207,7 +207,34 @@ window.PROJECTS = (function () {
       ],
       highlights: ["Snap a meal photo and AI estimates calories, carbs, protein and fat", "Personalised meal plans and healthy recipes for each goal", "Daily insights for healthier food choices", "Visual progress tracking with reminders and streaks"],
       tags: ["AI", "Health", "Image upload", "Responsive"],
-      images: imgs(["fs_webp/ecf50f238047517.690cb76536f1a.png", "1400_webp/b821f5238047517.690cb76538409.png", "1400_webp/c31303238047517.690cb76538a71.png", "1400_webp/d8ac81238047517.690cb76537cd2.png", "1400_webp/f95bee238047517.690cb76537637.png", "1400_webp/e5b487238047517.690cb765397b3.png", "fs_webp/227280238047517.690d0a6258c4c.png", "fs_webp/643a1a238047517.690cb818b1edf.png", "1400_webp/976817238047517.690cb765390f1.png", "max_1200_webp/8b1071238047517.690d0a6259115.png"])
+      images: imgs(["fs_webp/ecf50f238047517.690cb76536f1a.png", "1400_webp/b821f5238047517.690cb76538409.png", "1400_webp/c31303238047517.690cb76538a71.png", "1400_webp/d8ac81238047517.690cb76537cd2.png", "1400_webp/f95bee238047517.690cb76537637.png", "1400_webp/e5b487238047517.690cb765397b3.png", "fs_webp/227280238047517.690d0a6258c4c.png", "fs_webp/643a1a238047517.690cb818b1edf.png", "1400_webp/976817238047517.690cb765390f1.png", "max_1200_webp/8b1071238047517.690d0a6259115.png"]),
+      facts: [["Role", "UI/UX design, concept to delivery"], ["Duration", "2 weeks"], ["Tools", "Figma · FigJam · Google Forms"], ["Platform", "Mobile app"]],
+      story: {
+        challenge: {
+          statement: "Counting calories by hand takes so much effort that many people give up before they reach their goal.", em: "give up",
+          points: [["Manual input is slow", "Most calorie apps ask you to type in every meal, which takes time and is hard to keep up."], ["Homemade food is a guess", "Carbs, fats and protein are hard to estimate for homemade or restaurant meals."], ["Labels are confusing", "Menus and food labels don’t make the healthy choice obvious."], ["Motivation fades", "Inaccurate tracking leads to missed goals, and people stop tracking altogether."]]
+        },
+        rolesTitle: ["One designer,", "start to finish"], rolesText: "I was the UI/UX designer from the first concept to the final screens, in two weeks.",
+        roles: [["Concept", "Defined the idea: snap a meal, let AI do the counting, and turn the numbers into plans and progress."], ["UX research", "Mapped what users say, think, see and hear in an empathy map, with FigJam and Google Forms."], ["UI design", "Designed the full flow in Figma: onboarding, home, recipes, AI coach, daily macros and progress."], ["Design system", "Built the colours, type scale, a 390 px grid and reusable components with variants."]],
+        empathy: {
+          title: ["What users", "say and feel"], intro: "An empathy map of someone who wants to eat better but has no time to count every meal.", core: "User",
+          quads: [
+            ["💬", "Says", ["“I don’t know how many calories are in this meal.”", "“I want to eat better, but I don’t have time to count everything.”", "“I tried other apps, but they’re too complicated.”"]],
+            ["💭", "Thinks", ["“If I could just take a picture, it would save me so much time.”", "“I get confused about carbs and fats.”", "“I want to see progress without feeling stressed.”"]],
+            ["👀", "Sees", ["Fitness influencers with perfect diets", "Apps that need manual entry", "Confusing labels in restaurants and stores"]],
+            ["👂", "Hears", ["“AI can now tell you how many calories are in your food.”", "“You should eat fewer carbs.”", "“It’s too hard to stay consistent with diet apps.”"]]
+          ],
+          insight: ["Key insight", "Users don’t want more data, they want less effort. “If I could just take a picture” became the core feature."]
+        },
+        process: [["Empathize", "Empathy map of users’ frustrations", "Research"], ["Define", "Problem statement and goals", "Research"], ["Ideate", "Photo-first tracking, meal plans and an AI coach", "Concept"], ["Prototype", "High-fidelity screens in Figma", "Design"], ["Test", "Review the flow and refine", "Design"]],
+        processTitle: ["Design thinking,", "step by step"],
+        screensTitle: ["From first tap to", "daily habit"], screensText: "The key screens, in the order a new user meets them. Every board is in the gallery below.",
+        screens: [["Quick sign-up", "Sign up with Facebook or Google, without long forms."], ["Personal setup", "Four short steps (sex, birthday, height and weight) set personal targets and end with a friendly congratulations."], ["Home & recipes", "Search plus Breakfast, Lunch and Dinner tabs lead to recipes with ingredients and step-by-step instructions."], ["Snap a meal", "Upload a photo of your meal and the AI estimates calories, carbs, protein and fat."], ["AI coach", "A chat where users ask about food and goals and get personal suggestions."], ["My daily & progress", "Macros for each day, saved recipes and a weight chart that make progress visible."]],
+        brand: { title: ["Fresh, calm", "and green"], text: "An olive green for health and freshness, a warm cocoa brown for food, and one font family in four weights.",
+          palette: [["Olive", "#9FAE70"], ["Cocoa", "#8C5E42"]],
+          type: [["Montserrat", "Light, Regular, Bold and Extra Bold"], ["Type scale", "H1 24 px down to H6 14 px, body 16 px"], ["Grid", "390 px frame, 16 px margins and gutters"]] },
+        outcome: { title: ["A complete", "app concept"], points: ["An end-to-end flow from sign-up to progress", "Photo-first meal logging powered by AI", "A reusable design system with components and variants", "Designed in two weeks"], ongoing: "CalTrack is a concept case study designed in Figma. The next step would be usability testing the photo flow with real meals." }
+      }
     },
     {
       slug: "bienenhaus", tldr: { problem: "A small-batch honey brand needed a website that tells its story and sells its honey.", role: "Web design and front-end development.", result: "A live, responsive site in German and English with a seasonal shop and a playful animated bee guide." }, behance: "257105511/Bienenhaus-Raw-Honey-Website",
@@ -251,7 +278,23 @@ window.PROJECTS = (function () {
       ],
       highlights: ["Digital plant store", "Snap a photo to detect pests, diseases or improper care", "Personalised care guidance", "Designed for beginners and plant lovers"],
       tags: ["AI", "E-commerce", "Plants", "Mobile app"],
-      images: imgs(["1400_webp/1315c1230573965.68790b883ecf7.png", "1400_webp/d03c0d230573965.68790b8840c32.png", "1400_webp/a77d4d230573965.687953251c803.png", "1400_webp/285f9b230573965.687953251bae7.png", "1400_webp/dac537230573965.68790b883fd7d.png", "1400_webp/4a7f9f230573965.6879552e55fa2.png", "1400_webp/f2bfbb230573965.687953251c183.png", "1400_webp/bf0b4a230573965.6879552e55a49.png", "1400_webp/46828a230573965.68790b883d625.png", "1400_webp/b0dbf4230573965.68790b8840239.png", "1400_webp/97685b230573965.6879552e566b5.png", "1400_webp/fbfa35230573965.68790b883e2a3.png", "1400_webp/756939230573965.68790b883b8b4.png", "1400_webp/68af49230573965.68790b883c12f.png", "1400_webp/ee893f230573965.68790c824d5e9.png"])
+      images: imgs(["1400_webp/1315c1230573965.68790b883ecf7.png", "1400_webp/d03c0d230573965.68790b8840c32.png", "1400_webp/a77d4d230573965.687953251c803.png", "1400_webp/285f9b230573965.687953251bae7.png", "1400_webp/dac537230573965.68790b883fd7d.png", "1400_webp/4a7f9f230573965.6879552e55fa2.png", "1400_webp/f2bfbb230573965.687953251c183.png", "1400_webp/bf0b4a230573965.6879552e55a49.png", "1400_webp/46828a230573965.68790b883d625.png", "1400_webp/b0dbf4230573965.68790b8840239.png", "1400_webp/97685b230573965.6879552e566b5.png", "1400_webp/fbfa35230573965.68790b883e2a3.png", "1400_webp/756939230573965.68790b883b8b4.png", "1400_webp/68af49230573965.68790b883c12f.png", "1400_webp/ee893f230573965.68790c824d5e9.png"]),
+      story: {
+        challenge: {
+          statement: "Many people love plants but struggle to keep them alive, and most apps help only with shopping or only with care.", em: "keep them alive",
+          points: [["Lack of knowledge", "Beginners don’t know what a plant needs or what is going wrong."], ["Problems found too late", "Pests, diseases and improper care are noticed when the plant is already hard to save."], ["Unreliable purchases", "Poor-quality plants bought online lead to frustration and plant loss."], ["Two apps for one hobby", "Shopping and care live in separate apps, so the journey breaks."]]
+        },
+        rolesTitle: ["Designing the", "whole journey"], rolesText: "I designed Grove end to end in Figma, from the problem statement to the final screens.",
+        roles: [["UX research", "Defined the problem and the two audiences: beginners and plant enthusiasts."], ["UX design", "Joined the store and the care assistant in one flow, from browsing to checkout to care."], ["UI design", "Designed every screen, from welcome and login to payment, reviews and My Garden."], ["Visual system", "Chose the colours and type, and set up a 5-column mobile grid."]],
+        decisionsTitle: ["Key design decisions", "One app,", "two jobs"],
+        decisions: [["Shop and care in one place", "A plant store and a care assistant share one app, so users can spot a problem and buy what they need in the same place."], ["Take a photo, get an answer", "Users take a photo or pick one from the gallery, and the app checks it for pests, diseases or improper care."], ["Care advice after every scan", "The analysis ends in a plant profile with care tips, and users can save their plants in My Garden collections."], ["Compare before you buy", "Favourites let users compare prices, and reviews help them shop with confidence."]],
+        screensTitle: ["Screen by", "screen"], screensText: "The key screens of the app. Every board is in the gallery below.",
+        screens: [["Welcome & login", "A short onboarding, then login or sign-up."], ["Home & new arrivals", "Browse plants, new arrivals and categories."], ["Plant details", "Photos, price and care information for each plant."], ["Snap to diagnose", "Use the camera or gallery, tap “Analyse the image” and get the plant’s details."], ["Bag & order details", "Review the bag, then follow the order with its tracking details."], ["Reviews & My Garden", "Review bought plants and group your own plants into collections."], ["Favourites", "Save plants and compare prices before buying."], ["Payment", "Pay by card or with PayPal."]],
+        brand: { title: ["Deep green,", "soft leaves"], text: "A deep forest green with a pale leaf green keeps the store calm and lets the plant photos stand out.",
+          palette: [["Forest", "#143730"], ["Leaf mist", "#DCE8DE"], ["Black", "#000000"], ["White", "#FEFEFE"]],
+          type: [["Lunasima", "Regular and Bold, for headings and text"], ["Grid", "16 px margins and gutters, 5 columns"]] },
+        outcome: { title: ["Shop it,", "grow it"], points: ["One app for buying plants and caring for them", "Photo-based checks for pests, diseases and care problems", "A complete purchase flow with card and PayPal", "Personal plant collections in My Garden"], ongoing: "Grove is a concept case study designed in Figma. The next step would be testing the photo diagnosis with beginners and refining the care advice." }
+      }
     },
     {
       slug: "abaya-store", tldr: { problem: "Shopping for modest fashion online should feel calm, elegant and easy, in Arabic.", role: "UI/UX design in Figma.", result: "A complete right-to-left shopping app: onboarding, categories, product details, cart, checkout and account." }, behance: "239610529/Abaya-Store-Modest-Fashion-Shopping-App-UIUX",
@@ -264,7 +307,20 @@ window.PROJECTS = (function () {
       ],
       highlights: ["Welcome & onboarding screens", "Home and category pages", "Product details", "Shopping cart & checkout", "Login / sign up", "Contact and About pages"],
       tags: ["E-commerce", "Fashion", "Mobile app", "RTL"],
-      images: imgs(["1400_webp/1b7e88239610529.692d77dc66cb9.png", "1400_webp/6b8bb3239610529.692d77dc68b3d.png", "1400_webp/7a7857239610529.692d77dc693f1.png", "1400_webp/fcbd6b239610529.692d7ba648efa.png", "1400_webp/c0a238239610529.692d77dc684a9.png", "1400_webp/26ca9e239610529.692d77dc67be6.png"])
+      images: imgs(["1400_webp/1b7e88239610529.692d77dc66cb9.png", "1400_webp/6b8bb3239610529.692d77dc68b3d.png", "1400_webp/7a7857239610529.692d77dc693f1.png", "1400_webp/fcbd6b239610529.692d7ba648efa.png", "1400_webp/c0a238239610529.692d77dc684a9.png", "1400_webp/26ca9e239610529.692d77dc67be6.png"]),
+      story: {
+        challenge: {
+          statement: "Design a complete Arabic shopping app for modest fashion, from the first welcome screen to a confirmed order.", em: "complete",
+          points: [["Welcome & onboarding", "Introduce the store and what it promises before the first purchase."], ["Easy browsing", "Home, category and product pages for exploring abayas."], ["A clear checkout", "Cart, checkout and an order confirmation."], ["Trust & contact", "Login and sign-up, plus Contact Us and About pages."]]
+        },
+        rolesTitle: ["Designing in", "Arabic"], rolesText: "I designed every screen in Figma, right to left from the start.",
+        roles: [["UX design", "Planned the shopping flow from onboarding to order confirmation."], ["UI design", "Designed onboarding, sign-in, home, favourites, product details, cart, checkout and account screens."], ["Right-to-left layout", "Layouts, navigation and text follow the Arabic reading direction on every screen."]],
+        decisionsTitle: ["Key design decisions", "Calm, warm and", "right to left"],
+        decisions: [["Right to left on every screen", "Layouts, back arrows and navigation follow the Arabic reading direction, so the app feels native to its users."], ["Three promises in onboarding", "Three illustrated screens welcome users to the store and introduce easy ordering and fast delivery."], ["Sign in your way", "Sign in with email, or with Facebook, Google or Apple."], ["Warm sand tones", "Soft beige and a deep brown keep the focus on the abayas and give the store a calm, elegant feel."]],
+        screensTitle: ["Screen by", "screen"], screensText: "The key screens of the app. Every board is in the gallery below.",
+        screens: [["Onboarding", "Three illustrated welcome screens."], ["Sign in & sign-up", "Email or social sign-in, and a short sign-up form."], ["Home", "Featured abayas, new arrivals and categories."], ["Favourites", "Saved pieces, ready to add to the cart."], ["Product details", "Large photos, sizes, rating and description, with Add to cart."], ["Cart, checkout & confirmation", "Cart, address and payment, and a clear order confirmation."], ["Contact & account", "A contact form, About page and account settings."]],
+        outcome: { title: ["Ready", "to shop"], points: ["A complete shopping flow in Arabic", "Right-to-left layouts on every screen", "Onboarding, account, cart, checkout and confirmation", "Contact and About pages that build trust"], ongoing: "Abaya Store is a UI/UX concept designed in Figma. The next steps would be a usability test with Arabic-speaking shoppers and an English version." }
+      }
     },
     {
       slug: "little-chapter", tldr: { problem: "Parents want safe, engaging stories they can enjoy together with their kids.", role: "UX research and UI design.", result: "A storytelling app with read-together and narrated modes in a playful, safe interface." }, behance: "235882915/Little-Chapter-Kids-Storytelling-App-UX-Case-Study",
@@ -277,7 +333,23 @@ window.PROJECTS = (function () {
       ],
       highlights: ["Read-together and narrated listening modes", "Child-friendly, playful interface", "Safe, distraction-free reading", "Designed for parents and kids alike"],
       tags: ["Kids", "Education", "Storytelling", "Mobile app"],
-      images: imgs(["fs_webp/0eaea9235882915.68e01c8762041.png", "fs_webp/387d10235882915.68e01c8761672.png", "fs_webp/9d4a1d235882915.68e01c876348c.png", "fs_webp/7ecf39235882915.68e01c8762e48.png", "fs_webp/01f45d235882915.68e01c876053f.png", "max_632_webp/367b80235882915.68e01c875fd3b.png", "1400_webp/5de89c235882915.68e7b8bab62c0.png", "1400_webp/eab6fe235882915.68e01dc41d744.png", "1400_webp/340bd3235882915.68e01c8763efa.png"])
+      images: imgs(["fs_webp/0eaea9235882915.68e01c8762041.png", "fs_webp/387d10235882915.68e01c8761672.png", "fs_webp/9d4a1d235882915.68e01c876348c.png", "fs_webp/7ecf39235882915.68e01c8762e48.png", "fs_webp/01f45d235882915.68e01c876053f.png", "max_632_webp/367b80235882915.68e01c875fd3b.png", "1400_webp/5de89c235882915.68e7b8bab62c0.png", "1400_webp/eab6fe235882915.68e01dc41d744.png", "1400_webp/340bd3235882915.68e01c8763efa.png"]),
+      story: {
+        challenge: {
+          statement: "Many parents struggle to make storytime consistent, so children miss out on the benefits of regular storytelling.", em: "consistent",
+          points: [["Busy schedules", "Parents often don’t have time to read to their kids every day."], ["Stories are scattered", "Diverse, age-appropriate stories are hard to find in one place."], ["Passive reading", "Few apps have interactive features that keep children engaged and help them learn."], ["Overstimulating apps", "Many apps are loud and busy instead of calm and designed for kids."]]
+        },
+        rolesTitle: ["Designing for", "two users"], rolesText: "Little Chapter has to work for a parent and a child at the same time. I designed it end to end in Figma.",
+        roles: [["UX research", "Defined the problem and mapped the tone the app should have for kids and parents."], ["UX design", "Planned two ways to enjoy a story, reading together or listening to narration, plus a short quiz."], ["UI design", "Designed every screen, from splash and onboarding to library, explore and profile."], ["Design system", "Created the colours, typography and reusable components like story cards and the tab bar."]],
+        decisionsTitle: ["Tone mapping", "How it", "feels"], decisionsNav: "Tone", decisionsText: "Before drawing screens, I defined how the app should sound, look and react.",
+        decisions: [["Voice & language", "Simple, playful and friendly. Short sentences, emojis and questions, and no formal words."], ["Visual tone", "Warm, soft colours, rounded shapes and icons, and light animations like stars, balloons and sparkles."], ["Interaction tone", "Encouraging feedback: “Almost! Try again” instead of “Wrong!”, and confetti, stars and sounds to celebrate success."]],
+        screensTitle: ["Screen by", "screen"], screensText: "The key screens of the app. Every board is in the gallery below.",
+        screens: [["Splash & onboarding", "A friendly fox welcomes the family: “Adventure begins with every page”."], ["Sign up & login", "A simple start for parents."], ["Personal home", "A welcome, trending stories and the most popular ones."], ["Read or listen", "Read the story together, or play the narrated version."], ["Story quiz", "A short question after the story, with green for right and gentle red for “try again”."], ["Library & explore", "Saved stories in My Library, and search to find new ones."], ["Profile", "Notifications, data and storage, and subscription settings for parents."]],
+        brand: { title: ["Soft, warm", "and safe"], text: "A calm teal green on a warm cream background, with rounded, friendly type that is easy for young readers.",
+          palette: [["Teal", "#3E7067"], ["Cream", "#FDF6EC"], ["Ink", "#000000"]],
+          type: [["Baloo", "Headings, 16 to 30 px"], ["Nunito", "Body text, 16 px, Regular and Semi Bold"]] },
+        outcome: { title: ["Storytime,", "made easy"], points: ["Read-together and narrated listening modes", "A short quiz after the story", "A calm, child-friendly interface shaped by a tone map", "Library, explore and profile for parents"], ongoing: "Little Chapter is a concept case study designed in Figma. The next step would be testing the reading and quiz flow with parents and children together." }
+      }
     }
   ];
   // German version of each case study (used when the site is in DE). Anything left out falls back to English.
@@ -408,7 +480,34 @@ window.PROJECTS = (function () {
       overview: ["Eine smarte Kalorien- und Ernährungs-App, die Menschen hilft, ihre Ernährung einfach zu verstehen und zu steuern.", "Sie verbindet KI mit einem freundlichen, einfachen Design, damit gesunde Ernährung schnell und für alle zugänglich wird."],
       highlights: ["Mahlzeit fotografieren: Die KI schätzt Kalorien, Kohlenhydrate, Eiweiß und Fett", "Persönliche Ernährungspläne und gesunde Rezepte für jedes Ziel", "Tägliche Tipps für gesündere Entscheidungen", "Visueller Fortschritt mit Erinnerungen und Streaks"],
       tags: ["KI", "Gesundheit", "Bild-Upload", "Responsive"],
-      tldr: { problem: "Die eigene Ernährung jeden Tag zu verstehen und zu steuern, kann kompliziert wirken.", role: "UX-Research und UI Design für Smartphone und Tablet.", result: "Ein KI-gestütztes App-Konzept: Mahlzeit fotografieren für sofortige Nährwerte, persönliche Pläne und sichtbarer Fortschritt." }
+      tldr: { problem: "Die eigene Ernährung jeden Tag zu verstehen und zu steuern, kann kompliziert wirken.", role: "UX-Research und UI Design für Smartphone und Tablet.", result: "Ein KI-gestütztes App-Konzept: Mahlzeit fotografieren für sofortige Nährwerte, persönliche Pläne und sichtbarer Fortschritt." },
+      facts: [["Rolle", "UI/UX Design, vom Konzept bis zur Übergabe"], ["Dauer", "2 Wochen"], ["Tools", "Figma · FigJam · Google Forms"], ["Plattform", "Mobile App"]],
+      story: {
+        challenge: {
+          statement: "Kalorien von Hand zu zählen ist so mühsam, dass viele aufgeben, bevor sie ihr Ziel erreichen.", em: "aufgeben",
+          points: [["Manuelle Eingabe ist langsam", "Die meisten Kalorien-Apps verlangen, jede Mahlzeit einzutippen. Das kostet Zeit und hält kaum jemand durch."], ["Selbstgekochtes ist Schätzung", "Kohlenhydrate, Fette und Eiweiß sind bei selbstgekochtem oder Restaurant-Essen schwer zu schätzen."], ["Verwirrende Angaben", "Speisekarten und Etiketten machen die gesunde Wahl nicht offensichtlich."], ["Die Motivation sinkt", "Ungenaues Tracking führt zu verfehlten Zielen, und viele hören ganz auf."]]
+        },
+        rolesTitle: ["Eine Designerin,", "von Anfang bis Ende"], rolesText: "Ich war UI/UX Designerin vom ersten Konzept bis zu den finalen Screens, in zwei Wochen.",
+        roles: [["Konzept", "Die Idee definiert: Mahlzeit fotografieren, die KI zählt, und aus den Zahlen werden Pläne und Fortschritt."], ["UX-Research", "In einer Empathy Map festgehalten, was Nutzer:innen sagen, denken, sehen und hören, mit FigJam und Google Forms."], ["UI Design", "Den kompletten Ablauf in Figma gestaltet: Onboarding, Startseite, Rezepte, KI-Coach, Tageswerte und Fortschritt."], ["Designsystem", "Farben, Schriftskala, ein 390-px-Raster und wiederverwendbare Komponenten mit Varianten."]],
+        empathy: {
+          title: ["Was Nutzer:innen", "sagen und fühlen"], intro: "Eine Empathy Map von jemandem, der sich gesünder ernähren will, aber keine Zeit hat, jede Mahlzeit zu zählen.", core: "Nutzer:in",
+          quads: [
+            ["💬", "Sagt", ["„Ich weiß nicht, wie viele Kalorien in dieser Mahlzeit stecken.“", "„Ich will mich besser ernähren, habe aber keine Zeit, alles zu zählen.“", "„Ich habe andere Apps probiert, aber sie sind zu kompliziert.“"]],
+            ["💭", "Denkt", ["„Wenn ich einfach ein Foto machen könnte, würde mir das so viel Zeit sparen.“", "„Kohlenhydrate und Fette verwirren mich.“", "„Ich will Fortschritte sehen, ohne Stress.“"]],
+            ["👀", "Sieht", ["Fitness-Influencer mit perfekter Ernährung", "Apps mit manueller Eingabe", "Verwirrende Angaben in Restaurants und Läden"]],
+            ["👂", "Hört", ["„KI kann dir jetzt sagen, wie viele Kalorien in deinem Essen stecken.“", "„Du solltest weniger Kohlenhydrate essen.“", "„Mit Diät-Apps dranzubleiben ist zu schwer.“"]]
+          ],
+          insight: ["Wichtigste Erkenntnis", "Nutzer:innen wollen nicht mehr Daten, sondern weniger Aufwand. „Wenn ich einfach ein Foto machen könnte“ wurde zur Kernfunktion."]
+        },
+        process: [["Empathize", "Empathy Map der Frustrationen", "Research"], ["Define", "Problemstellung und Ziele", "Research"], ["Ideate", "Foto-Tracking, Ernährungspläne und KI-Coach", "Konzept"], ["Prototype", "High-Fidelity-Screens in Figma", "Design"], ["Test", "Ablauf prüfen und verfeinern", "Design"]],
+        processTitle: ["Design Thinking,", "Schritt für Schritt"],
+        screensTitle: ["Vom ersten Tippen zur", "täglichen Routine"], screensText: "Die wichtigsten Screens, in der Reihenfolge, in der neue Nutzer:innen sie sehen. Alle Boards sind in der Galerie unten.",
+        screens: [["Schnelle Registrierung", "Mit Facebook oder Google registrieren, ohne lange Formulare."], ["Persönliches Setup", "Vier kurze Schritte (Geschlecht, Geburtstag, Größe und Gewicht) setzen persönliche Ziele und enden mit einem freundlichen Glückwunsch."], ["Startseite & Rezepte", "Suche und Tabs für Frühstück, Mittag- und Abendessen führen zu Rezepten mit Zutaten und Schritt-für-Schritt-Anleitung."], ["Mahlzeit fotografieren", "Ein Foto der Mahlzeit hochladen, und die KI schätzt Kalorien, Kohlenhydrate, Eiweiß und Fett."], ["KI-Coach", "Ein Chat für Fragen zu Essen und Zielen, mit persönlichen Vorschlägen."], ["Mein Tag & Fortschritt", "Makros pro Tag, gespeicherte Rezepte und eine Gewichtskurve machen Fortschritt sichtbar."]],
+        brand: { title: ["Frisch, ruhig", "und grün"], text: "Ein Olivgrün für Gesundheit und Frische, ein warmes Kakaobraun für Essen und eine Schriftfamilie in vier Stärken.",
+          palette: [["Oliv", "#9FAE70"], ["Kakao", "#8C5E42"]],
+          type: [["Montserrat", "Light, Regular, Bold und Extra Bold"], ["Schriftskala", "H1 24 px bis H6 14 px, Fließtext 16 px"], ["Raster", "390-px-Frame, 16 px Ränder und Abstände"]] },
+        outcome: { title: ["Ein komplettes", "App-Konzept"], points: ["Ein durchgängiger Ablauf von der Registrierung bis zum Fortschritt", "Mahlzeiten per Foto erfassen, mit KI", "Ein wiederverwendbares Designsystem mit Komponenten und Varianten", "In zwei Wochen gestaltet"], ongoing: "CalTrack ist eine Konzept-Case-Study, gestaltet in Figma. Der nächste Schritt wäre ein Usability-Test des Foto-Ablaufs mit echten Mahlzeiten." }
+      }
     },
     "bienenhaus": {
       tagline: "Rohhonig aus Brandenburg", kindLabel: "Website · Design & Front-End", role: "Webdesign & Front-End-Entwicklung", platform: "Responsive Website · Deutsch & Englisch",
@@ -422,21 +521,66 @@ window.PROJECTS = (function () {
       overview: ["Grove ist eine All-in-one-App, die Pflanzenkauf und Pflanzenpflege für Einsteiger:innen und Fans vereinfacht.", "Sie verbindet einen digitalen Pflanzenshop mit einem smarten Pflege-Assistenten auf Basis von Bilderkennung."],
       highlights: ["Digitaler Pflanzenshop", "Foto machen und Schädlinge, Krankheiten oder Pflegefehler erkennen", "Persönliche Pflegetipps", "Für Einsteiger:innen und Pflanzenfans gestaltet"],
       tags: ["KI", "E-Commerce", "Pflanzen", "Mobile App"],
-      tldr: { problem: "Pflanzenkauf und Pflanzenpflege finden meist an getrennten Orten statt, was für Einsteiger:innen schwierig ist.", role: "UX-Research und UI Design.", result: "Eine All-in-one-App: Pflanzenshop plus fotobasierter Pflege-Assistent, der Schädlinge und Krankheiten erkennt." }
+      tldr: { problem: "Pflanzenkauf und Pflanzenpflege finden meist an getrennten Orten statt, was für Einsteiger:innen schwierig ist.", role: "UX-Research und UI Design.", result: "Eine All-in-one-App: Pflanzenshop plus fotobasierter Pflege-Assistent, der Schädlinge und Krankheiten erkennt." },
+      story: {
+        challenge: {
+          statement: "Viele lieben Pflanzen, schaffen es aber nicht, sie am Leben zu halten, und die meisten Apps helfen nur beim Kaufen oder nur bei der Pflege.", em: "am Leben zu halten",
+          points: [["Fehlendes Wissen", "Einsteiger:innen wissen nicht, was eine Pflanze braucht oder was schiefläuft."], ["Probleme zu spät erkannt", "Schädlinge, Krankheiten und falsche Pflege fallen erst auf, wenn die Pflanze kaum noch zu retten ist."], ["Unzuverlässige Käufe", "Online gekaufte Pflanzen schlechter Qualität führen zu Frust und Verlust."], ["Zwei Apps für ein Hobby", "Kaufen und Pflegen passieren in getrennten Apps, die Journey bricht ab."]]
+        },
+        rolesTitle: ["Die ganze Journey", "gestaltet"], rolesText: "Ich habe Grove komplett in Figma gestaltet, von der Problemstellung bis zu den finalen Screens.",
+        roles: [["UX-Research", "Das Problem und die zwei Zielgruppen definiert: Einsteiger:innen und Pflanzenfans."], ["UX Design", "Shop und Pflege-Assistent in einem Ablauf verbunden, vom Stöbern über den Checkout bis zur Pflege."], ["UI Design", "Jeden Screen gestaltet, von Willkommen und Login bis zu Bezahlung, Bewertungen und My Garden."], ["Visuelles System", "Farben und Schrift gewählt und ein mobiles 5-Spalten-Raster angelegt."]],
+        decisionsTitle: ["Wichtige Designentscheidungen", "Eine App,", "zwei Aufgaben"],
+        decisions: [["Kaufen und Pflegen an einem Ort", "Pflanzenshop und Pflege-Assistent teilen sich eine App: Problem erkennen und das Passende kaufen, am selben Ort."], ["Foto machen, Antwort bekommen", "Ein Foto aufnehmen oder aus der Galerie wählen, und die App prüft es auf Schädlinge, Krankheiten oder falsche Pflege."], ["Pflegetipps nach jedem Scan", "Die Analyse endet in einem Pflanzenprofil mit Pflegetipps, und eigene Pflanzen lassen sich in My-Garden-Sammlungen speichern."], ["Vergleichen vor dem Kauf", "Mit Favoriten lassen sich Preise vergleichen, und Bewertungen geben Sicherheit beim Kauf."]],
+        screensTitle: ["Screen für", "Screen"], screensText: "Die wichtigsten Screens der App. Alle Boards sind in der Galerie unten.",
+        screens: [["Willkommen & Login", "Ein kurzes Onboarding, dann Login oder Registrierung."], ["Startseite & Neuheiten", "Pflanzen, Neuheiten und Kategorien entdecken."], ["Pflanzendetails", "Fotos, Preis und Pflegeinfos zu jeder Pflanze."], ["Foto-Diagnose", "Kamera oder Galerie nutzen, „Bild analysieren“ tippen und die Pflanzendetails erhalten."], ["Warenkorb & Bestellung", "Den Warenkorb prüfen und die Bestellung mit Sendungsdetails verfolgen."], ["Bewertungen & My Garden", "Gekaufte Pflanzen bewerten und eigene Pflanzen in Sammlungen ordnen."], ["Favoriten", "Pflanzen merken und Preise vor dem Kauf vergleichen."], ["Bezahlung", "Mit Karte oder PayPal bezahlen."]],
+        brand: { title: ["Tiefes Grün,", "zarte Blätter"], text: "Ein tiefes Waldgrün mit einem hellen Blattgrün hält den Shop ruhig und lässt die Pflanzenfotos wirken.",
+          palette: [["Wald", "#143730"], ["Blattnebel", "#DCE8DE"], ["Schwarz", "#000000"], ["Weiß", "#FEFEFE"]],
+          type: [["Lunasima", "Regular und Bold, für Überschriften und Text"], ["Raster", "16 px Ränder und Abstände, 5 Spalten"]] },
+        outcome: { title: ["Kaufen,", "wachsen lassen"], points: ["Eine App zum Kaufen und Pflegen von Pflanzen", "Foto-Check auf Schädlinge, Krankheiten und Pflegeprobleme", "Ein kompletter Kaufablauf mit Karte und PayPal", "Eigene Pflanzensammlungen in My Garden"], ongoing: "Grove ist eine Konzept-Case-Study, gestaltet in Figma. Der nächste Schritt wäre, die Foto-Diagnose mit Einsteiger:innen zu testen und die Pflegetipps zu verfeinern." }
+      }
     },
     "abaya-store": {
       tagline: "Eine Shopping-App für Modest Fashion", kindLabel: "Mobile App · UI/UX", role: "UI/UX Design", platform: "Mobile App · arabische Oberfläche (RTL)",
       overview: ["Eine Shopping-App für Modest Fashion, komplett in Figma gestaltet, mit arabischer Oberfläche von rechts nach links.", "Das Ziel: ein ruhiger, eleganter Shop, in dem Stöbern und Bezahlen mühelos funktionieren."],
       highlights: ["Willkommens- und Onboarding-Screens", "Startseite und Kategorien", "Produktdetails", "Warenkorb & Checkout", "Login / Registrierung", "Kontakt- und Über-uns-Seite"],
       tags: ["E-Commerce", "Mode", "Mobile App", "RTL"],
-      tldr: { problem: "Modest Fashion online zu kaufen soll sich ruhig, elegant und einfach anfühlen, auf Arabisch.", role: "UI/UX Design in Figma.", result: "Eine vollständige Shopping-App von rechts nach links: Onboarding, Kategorien, Produktdetails, Warenkorb, Checkout und Konto." }
+      tldr: { problem: "Modest Fashion online zu kaufen soll sich ruhig, elegant und einfach anfühlen, auf Arabisch.", role: "UI/UX Design in Figma.", result: "Eine vollständige Shopping-App von rechts nach links: Onboarding, Kategorien, Produktdetails, Warenkorb, Checkout und Konto." },
+      story: {
+        challenge: {
+          statement: "Eine komplette arabische Shopping-App für Modest Fashion gestalten, vom ersten Willkommens-Screen bis zur bestätigten Bestellung.", em: "komplette",
+          points: [["Willkommen & Onboarding", "Den Shop und seine Versprechen vor dem ersten Kauf vorstellen."], ["Einfaches Stöbern", "Startseite, Kategorien und Produktseiten, um Abayas zu entdecken."], ["Ein klarer Checkout", "Warenkorb, Checkout und eine Bestellbestätigung."], ["Vertrauen & Kontakt", "Login und Registrierung, dazu Kontakt- und Über-uns-Seiten."]]
+        },
+        rolesTitle: ["Gestaltet auf", "Arabisch"], rolesText: "Ich habe jeden Screen in Figma gestaltet, von Anfang an von rechts nach links.",
+        roles: [["UX Design", "Den Einkaufsablauf vom Onboarding bis zur Bestellbestätigung geplant."], ["UI Design", "Onboarding, Anmeldung, Startseite, Favoriten, Produktdetails, Warenkorb, Checkout und Konto gestaltet."], ["Rechts-nach-links-Layout", "Layouts, Navigation und Text folgen auf jedem Screen der arabischen Leserichtung."]],
+        decisionsTitle: ["Wichtige Designentscheidungen", "Ruhig, warm und", "von rechts nach links"],
+        decisions: [["Rechts nach links auf jedem Screen", "Layouts, Zurück-Pfeile und Navigation folgen der arabischen Leserichtung, damit sich die App für ihre Nutzer:innen natürlich anfühlt."], ["Drei Versprechen im Onboarding", "Drei illustrierte Screens begrüßen im Shop und stellen einfaches Bestellen und schnelle Lieferung vor."], ["Anmelden, wie man möchte", "Mit E-Mail anmelden oder mit Facebook, Google oder Apple."], ["Warme Sandtöne", "Sanftes Beige und ein tiefes Braun lenken den Blick auf die Abayas und geben dem Shop eine ruhige, elegante Wirkung."]],
+        screensTitle: ["Screen für", "Screen"], screensText: "Die wichtigsten Screens der App. Alle Boards sind in der Galerie unten.",
+        screens: [["Onboarding", "Drei illustrierte Willkommens-Screens."], ["Anmeldung & Registrierung", "E-Mail- oder Social-Login und ein kurzes Registrierungsformular."], ["Startseite", "Ausgewählte Abayas, Neuheiten und Kategorien."], ["Favoriten", "Gemerkte Stücke, bereit für den Warenkorb."], ["Produktdetails", "Große Fotos, Größen, Bewertung und Beschreibung, mit „In den Warenkorb“."], ["Warenkorb, Checkout & Bestätigung", "Warenkorb, Adresse und Bezahlung, dazu eine klare Bestellbestätigung."], ["Kontakt & Konto", "Ein Kontaktformular, die Über-uns-Seite und Kontoeinstellungen."]],
+        outcome: { title: ["Bereit zum", "Einkaufen"], points: ["Ein kompletter Einkaufsablauf auf Arabisch", "Rechts-nach-links-Layouts auf jedem Screen", "Onboarding, Konto, Warenkorb, Checkout und Bestätigung", "Kontakt- und Über-uns-Seiten, die Vertrauen schaffen"], ongoing: "Abaya Store ist ein UI/UX-Konzept, gestaltet in Figma. Die nächsten Schritte wären ein Usability-Test mit arabischsprachigen Kund:innen und eine englische Version." }
+      }
     },
     "little-chapter": {
       tagline: "Geschichten, die Familien verbinden", kindLabel: "Mobile App · UX Case Study", role: "UX-Research & UI Design", platform: "Mobile App",
       overview: ["Eine App für Kindergeschichten, mit der Eltern und Kinder gemeinsam lesen oder vertonte Versionen hören können.", "Sie verbindet Lernen, Unterhaltung und gemeinsame Zeit in einer ansprechenden und sicheren digitalen Leseumgebung."],
       highlights: ["Gemeinsam lesen oder vorlesen lassen", "Kindgerechte, verspielte Oberfläche", "Sicheres Lesen ohne Ablenkung", "Für Eltern und Kinder gestaltet"],
       tags: ["Kinder", "Bildung", "Storytelling", "Mobile App"],
-      tldr: { problem: "Eltern wünschen sich sichere, spannende Geschichten, die sie gemeinsam mit ihren Kindern erleben können.", role: "UX-Research und UI Design.", result: "Eine Geschichten-App mit Vorlese- und Hörmodus in einer verspielten, sicheren Oberfläche." }
+      tldr: { problem: "Eltern wünschen sich sichere, spannende Geschichten, die sie gemeinsam mit ihren Kindern erleben können.", role: "UX-Research und UI Design.", result: "Eine Geschichten-App mit Vorlese- und Hörmodus in einer verspielten, sicheren Oberfläche." },
+      story: {
+        challenge: {
+          statement: "Vielen Eltern fällt es schwer, regelmäßig vorzulesen, und Kinder verpassen so die Vorteile von Geschichten im Alltag.", em: "regelmäßig",
+          points: [["Volle Terminkalender", "Eltern haben oft keine Zeit, ihren Kindern jeden Tag vorzulesen."], ["Verstreute Geschichten", "Vielfältige, altersgerechte Geschichten sind schwer an einem Ort zu finden."], ["Passives Lesen", "Wenige Apps haben interaktive Funktionen, die Kinder fesseln und beim Lernen helfen."], ["Überreizende Apps", "Viele Apps sind laut und unruhig statt ruhig und für Kinder gemacht."]]
+        },
+        rolesTitle: ["Gestaltet für", "zwei Nutzer:innen"], rolesText: "Little Chapter muss gleichzeitig für ein Elternteil und ein Kind funktionieren. Ich habe die App komplett in Figma gestaltet.",
+        roles: [["UX-Research", "Das Problem definiert und festgelegt, welchen Ton die App für Kinder und Eltern haben soll."], ["UX Design", "Zwei Wege zur Geschichte geplant, gemeinsam lesen oder vorlesen lassen, dazu ein kurzes Quiz."], ["UI Design", "Jeden Screen gestaltet, vom Splash und Onboarding bis zu Bibliothek, Entdecken und Profil."], ["Designsystem", "Farben, Typografie und wiederverwendbare Komponenten wie Story-Karten und die Tab-Leiste."]],
+        decisionsTitle: ["Tone Mapping", "Wie es sich", "anfühlt"], decisionsNav: "Tonalität", decisionsText: "Bevor ich Screens gezeichnet habe, habe ich festgelegt, wie die App klingen, aussehen und reagieren soll.",
+        decisions: [["Stimme & Sprache", "Einfach, verspielt und freundlich. Kurze Sätze, Emojis und Fragen, keine förmlichen Wörter."], ["Visueller Ton", "Warme, sanfte Farben, runde Formen und Icons und leichte Animationen wie Sterne, Ballons und Funkeln."], ["Ton der Interaktion", "Ermutigendes Feedback: „Fast! Versuch’s nochmal“ statt „Falsch!“, und Konfetti, Sterne und Sounds, um Erfolge zu feiern."]],
+        screensTitle: ["Screen für", "Screen"], screensText: "Die wichtigsten Screens der App. Alle Boards sind in der Galerie unten.",
+        screens: [["Splash & Onboarding", "Ein freundlicher Fuchs begrüßt die Familie: „Mit jeder Seite beginnt ein Abenteuer“."], ["Registrierung & Login", "Ein einfacher Einstieg für Eltern."], ["Persönliche Startseite", "Eine Begrüßung, angesagte und die beliebtesten Geschichten."], ["Lesen oder hören", "Die Geschichte gemeinsam lesen oder die vorgelesene Version abspielen."], ["Story-Quiz", "Eine kurze Frage nach der Geschichte, mit Grün für richtig und sanftem Rot für „nochmal versuchen“."], ["Bibliothek & Entdecken", "Gespeicherte Geschichten in Meine Bibliothek und eine Suche für neue."], ["Profil", "Benachrichtigungen, Daten und Speicher sowie Abo-Einstellungen für Eltern."]],
+        brand: { title: ["Sanft, warm", "und sicher"], text: "Ein ruhiges Petrolgrün auf warmem Creme, mit runder, freundlicher Schrift, die für junge Leser:innen leicht lesbar ist.",
+          palette: [["Petrol", "#3E7067"], ["Creme", "#FDF6EC"], ["Tinte", "#000000"]],
+          type: [["Baloo", "Überschriften, 16 bis 30 px"], ["Nunito", "Fließtext, 16 px, Regular und Semi Bold"]] },
+        outcome: { title: ["Vorlesezeit,", "ganz einfach"], points: ["Gemeinsam lesen oder vorlesen lassen", "Ein kurzes Quiz nach der Geschichte", "Eine ruhige, kindgerechte Oberfläche, geprägt durch ein Tone Mapping", "Bibliothek, Entdecken und Profil für Eltern"], ongoing: "Little Chapter ist eine Konzept-Case-Study, gestaltet in Figma. Der nächste Schritt wäre, den Lese- und Quiz-Ablauf gemeinsam mit Eltern und Kindern zu testen." }
+      }
     }
   };
   list.forEach(p => { if (DE[p.slug]) p.de = DE[p.slug]; });
