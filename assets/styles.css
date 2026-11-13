@@ -142,7 +142,7 @@ a { color: inherit; text-decoration: none; }
 .about-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: clamp(40px, 6vw, 90px); align-items: start; }
 .note { background: var(--paper); padding: 34px 30px 30px; position: relative; transform: rotate(-2deg); box-shadow: 0 14px 34px rgba(60,20,15,.13);
   background-image: repeating-linear-gradient(180deg, transparent 0 33px, color-mix(in srgb, var(--red) 13%, transparent) 33px 34px); }
-.note h3 { font-family: "Instrument Serif", serif; font-style: italic; font-weight: 400; font-size: 38px; color: var(--red); line-height: 1; margin-bottom: 16px; }
+.note h2, .note h3 { font-family: "Instrument Serif", serif; font-style: italic; font-weight: 400; font-size: 38px; color: var(--red); line-height: 1; margin-bottom: 16px; }
 .contact-list { list-style: none; display: grid; gap: 14px; }
 .contact-list li { display: flex; gap: 14px; align-items: center; font-size: 15px; }
 .contact-list .ic { width: 34px; height: 34px; border-radius: 50%; background: var(--soft); color: var(--ink); display: grid; place-items: center; flex-shrink: 0; }
@@ -168,7 +168,7 @@ a { color: inherit; text-decoration: none; }
 .feat-grid { display: grid; grid-template-columns: 1fr 1.25fr; gap: clamp(40px, 6vw, 90px); align-items: center; }
 .feat-proj { font-size: clamp(28px, 3vw, 42px); color: var(--ink); margin-top: 22px; }
 .feat-name { font-size: clamp(54px, 7.5vw, 112px); color: var(--red); margin: -6px 0 30px; }
-.feat-block h4 { font-family: "Bricolage Grotesque"; font-weight: 400; font-size: 15px; letter-spacing: .1em; text-transform: uppercase; color: var(--red); margin-bottom: 8px; }
+.feat-block h3, .feat-block h4 { font-family: "Bricolage Grotesque"; font-weight: 400; font-size: 15px; letter-spacing: .1em; text-transform: uppercase; color: var(--red); margin-bottom: 8px; }
 .feat-block p, .feat-block li { color: var(--body); font-size: 16px; }
 .feat-block ul { list-style: none; display: grid; gap: 6px; }
 .feat-block li::before { content: "✦"; color: var(--red); margin-right: 10px; font-size: 12px; }
@@ -590,7 +590,7 @@ a, button, [role="button"], .chip, .pola, label { cursor: pointer; }
 .pola .flag { position: absolute; top: 22px; right: 22px; z-index: 4; background: var(--ink); color: var(--paper); font: 700 11.5px "Plus Jakarta Sans"; letter-spacing: .06em; padding: 7px 12px; border-radius: 999px; box-shadow: 0 8px 18px -8px rgba(0,0,0,.4); }
 
 /* Language switch */
-.lang-toggle { display: inline-flex; gap: 2px; padding: 3px; border-radius: 999px; border: 1px solid var(--line); background: var(--paper); font: 700 11.5px "Plus Jakarta Sans"; letter-spacing: .08em; cursor: pointer; }
+.lang-toggle { position: relative; display: inline-flex; gap: 2px; padding: 3px; border-radius: 999px; border: 1px solid var(--line); background: var(--paper); font: 700 11.5px "Plus Jakarta Sans"; letter-spacing: .08em; cursor: pointer; }
 .lang-toggle span { padding: 6px 9px; border-radius: 999px; color: var(--muted); transition: background .3s, color .3s; }
 .lang-toggle span.on { background: var(--soft); color: var(--ink); }
 .lang-toggle:hover span:not(.on) { color: var(--ink); }
@@ -717,3 +717,11 @@ a, button, [role="button"], .chip, .pola, label { cursor: pointer; }
 .mf-card .mf-mail { font-size: clamp(15px, 1.55vw, 21px); white-space: nowrap; overflow-wrap: normal; }
 @media (max-width: 520px) { .mf-card .mf-mail { font-size: clamp(13px, 4.1vw, 16px); } }
 @media (max-width: 520px) { .mf-body b { white-space: normal; overflow: visible; overflow-wrap: anywhere; } }
+
+/* Hero availability line */
+.avail { display: inline-flex; align-items: center; gap: 10px; margin-top: 22px; padding: 9px 16px 9px 12px; border-radius: 999px; background: var(--paper); border: 1px solid var(--soft-deep); font-size: 14px; color: var(--body); line-height: 1.35; }
+.avail i { flex: none; width: 9px; height: 9px; border-radius: 50%; background: #2fb36b; box-shadow: 0 0 0 0 rgba(47,179,107,.55); animation: pulse 2s infinite; }
+.avail b { color: var(--ink); font-weight: 700; }
+.avail-sep { margin: 0 7px; color: var(--muted); }
+@media (max-width: 560px) { .avail { border-radius: 18px; align-items: flex-start; } .avail i { margin-top: 5px; } }
+@media (prefers-reduced-motion: reduce) { .avail i { animation: none; } }

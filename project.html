@@ -18,8 +18,9 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css?v=20261113a" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" /></noscript>
+  <link rel="stylesheet" href="assets/styles.css?v=20261113c" />
   <style>
     /* ---------- Case study page ---------- */
     .case-hero { position: relative; padding: 130px 0 120px; }
@@ -285,6 +286,7 @@
     @media (max-width: 1000px) { .stats-grid, .pr-grid { grid-template-columns: 1fr 1fr; } .cp-grid, .learn-grid, .insights { grid-template-columns: 1fr; } .feat-row, .feat-row.flip { grid-template-columns: 1fr; } .feat-row.flip > :first-child { order: 0; } .palette { grid-template-columns: repeat(3, 1fr); } }
     @media (max-width: 560px) { .stats-grid, .pr-grid { grid-template-columns: 1fr; } .crow { grid-template-columns: 1.2fr repeat(3, 1fr); padding: 12px; font-size: 13px; } .ck i { display: none; } .val { grid-template-columns: 1fr; } .palette { grid-template-columns: 1fr 1fr; } }
 
+    .motion-frame { margin-bottom: 0; transform: rotate(.4deg); }
     .video-frame .vfile { display: block; width: 100%; height: auto; max-height: 80vh; background: #efe6da; border-radius: 4px; }
     .team-note { display: inline-flex; align-items: center; gap: 10px; margin-top: 16px; padding: 10px 16px; border-radius: 999px; background: var(--paper); border: 1px solid var(--line); font-size: 14px; color: var(--body); }
     .testi { position: relative; max-width: 1000px; margin: 0 auto; padding: clamp(36px, 5vw, 70px); border-radius: clamp(28px, 4vw, 44px); overflow: hidden;
@@ -366,13 +368,13 @@
     </nav>
   </header>
 
-  <main id="top"></main>
+  <main id="top" style="min-height:100vh"></main>
 
   <footer class="site-foot mfoot" id="contact">
     <div class="wrap">
       <div class="mf-top">
         <div class="mf-intro">
-          <div class="mf-me"><img src="assets/alaa-photo.png" alt="Alaa Shaheen" width="56" height="56" loading="lazy" /><div><b>Alaa Shaheen</b><span>UX/UI Designer · Cologne</span></div></div>
+          <div class="mf-me"><img src="assets/alaa-photo.webp" alt="Alaa Shaheen" width="56" height="56" loading="lazy" /><div><b>Alaa Shaheen</b><span>UX/UI Designer · Cologne</span></div></div>
           <p class="mf-kicker">Get in touch</p>
           <h2 class="mf-title heavy"><span class="mf-a">Let’s work</span> <span class="script">together</span></h2>
           <p class="mf-text">Open to Junior UX/UI &amp; Product Design roles in Germany (hybrid or remote) and freelance projects.</p>
@@ -419,8 +421,8 @@
     <img id="lbImg" alt="" />
   </div>
 
-  <script src="assets/i18n.js?v=20261113a"></script>
-  <script src="assets/projects.js?v=20261113a"></script>
+  <script src="assets/i18n.js?v=20261113c"></script>
+  <script src="assets/projects.js?v=20261113c"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script>
@@ -670,9 +672,19 @@
             ${p.process ? `<div class="steps reveal">${p.process.map(s => `<span>${esc(s)}</span>`).join("<i>→</i>")}</div>` : ""}
             <div class="ctags reveal">${p.tags.map(t => `<span>${esc(t)}</span>`).join("")}</div>
           </div>
-          <div class="note hl-note reveal"><span class="tape"></span><h3>Highlights</h3><ul>${p.highlights.map(h => `<li>${esc(h)}</li>`).join("")}</ul></div>
+          <div class="note hl-note reveal"><span class="tape"></span><h2>Highlights</h2><ul>${p.highlights.map(h => `<li>${esc(h)}</li>`).join("")}</ul></div>
         </div>
       </section>
+
+      ${p.demoVideo ? `<section class="sec" id="motion" style="padding-top:0">
+        <div class="wrap">
+          <div class="s-head" style="text-align:center"><span class="pill reveal">In motion</span>
+            <h2 class="sec-title heavy reveal">See it <span class="script">in action</span></h2>
+            <p class="reveal" style="margin-left:auto;margin-right:auto">A short recording of the live site, so you can see the interactions without leaving this page.</p></div>
+          <div class="video-frame motion-frame reveal"><span class="tape"></span>
+            <video class="vfile" data-autoplay src="${p.demoVideo}" poster="${p.demoPoster || ""}" muted loop playsinline controls preload="none" width="1280" height="800" aria-label="${esc(p.title)}: screen recording of the live site"></video></div>
+        </div>
+      </section>` : ""}
 
       ${p.testimonial ? testimonialHTML(p) : ""}
 
@@ -729,6 +741,11 @@
     }
 
     I18N.apply(document.body); I18N.toggle();
+    // Demo videos: load and play only while on screen (saves data on phones)
+    document.querySelectorAll("video[data-autoplay]").forEach(v => {
+      if (!("IntersectionObserver" in window)) return;
+      new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { if (!reduced) v.play().catch(() => {}); } else v.pause(); }), { threshold: .35 }).observe(v);
+    });
     if (I18N.lang === "de") document.querySelectorAll("[data-cv]").forEach(a => a.href = "assets/docs/Alaa_Shaheen_Lebenslauf_UXUI_Designer.pdf");
 
     // ---------- Torn paper ----------
@@ -798,7 +815,7 @@
     // ---------- Flagship: chapter nav, palette copy, carousel drag ----------
     (function () {
       if (i < 0 || !P[i].story) return;
-      const chapters = [["overview", "Overview"], ["testimonial", "Testimonial"], ["challenge", "Challenge"], ["role", "My role"], ["empathy", "Empathy map"], ["evolution", "Evolution"], ["research", "Research"], ["principles", "Principles"], ["process", "Process"], ["features", "Walkthrough"], ["screens", "Key screens"], ["brand", "Brand"], ["decisions", P[i].story.decisionsNav || "Decisions"], ["before-after", "Before & after"], ["validation", "Validation"], ["learned", "Learned"], ["outcome", "Outcome"]]
+      const chapters = [["overview", "Overview"], ["motion", "In motion"], ["testimonial", "Testimonial"], ["challenge", "Challenge"], ["role", "My role"], ["empathy", "Empathy map"], ["evolution", "Evolution"], ["research", "Research"], ["principles", "Principles"], ["process", "Process"], ["features", "Walkthrough"], ["screens", "Key screens"], ["brand", "Brand"], ["decisions", P[i].story.decisionsNav || "Decisions"], ["before-after", "Before & after"], ["validation", "Validation"], ["learned", "Learned"], ["outcome", "Outcome"]]
         .filter(c => document.getElementById(c[0]))
         .sort((x, y) => document.getElementById(x[0]).compareDocumentPosition(document.getElementById(y[0])) & 2 ? 1 : -1);
       const nav = document.createElement("nav");

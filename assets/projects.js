@@ -106,7 +106,7 @@ window.PROJECTS = (function () {
       }
     },
     {
-      slug: "casavue-web", tldr: { problem: "Flat product photos make it hard to imagine furniture in your own room.", role: "UX research, UI design and front-end development of a working prototype.", result: "A live, coded prototype: daylight and lamp previews, room placement, size checks and a 3-tap style finder." }, behance: "258133951/CasaVue-Furniture-Shopping-Website-UX-Case-Study",
+      slug: "casavue-web", demoVideo: "assets/work/casavue-web/demo.mp4", demoPoster: "assets/work/casavue-web/demo-poster.webp", tldr: { problem: "Flat product photos make it hard to imagine furniture in your own room.", role: "UX research, UI design and front-end development of a working prototype.", result: "A live, coded prototype: daylight and lamp previews, room placement, size checks and a 3-tap style finder." }, behance: "258133951/CasaVue-Furniture-Shopping-Website-UX-Case-Study",
       title: "CasaVue", tagline: "Furniture shopping, brought to life on the web", kind: "web", kindLabel: "Website · UX case study", year: "2026",
       role: "UX research, UI design & front-end", platform: "Desktop & mobile web", tools: ["HTML", "CSS", "JavaScript"],
       live: "https://alaashaheen93.github.io/CasaVue/",
@@ -197,7 +197,7 @@ window.PROJECTS = (function () {
       }
     },
     {
-      slug: "coffee-lab", behance: null, repo: "https://github.com/ALAASHAHEEN93/Coffee-Lab", live: "https://alaashaheen93.github.io/Coffee-Lab/",
+      slug: "coffee-lab", demoVideo: "assets/work/coffee-lab/demo.mp4", demoPoster: "assets/work/coffee-lab/demo-poster.webp", behance: null, repo: "https://github.com/ALAASHAHEEN93/Coffee-Lab", live: "https://alaashaheen93.github.io/Coffee-Lab/",
       tldr: { problem: "Most coffee shops online look the same and don’t help you understand how a coffee will taste.", role: "Concept, UI design and full-stack development, on my own.", result: "A bilingual shop in Next.js and Payload CMS with interactive flavour tools, a cart and user accounts." },
       title: "CoffeeLab", tagline: "A molecular roastery online shop", kind: "web", kindLabel: "E-commerce · Design & full-stack", year: "2026",
       role: "UI design & full-stack development", platform: "Responsive web · German & English", tools: ["Next.js", "TypeScript", "Payload CMS", "MongoDB"],
@@ -277,18 +277,42 @@ window.PROJECTS = (function () {
       }
     },
     {
-      slug: "bienenhaus", tldr: { problem: "A small-batch honey brand needed a website that tells its story and sells its honey.", role: "Web design and front-end development.", result: "A live, responsive site in German and English with a seasonal shop and a playful animated bee guide." }, behance: "257105511/Bienenhaus-Raw-Honey-Website",
+      slug: "bienenhaus", demoVideo: "assets/work/bienenhaus/demo.mp4", demoPoster: "assets/work/bienenhaus/demo-poster.webp", tldr: { problem: "A small-batch honey brand needs a website that tells its story and sells its honey.", role: "Web design and front-end development.", result: "A live, responsive site in German and English with a seasonal shop and a playful animated bee guide." }, behance: "257105511/Bienenhaus-Raw-Honey-Website",
       title: "Bienenhaus", tagline: "Raw honey from Brandenburg", kind: "web", kindLabel: "Website · Design & front-end", year: "2026",
       role: "Web design & front-end development", platform: "Responsive web · German & English", tools: ["HTML", "CSS", "JavaScript"],
       live: "https://alaashaheen93.github.io/bienenhaus/",
       cover: C + "730add257105511.Y3JvcCwxNTM5LDEyMDQsMjIsMA.png",
       overview: [
-        "Website design and front-end development for Bienenhaus, a small-batch honey brand with 42 colonies in Brandenburg and the Uckermark.",
+        "Web design and front-end development of Bienenhaus, a demo storefront for a small-batch honey brand with 42 hives in Brandenburg and the Uckermark.",
         "The concept centres on warm honey tones, elegant serif typography and a playful animated bee that guides visitors through the story: raw, cold-extracted honey, traceable batches and hand-filled jars."
       ],
       highlights: ["Hero with product showcase", "Brand promises", "Seasonal shop with product cards", "Customer reviews", "Three-step “from hive to jar” process", "Fully responsive, in German and English"],
       tags: ["Branding", "Landing page", "E-commerce", "Front-end", "Responsive"],
-      images: imgs(["1400_webp/635af7257105511.6acf98becc601.jpg", "1400_webp/bbf5a8257105511.6acf98becbf14.jpg", "1400_webp/1860a8257105511.6acf98becbb79.jpg", "1400_webp/7322d3257105511.6acf98becc267.jpg", "1400_webp/959951257105511.6acf98becc940.jpg"])
+      images: ["assets/work/bienenhaus/live-00-home.webp", "assets/work/bienenhaus/live-01-shop.webp", "assets/work/bienenhaus/live-02-product.webp", "assets/work/bienenhaus/live-03-gift.webp", "assets/work/bienenhaus/live-04-about.webp", "assets/work/bienenhaus/live-05-mobile.webp"].concat(imgs(["1400_webp/635af7257105511.6acf98becc601.jpg", "1400_webp/bbf5a8257105511.6acf98becbf14.jpg", "1400_webp/1860a8257105511.6acf98becbb79.jpg", "1400_webp/7322d3257105511.6acf98becc267.jpg", "1400_webp/959951257105511.6acf98becc940.jpg"])),
+      facts: [["Role", "Web design & front-end"], ["Platform", "Responsive web · DE & EN"], ["Built with", "HTML · CSS · JavaScript"], ["Year", "2026"]],
+      story: {
+        challenge: {
+          statement: "A small-batch honey brand needs a shop that feels as handmade as its jars, and works like a real German online store.", em: "handmade",
+          points: [["Show the quality", "Raw, cold-extracted and traceable: the quality has to be visible before anyone reads a label."], ["Make choosing easy", "Eight honeys, liquid or creamy, mild or bold. Filters and clear tasting notes help people pick."], ["Gifts are a big moment", "Honey is often bought as a present, so gifting needs its own flow."], ["Ready for Germany", "German and English, prices per kilo, a free-delivery threshold, cookie consent and legal pages."]]
+        },
+        rolesTitle: ["Designed", "and built"], rolesText: "I designed the storefront and built it by hand in HTML, CSS and JavaScript, without a framework.",
+        roles: [["Web design", "Layout, the honey palette, typography and every page, from home to checkout."], ["Interaction", "The animated bee guide, filters, quick view, the gift box builder and the basket."], ["Front-end", "One HTML file with plain CSS and JavaScript: a single-page shop that remembers the basket."], ["Content & compliance", "German and English texts, base prices per kilo, cookie consent and templates for the German legal pages."]],
+        featuresTitle: ["Walk", "through the shop"], featuresText: "Six moments from the live site.",
+        features: [
+          { title: "Pure, raw, naturally", board: 0, text: "The hero shows the jar and an animated bee, with four promises right below: raw honey, cold extraction, traceable lots and plastic-free shipping." },
+          { title: "Pick by texture and taste", board: 1, text: "Filters for liquid, creamy, dark & bold, and comb & gifts, plus sorting. Every card shows rating, texture, price per jar and price per kilo." },
+          { title: "Everything on one page", board: 2, text: "Size, quantity and Add to basket at the top, a note on how far you are from free delivery, and origin, harvest, texture and taste below." },
+          { title: "Build a gift box", board: 3, text: "Pick three honeys, choose a ribbon and add a handwritten card. The total updates as you go." },
+          { title: "Meet the beekeeper", board: 4, text: "A family honey house since 2011, told in a photo and four numbers: 42 hives, the first colony, nothing added, jarred by hand." },
+          { title: "Made for phones", board: 5, text: "The same shop on a phone, with a compact header, wrapping filters and product cards in two columns." }
+        ],
+        brand: { title: ["Warm honey,", "calm cream"], text: "Cream and sand backgrounds with a deep honey brown, a classic serif for headlines and a clean sans-serif for shopping details.",
+          palette: [["Ink", "#1B1408"], ["Honey", "#B5824A"], ["Amber", "#8E6537"], ["Sand", "#EBDFCC"], ["Cream", "#EFE7DA"], ["Linen", "#F8F4EC"]],
+          type: [["Playfair Display", "Headlines and product names"], ["Montserrat", "Brand, navigation and buttons"], ["DM Sans", "Body text"]] },
+        decisionsTitle: ["Key decisions", "Built for a", "real shop"],
+        decisions: [["A price per kilo on every jar", "German shops must show the base price, so every card shows the price per 250 g and per kilo."], ["Free delivery you can see", "The product page shows how far the basket is from free delivery at 40 €."], ["Privacy first", "The cookie banner offers “Necessary only” as an equal choice, and the basket is saved in the browser."], ["No framework", "The whole shop is one HTML file with plain CSS and JavaScript, so it loads fast and runs on GitHub Pages."]],
+        outcome: { title: ["Live and", "shoppable"], cta: "Visit the live shop", points: ["A complete storefront: home, shop, product, gift box, checkout and account", "German and English", "Responsive on desktop and mobile", "Built without a framework"], ongoing: "Bienenhaus is a demo storefront: products, reviews and figures are sample content, and no real orders or payments are taken." }
+      }
     },
     {
       slug: "aurelle-bakery", behance: null, repo: "https://github.com/ALAASHAHEEN93/aurelle-bakery-menu",
@@ -584,10 +608,34 @@ window.PROJECTS = (function () {
     },
     "bienenhaus": {
       tagline: "Rohhonig aus Brandenburg", kindLabel: "Website · Design & Front-End", role: "Webdesign & Front-End-Entwicklung", platform: "Responsive Website · Deutsch & Englisch",
-      overview: ["Webdesign und Front-End-Entwicklung für Bienenhaus, eine kleine Honigmarke mit 42 Bienenvölkern in Brandenburg und der Uckermark.", "Das Konzept setzt auf warme Honigtöne, elegante Serifenschrift und eine verspielte animierte Biene, die durch die Geschichte führt: roher, kalt geschleuderter Honig, rückverfolgbare Chargen und handabgefüllte Gläser."],
+      overview: ["Webdesign und Front-End-Entwicklung von Bienenhaus, einem Demo-Shop für eine kleine Honigmarke mit 42 Bienenvölkern in Brandenburg und der Uckermark.", "Das Konzept setzt auf warme Honigtöne, elegante Serifenschrift und eine verspielte animierte Biene, die durch die Geschichte führt: roher, kalt geschleuderter Honig, rückverfolgbare Chargen und handabgefüllte Gläser."],
       highlights: ["Hero mit Produktpräsentation", "Markenversprechen", "Saisonaler Shop mit Produktkarten", "Kundenbewertungen", "Drei Schritte „vom Bienenstock ins Glas“", "Vollständig responsive, auf Deutsch und Englisch"],
       tags: ["Branding", "Landingpage", "E-Commerce", "Front-End", "Responsive"],
-      tldr: { problem: "Eine kleine Honigmarke brauchte eine Website, die ihre Geschichte erzählt und ihren Honig verkauft.", role: "Webdesign und Front-End-Entwicklung.", result: "Eine responsive Live-Website auf Deutsch und Englisch mit saisonalem Shop und einer verspielten animierten Biene." }
+      tldr: { problem: "Eine kleine Honigmarke braucht eine Website, die ihre Geschichte erzählt und ihren Honig verkauft.", role: "Webdesign und Front-End-Entwicklung.", result: "Eine responsive Live-Website auf Deutsch und Englisch mit saisonalem Shop und einer verspielten animierten Biene." },
+      facts: [["Rolle", "Webdesign & Front-End"], ["Plattform", "Responsive Web · DE & EN"], ["Gebaut mit", "HTML · CSS · JavaScript"], ["Jahr", "2026"]],
+      story: {
+        challenge: {
+          statement: "Eine kleine Honigmarke braucht einen Shop, der sich so handgemacht anfühlt wie ihre Gläser und wie ein echter deutscher Onlineshop funktioniert.", em: "handgemacht",
+          points: [["Qualität zeigen", "Roh, kalt geschleudert und rückverfolgbar: Die Qualität muss sichtbar sein, bevor jemand ein Etikett liest."], ["Die Wahl leicht machen", "Acht Honige, flüssig oder cremig, mild oder kräftig. Filter und klare Geschmacksnoten helfen bei der Auswahl."], ["Geschenke sind ein großer Moment", "Honig wird oft verschenkt, deshalb bekommt das Schenken einen eigenen Ablauf."], ["Bereit für Deutschland", "Deutsch und Englisch, Grundpreise pro Kilo, eine Versandkostenfrei-Schwelle, Cookie-Einwilligung und Rechtstexte."]]
+        },
+        rolesTitle: ["Gestaltet", "und gebaut"], rolesText: "Ich habe den Shop gestaltet und von Hand mit HTML, CSS und JavaScript gebaut, ohne Framework.",
+        roles: [["Webdesign", "Layout, die Honigpalette, Typografie und jede Seite, von der Startseite bis zum Checkout."], ["Interaktion", "Die animierte Biene, Filter, Schnellansicht, der Geschenkbox-Baukasten und der Warenkorb."], ["Front-End", "Eine HTML-Datei mit reinem CSS und JavaScript: ein Single-Page-Shop, der sich den Warenkorb merkt."], ["Inhalte & Recht", "Deutsche und englische Texte, Grundpreise pro Kilo, Cookie-Einwilligung und Vorlagen für die deutschen Rechtstexte."]],
+        featuresTitle: ["Ein Rundgang", "durch den Shop"], featuresText: "Sechs Momente aus der Live-Website.",
+        features: [
+          { title: "Rein, roh, natürlich", board: 0, text: "Der Hero zeigt das Glas und eine animierte Biene, darunter vier Versprechen: roher Honig, kalt geschleudert, rückverfolgbare Chargen und plastikfreier Versand." },
+          { title: "Nach Konsistenz und Geschmack wählen", board: 1, text: "Filter für flüssig, cremig, dunkel & kräftig sowie Wabe & Geschenke, dazu Sortierung. Jede Karte zeigt Bewertung, Konsistenz, Preis pro Glas und pro Kilo." },
+          { title: "Alles auf einer Seite", board: 2, text: "Größe, Menge und „In den Warenkorb“ oben, ein Hinweis, wie viel bis zum kostenlosen Versand fehlt, und darunter Herkunft, Ernte, Konsistenz und Geschmack." },
+          { title: "Eine Geschenkbox zusammenstellen", board: 3, text: "Drei Honige wählen, ein Band aussuchen und eine handgeschriebene Karte hinzufügen. Die Summe aktualisiert sich dabei live." },
+          { title: "Die Imkerei kennenlernen", board: 4, text: "Ein Familienbetrieb seit 2011, erzählt mit einem Foto und vier Zahlen: 42 Völker, das erste Volk, nichts zugesetzt, von Hand abgefüllt." },
+          { title: "Gemacht für Smartphones", board: 5, text: "Derselbe Shop auf dem Smartphone, mit kompaktem Header, umbrechenden Filtern und Produktkarten in zwei Spalten." }
+        ],
+        brand: { title: ["Warmer Honig,", "ruhiges Creme"], text: "Creme- und Sandtöne mit einem tiefen Honigbraun, eine klassische Serifenschrift für Headlines und eine klare Sans-Serif für Shop-Details.",
+          palette: [["Tinte", "#1B1408"], ["Honig", "#B5824A"], ["Bernstein", "#8E6537"], ["Sand", "#EBDFCC"], ["Creme", "#EFE7DA"], ["Leinen", "#F8F4EC"]],
+          type: [["Playfair Display", "Headlines und Produktnamen"], ["Montserrat", "Marke, Navigation und Buttons"], ["DM Sans", "Fließtext"]] },
+        decisionsTitle: ["Wichtige Entscheidungen", "Gebaut für einen", "echten Shop"],
+        decisions: [["Grundpreis auf jedem Glas", "Deutsche Shops müssen den Grundpreis zeigen, deshalb steht auf jeder Karte der Preis pro 250 g und pro Kilo."], ["Kostenloser Versand, sichtbar", "Die Produktseite zeigt, wie viel bis zum kostenlosen Versand ab 40 € fehlt."], ["Datenschutz zuerst", "Das Cookie-Banner bietet „Nur notwendige“ als gleichwertige Wahl, und der Warenkorb wird im Browser gespeichert."], ["Kein Framework", "Der ganze Shop ist eine HTML-Datei mit reinem CSS und JavaScript, lädt schnell und läuft auf GitHub Pages."]],
+        outcome: { title: ["Live und", "einkaufbar"], cta: "Zum Live-Shop", points: ["Ein kompletter Shop: Start, Produkte, Produktseite, Geschenkbox, Checkout und Konto", "Deutsch und Englisch", "Responsive auf Desktop und Mobilgeräten", "Ohne Framework gebaut"], ongoing: "Bienenhaus ist ein Demo-Shop: Produkte, Bewertungen und Zahlen sind Beispielinhalte, und es werden keine echten Bestellungen oder Zahlungen angenommen." }
+      }
     },
     "grove": {
       tagline: "Pflanzenshop & smarter Pflege-Assistent", kindLabel: "Mobile App · UX Case Study", role: "UX-Research & UI Design", platform: "Mobile App",
