@@ -197,7 +197,7 @@ window.PROJECTS = (function () {
       }
     },
     {
-      slug: "coffee-lab", behance: null, repo: "https://github.com/ALAASHAHEEN93/Coffee-Lab",
+      slug: "coffee-lab", behance: null, repo: "https://github.com/ALAASHAHEEN93/Coffee-Lab", live: "https://alaashaheen93.github.io/Coffee-Lab/",
       tldr: { problem: "Most coffee shops online look the same and don’t help you understand how a coffee will taste.", role: "Concept, UI design and full-stack development, on my own.", result: "A bilingual shop in Next.js and Payload CMS with interactive flavour tools, a cart and user accounts." },
       title: "CoffeeLab", tagline: "A molecular roastery online shop", kind: "web", kindLabel: "E-commerce · Design & full-stack", year: "2026",
       role: "UI design & full-stack development", platform: "Responsive web · German & English", tools: ["Next.js", "TypeScript", "Payload CMS", "MongoDB"],
@@ -233,7 +233,7 @@ window.PROJECTS = (function () {
           type: [["Cormorant Garamond", "Headlines and product names"], ["Inter / system sans", "UI, labels and body text"]] },
         decisionsTitle: ["Key decisions", "Built to", "last"],
         decisions: [["Content in a CMS, not in code", "Every text on the home page lives in a Payload CMS global, so content can change without a developer."], ["Two languages, one toggle", "German and English content per field, with a DE / EN toggle that remembers the choice."], ["Never a blank page", "If the database is unavailable, the site falls back to built-in content instead of breaking."], ["Accounts and cart", "Login, sign-up and an account page built on Payload’s authentication, plus a shared cart across the page."]],
-        outcome: { title: ["Designed", "and built"], points: ["A complete brand and UI concept", "A working Next.js shop with cart and accounts", "Content editable in a CMS, in German and English", "Responsive on desktop and mobile"], ongoing: "CoffeeLab is a portfolio project: products, prices, ratings and figures are sample content. The code is on GitHub." }
+        outcome: { title: ["Designed", "and built"], points: ["A complete brand and UI concept", "A working Next.js shop with cart and accounts", "Content editable in a CMS, in German and English", "Responsive on desktop and mobile"], cta: "Try the live demo", ongoing: "CoffeeLab is a portfolio project: products, prices, ratings and figures are sample content. The live demo runs on GitHub Pages without a server, so accounts and the CMS are only in the full version. The code is on GitHub." }
       }
     },
     {
@@ -424,7 +424,7 @@ window.PROJECTS = (function () {
           type: [["Cormorant Garamond", "Headlines und Produktnamen"], ["Inter / System-Sans", "UI, Labels und Fließtext"]] },
         decisionsTitle: ["Wichtige Entscheidungen", "Gebaut, um zu", "bleiben"],
         decisions: [["Inhalte im CMS, nicht im Code", "Jeder Text der Startseite liegt in einem Payload-CMS-Global, Inhalte lassen sich ohne Entwickler:in ändern."], ["Zwei Sprachen, ein Schalter", "Deutsche und englische Inhalte pro Feld, mit einem DE-/EN-Schalter, der die Wahl speichert."], ["Nie eine leere Seite", "Ist die Datenbank nicht erreichbar, zeigt die Seite eingebaute Inhalte, statt abzustürzen."], ["Konten und Warenkorb", "Login, Registrierung und Kontoseite auf Basis der Payload-Authentifizierung, dazu ein gemeinsamer Warenkorb auf der ganzen Seite."]],
-        outcome: { title: ["Gestaltet", "und gebaut"], points: ["Ein komplettes Marken- und UI-Konzept", "Ein funktionierender Next.js-Shop mit Warenkorb und Konten", "Inhalte im CMS pflegbar, auf Deutsch und Englisch", "Responsive auf Desktop und Mobilgeräten"], ongoing: "CoffeeLab ist ein Portfolio-Projekt: Produkte, Preise, Bewertungen und Zahlen sind Beispielinhalte. Der Code liegt auf GitHub." }
+        outcome: { title: ["Gestaltet", "und gebaut"], points: ["Ein komplettes Marken- und UI-Konzept", "Ein funktionierender Next.js-Shop mit Warenkorb und Konten", "Inhalte im CMS pflegbar, auf Deutsch und Englisch", "Responsive auf Desktop und Mobilgeräten"], cta: "Live-Demo ausprobieren", ongoing: "CoffeeLab ist ein Portfolio-Projekt: Produkte, Preise, Bewertungen und Zahlen sind Beispielinhalte. Die Live-Demo läuft auf GitHub Pages ohne Server, Konten und CMS gibt es daher nur in der Vollversion. Der Code liegt auf GitHub." }
       }
     },
     "aurelle-bakery": {
