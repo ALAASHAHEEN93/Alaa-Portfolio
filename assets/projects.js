@@ -197,6 +197,46 @@ window.PROJECTS = (function () {
       }
     },
     {
+      slug: "mivora", behance: null, repo: "https://github.com/ALAASHAHEEN93/Mivora-App",
+      tldr: { problem: "Families in Köln find children’s activities scattered across many sites, and mostly only in German.", role: "Concept, UX/UI design and full-stack development, with AI pair programming.", result: "A working, tested app prototype in 9 languages: discover, plan per child, save, share, and an admin dashboard." },
+      title: "Mivora", tagline: "Family activity app for Köln", kind: "app", kindLabel: "Mobile app · Design & full-stack", year: "2026",
+      role: "Concept, UX/UI design & full-stack development", platform: "Mobile-first web app · 9 languages", tools: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "next-intl", "Playwright"],
+      cover: "assets/work/mivora/cover.webp",
+      overview: [
+        "Mivora helps parents in Köln find courses, workshops, holiday camps and free activities for their children, filtered by age, district and day, and plan them in a calendar for each child.",
+        "It is German-first and works in eight more languages, including Arabic from right to left, so families who are new to the city can find their way too. Mivora is an independent project in its test phase: it runs on demo data and is not affiliated with the City of Köln."
+      ],
+      highlights: ["9 languages, including Arabic right to left", "A calendar for each child, with age-fitting suggestions", "Rainy-day indoor tips from German Weather Service open data", "“What shall we do today?” surprise picker for kids", "Admin dashboard with review, editing and problem reports", "Privacy by design: sign-in by email code, no tracking"],
+      tags: ["Mobile app", "Kids & family", "UX/UI design", "Next.js", "Full-stack", "Accessibility"],
+      images: ["assets/work/mivora/01-welcome.webp", "assets/work/mivora/02-home.webp", "assets/work/mivora/03-picker.webp", "assets/work/mivora/04-categories.webp", "assets/work/mivora/05-activity.webp", "assets/work/mivora/06-explore.webp", "assets/work/mivora/07-calendar.webp", "assets/work/mivora/08-admin.webp", "assets/work/mivora/09-arabic.webp", "assets/work/mivora/10-dark.webp"],
+      facts: [["Role", "UX/UI design & full-stack"], ["Platform", "Mobile-first web app · 9 languages"], ["Built with", "Next.js · TypeScript · PostgreSQL"], ["Status", "Test phase, demo data"]],
+      story: {
+        challenge: {
+          statement: "Finding something to do with your kids in Köln means checking many websites, mostly in German only. Mivora puts it in one friendly app, in your language.", em: "one friendly app",
+          points: [["Scattered offers", "Courses, camps and free events live on many different sites and lists."], ["Language barriers", "Families new to Köln often don’t read German well enough to compare offers."], ["Planning for several kids", "Parents juggle different ages, interests and dates for each child."], ["Trust", "Parents need to know a listing is current and that their family’s data is safe."]]
+        },
+        rolesTitle: ["From concept", "to code"], rolesText: "I created Mivora from the first idea to a tested app, working with an AI coding assistant for the implementation.",
+        roles: [["Concept & UX", "Problem framing, user flows for parents, kids and providers, and a German-first content plan."], ["UI & brand", "The sticker-style logo, the Coral, Sunshine, Mint and Lavender palette, a drawn meadow and playful motion that respects reduced-motion settings."], ["Front-end", "Next.js App Router with TypeScript, 9 languages with next-intl, right-to-left layouts and a map behind a consent step."], ["Back-end & quality", "PostgreSQL with Prisma, email-code sign-in, an admin review flow, daily reminder emails, plus unit, end-to-end and accessibility tests."]],
+        featuresTitle: ["Walk", "through the app"], featuresText: "Eight moments, from the first launch to the admin dashboard.",
+        features: [
+          { title: "A warm welcome", board: 0, text: "Pick your city and, if you like, your children’s ages. No account needed to start." },
+          { title: "A home that feels alive", board: 1, text: "A sky with a drifting balloon and our own meadow illustration, a day strip with the weekend highlighted, and search ideas that change every few seconds." },
+          { title: "What shall we do today?", board: 2, text: "Kids tap one button and the card shuffles through today’s activities until it lands on one." },
+          { title: "Categories at a glance", board: 3, text: "Colourful sticker bubbles for sport, music, art, science and more, with activity cards that show age, time, district and price." },
+          { title: "Everything on one page", board: 4, text: "Dates, age, price, cancellation terms and how to book, plus save, add to the calendar and share with the phone’s own share menu." },
+          { title: "A calendar for each child", board: 6, text: "Plan activities per child, spot clashes, and get an optional reminder email the evening before." },
+          { title: "One dashboard for the admin", board: 7, text: "Live, pending and reported counts, add an activity that goes online immediately, edit any listing, and review submissions." },
+          { title: "Right to left, day and night", board: 8, text: "The whole app mirrors for Arabic, and dark mode turns the meadow into a night scene." }
+        ],
+        brand: { title: ["Discover.", "Play. Grow."], text: "Soft pastels with a deep Midnight Blue for text and outlines, a rounded sticker-style typeface for headings and a friendly sans-serif for reading. Every text colour is checked for WCAG AA contrast.",
+          palette: [["Coral", "#F2A68A"], ["Sunshine", "#F3D077"], ["Mint", "#82C3B8"], ["Lavender", "#AF9FD5"], ["Cream", "#FFF3EA"], ["Midnight Blue", "#263847"]],
+          type: [["Fredoka", "Logo and headings"], ["Nunito", "Body text and UI"], ["Noto Sans Arabic", "Arabic text"]] },
+        decisionsTitle: ["Key decisions", "Safe for", "families"],
+        decisions: [["Privacy by design", "Sign-in with a one-time email code, no passwords, no advertising or tracking; a child profile is only a nickname, birth year and interests."], ["Listings only with permission", "Activities are added by an admin or by providers, never copied from other sites."], ["Open weather data", "Rain tips use German Weather Service open data; only Köln’s coordinates are sent, never anything about the visitor."], ["Accessible and tested", "Automated accessibility checks on every main screen, all motion paused for reduced motion, and tests for sign-in, permissions and planning."]],
+        outcome: { title: ["Designed", "and built"], points: ["A working app prototype with accounts, calendar and admin dashboard", "9 languages, including Arabic right to left", "Light and dark mode with a custom illustrated brand", "Unit, end-to-end and accessibility tests"], ongoing: "Mivora is in its test phase: all listings are demo content, and it is not affiliated with the City of Köln. Next steps are a private test version online, legal review of the privacy texts, and the first real activities from providers who agree. The code is on GitHub." }
+      }
+    },
+    {
       slug: "coffee-lab", demoVideo: "assets/work/coffee-lab/demo.mp4", demoPoster: "assets/work/coffee-lab/demo-poster.webp", behance: null, repo: "https://github.com/ALAASHAHEEN93/Coffee-Lab", live: "https://alaashaheen93.github.io/Coffee-Lab/",
       tldr: { problem: "Most coffee shops online look the same and don’t help you understand how a coffee will taste.", role: "Concept, UI design and full-stack development, on my own.", result: "A bilingual shop in Next.js and Payload CMS with interactive flavour tools, a cart and user accounts." },
       title: "CoffeeLab", tagline: "A molecular roastery online shop", kind: "web", kindLabel: "E-commerce · Design & full-stack", year: "2026",
@@ -418,6 +458,39 @@ window.PROJECTS = (function () {
   ];
   // German version of each case study (used when the site is in DE). Anything left out falls back to English.
   const DE = {
+    "mivora": {
+      tagline: "Familien-App für Aktivitäten in Köln", kindLabel: "Mobile App · Design & Full-Stack", role: "Konzept, UX/UI Design & Full-Stack-Entwicklung", platform: "Mobile-first Web-App · 9 Sprachen",
+      tldr: { problem: "Familien in Köln finden Kinderangebote verstreut auf vielen Seiten, und meist nur auf Deutsch.", role: "Konzept, UX/UI Design und Full-Stack-Entwicklung, mit KI-Unterstützung beim Programmieren.", result: "Ein funktionierender, getesteter App-Prototyp in 9 Sprachen: entdecken, pro Kind planen, merken, teilen, dazu ein Admin-Dashboard." },
+      overview: ["Mivora hilft Eltern in Köln, Kurse, Workshops, Ferienangebote und kostenlose Aktivitäten für ihre Kinder zu finden, gefiltert nach Alter, Stadtteil und Tag, und sie in einem Kalender pro Kind zu planen.", "Die App ist Deutsch-first und funktioniert in acht weiteren Sprachen, auch auf Arabisch von rechts nach links, damit sich auch neu zugezogene Familien zurechtfinden. Mivora ist ein unabhängiges Projekt in der Testphase: Es läuft mit Beispieldaten und steht in keiner Verbindung zur Stadt Köln."],
+      highlights: ["9 Sprachen, auch Arabisch von rechts nach links", "Ein Kalender pro Kind, mit Vorschlägen im passenden Alter", "Indoor-Tipps bei Regen, mit offenen Daten des Deutschen Wetterdienstes", "„Was machen wir heute?“: ein Überraschungs-Knopf für Kinder", "Admin-Dashboard mit Prüfung, Bearbeitung und Problemmeldungen", "Datenschutz von Anfang an: Anmeldung per E-Mail-Code, kein Tracking"],
+      tags: ["Mobile App", "Kinder & Familie", "UX/UI Design", "Next.js", "Full-Stack", "Barrierefreiheit"],
+      facts: [["Rolle", "UX/UI Design & Full-Stack"], ["Plattform", "Mobile-first Web-App · 9 Sprachen"], ["Gebaut mit", "Next.js · TypeScript · PostgreSQL"], ["Status", "Testphase, Beispieldaten"]],
+      story: {
+        challenge: {
+          statement: "Wer in Köln etwas mit Kindern unternehmen will, sucht auf vielen Websites, meist nur auf Deutsch. Mivora bündelt alles in einer freundlichen App, in der eigenen Sprache.", em: "einer freundlichen App",
+          points: [["Verstreute Angebote", "Kurse, Camps und kostenlose Events liegen auf vielen verschiedenen Seiten und Listen."], ["Sprachbarrieren", "Neu zugezogene Familien können Angebote auf Deutsch oft schwer vergleichen."], ["Planen für mehrere Kinder", "Eltern jonglieren verschiedene Alter, Interessen und Termine."], ["Vertrauen", "Eltern wollen wissen, dass ein Angebot aktuell ist und ihre Daten sicher sind."]]
+        },
+        rolesTitle: ["Vom Konzept", "zum Code"], rolesText: "Ich habe Mivora von der ersten Idee bis zur getesteten App entwickelt und bei der Umsetzung mit einem KI-Coding-Assistenten gearbeitet.",
+        roles: [["Konzept & UX", "Problemdefinition, User Flows für Eltern, Kinder und Anbieter und ein Deutsch-first-Inhaltskonzept."], ["UI & Marke", "Das Sticker-Logo, die Palette aus Coral, Sunshine, Mint und Lavender, eine gezeichnete Wiese und verspielte Animationen, die reduzierte Bewegung respektieren."], ["Front-End", "Next.js App Router mit TypeScript, 9 Sprachen mit next-intl, Rechts-nach-links-Layouts und eine Karte erst nach Zustimmung."], ["Back-End & Qualität", "PostgreSQL mit Prisma, Anmeldung per E-Mail-Code, ein Prüfablauf für Admins, tägliche Erinnerungs-E-Mails sowie Unit-, End-to-End- und Barrierefreiheitstests."]],
+        featuresTitle: ["Ein Rundgang", "durch die App"], featuresText: "Acht Momente, vom ersten Start bis zum Admin-Dashboard.",
+        features: [
+          { title: "Ein herzliches Willkommen", board: 0, text: "Stadt wählen und, wer mag, das Alter der Kinder. Zum Start ist kein Konto nötig." },
+          { title: "Eine Startseite, die lebt", board: 1, text: "Ein Himmel mit Ballon und unserer eigenen Wiesen-Illustration, ein Tagesstreifen mit hervorgehobenem Wochenende und Suchideen, die alle paar Sekunden wechseln." },
+          { title: "Was machen wir heute?", board: 2, text: "Kinder tippen auf einen Knopf, und die Karte mischt die heutigen Angebote, bis sie bei einem landet." },
+          { title: "Kategorien auf einen Blick", board: 3, text: "Bunte Sticker-Bubbles für Sport, Musik, Kunst, MINT und mehr, dazu Karten mit Alter, Uhrzeit, Stadtteil und Preis." },
+          { title: "Alles auf einer Seite", board: 4, text: "Termine, Alter, Preis, Stornobedingungen und Buchung, dazu merken, in den Kalender eintragen und mit dem Teilen-Menü des Handys teilen." },
+          { title: "Ein Kalender pro Kind", board: 6, text: "Aktivitäten pro Kind planen, Überschneidungen sehen und auf Wunsch am Vorabend eine Erinnerung per E-Mail bekommen." },
+          { title: "Ein Dashboard für den Admin", board: 7, text: "Zahlen zu online, offen und gemeldet, Aktivitäten sofort veröffentlichen, jedes Angebot bearbeiten und Einreichungen prüfen." },
+          { title: "Rechts nach links, Tag und Nacht", board: 8, text: "Die ganze App spiegelt sich für Arabisch, und im Dark Mode wird die Wiese zur Nachtlandschaft." }
+        ],
+        brand: { title: ["Entdecken.", "Spielen. Wachsen."], text: "Sanfte Pastelltöne mit einem tiefen Midnight Blue für Text und Konturen, eine runde Sticker-Schrift für Überschriften und eine freundliche Grotesk zum Lesen. Jede Textfarbe ist auf WCAG-AA-Kontrast geprüft.",
+          palette: [["Coral", "#F2A68A"], ["Sunshine", "#F3D077"], ["Mint", "#82C3B8"], ["Lavender", "#AF9FD5"], ["Cream", "#FFF3EA"], ["Midnight Blue", "#263847"]],
+          type: [["Fredoka", "Logo und Überschriften"], ["Nunito", "Fließtext und UI"], ["Noto Sans Arabic", "Arabischer Text"]] },
+        decisionsTitle: ["Wichtige Entscheidungen", "Sicher für", "Familien"],
+        decisions: [["Datenschutz von Anfang an", "Anmeldung mit einmaligem E-Mail-Code, keine Passwörter, keine Werbung, kein Tracking; ein Kinderprofil ist nur Spitzname, Geburtsjahr und Interessen."], ["Angebote nur mit Erlaubnis", "Aktivitäten trägt ein Admin oder der Anbieter ein, sie werden nie von anderen Seiten kopiert."], ["Offene Wetterdaten", "Regentipps nutzen offene Daten des Deutschen Wetterdienstes; gesendet werden nur Kölns Koordinaten, nie etwas über Besucher:innen."], ["Barrierearm und getestet", "Automatische Barrierefreiheitstests auf allen Hauptscreens, Animationen pausieren bei reduzierter Bewegung, und Tests für Anmeldung, Rechte und Planung."]],
+        outcome: { title: ["Gestaltet", "und gebaut"], points: ["Ein funktionierender App-Prototyp mit Konten, Kalender und Admin-Dashboard", "9 Sprachen, auch Arabisch von rechts nach links", "Hell- und Dunkelmodus mit eigener illustrierter Marke", "Unit-, End-to-End- und Barrierefreiheitstests"], ongoing: "Mivora ist in der Testphase: Alle Angebote sind Beispielinhalte, und es besteht keine Verbindung zur Stadt Köln. Nächste Schritte sind eine private Testversion online, eine rechtliche Prüfung der Datenschutztexte und die ersten echten Angebote von Anbietern, die zustimmen. Der Code ist auf GitHub." }
+      }
+    },
     "coffee-lab": {
       tagline: "Ein Onlineshop als molekulare Rösterei", kindLabel: "E-Commerce · Design & Full-Stack", role: "UI Design & Full-Stack-Entwicklung", platform: "Responsive Website · Deutsch & Englisch",
       tldr: { problem: "Die meisten Kaffee-Shops online sehen gleich aus und helfen nicht zu verstehen, wie ein Kaffee schmeckt.", role: "Konzept, UI Design und Full-Stack-Entwicklung, eigenständig.", result: "Ein zweisprachiger Shop mit Next.js und Payload CMS, mit interaktiven Geschmacks-Tools, Warenkorb und Nutzerkonten." },
